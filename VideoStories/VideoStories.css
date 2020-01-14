@@ -1,0 +1,65 @@
+.default-padding{
+    padding-top: .225rem !important;
+    padding-bottom: 0;
+}
+.About-h3{
+text-align: left;
+}
+.video-list_ul--li{
+    text-decoration: none;
+    text-align: left;
+    
+}
+.list_ul--li-img{
+    height: 2rem;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+.ul--li-main_h2{
+    margin-top: 0.2rem !important;
+    margin-bottom: 0 !important;
+    font-size:.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:.2rem;
+}
+.ul--li-main_p{
+    margin-top: 0.1rem !important;
+    font-size:.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:.2rem;
+}
+.play-btn_block .bigbtn{
+    width: 0.3rem;
+    height: 0.3rem;
+}
+.maskvideo{
+    position: absolute;
+    width:100%;
+    height:100%;
+    opacity:1;
+}
+.maskvideo .bigbtn{
+    cursor: pointer;
+    font-size: 60px;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    opacity:1;
+    border-radius:50px;
+    transition:all linear 0.5s;
+    transform: translate(-50%,-50%) 
+}
+.alSvgIcon {
+    width: 1em; 
+    height: 1em;
+    fill: currentColor;
+    overflow: hidden;
+}

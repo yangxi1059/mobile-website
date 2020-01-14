@@ -1,0 +1,84 @@
+{
+    "code":200,
+    "msg":"成功",
+    "data":
+    {
+        "header":{
+            "headerListMsg":
+                [
+                    {
+                        "id": 1,
+                        "name": "首页",
+                        "detail": [],
+                        "url":"../../../"
+                    },
+                    {
+                        "id": 10,
+                        "name": "视频课程",
+                        "detail": [],
+                        "url":"../../../static/VideoLessons/VideoLessons.html"
+                    },
+                    {
+                        "id": 2,
+                        "name": "视频故事",
+                        "detail": [],
+                        "url":"../../../static/VideoStories/VideoStories.html"
+                    },
+                    {
+                        "id": 3,
+                        "name": "Offer 榜单",
+                        "detail": [],
+                        "url":"../../../static/Offers/Offers.html"
+                    },
+                    {
+                        "id": 4,
+                        "name": "成功案例",
+                        "detail": [
+                       
+                        ],
+                        "url":"../../../static/SuccessStories/SuccessStories.html"
+                    },
+                    {
+                        "id": 5,
+                        "name": "我们的服务",
+                        "detail": [
+                      
+                        ],
+                        "url":"../../../static/Services/Services.html"
+                    },
+                    {
+                        "id": 6,
+                        "name": "关于我们",
+                        "detail": [
+                      
+                        ],
+                        "url":"../../../static/About/About.html"
+                    },
+                    {
+                        "id": 7,
+                        "name": "参考文章",
+                        "detail": [
+                        
+                        ],
+                        "url":"../../../static/Blog/Blog.html"
+                    }
+                ],
+            "headerLoginmsg":{
+                "other":"登录",
+                "myselfList":[
+                    {"my":"我的信息"},
+                    {"my":"我的资料"},
+                    {"my":"我的订单"},
+                    {"my":"我的等等"},
+                    {"my":"注销账户"}
+                ]
+            }
+        },
+        "footer":{
+            "footermsg1":"上海：长宁区天山路",
+            "footermsg2":"北京：朝阳区光华路",
+            "erweima1":"关注我们的微信公众号",
+            "erweima2":"联系我们的团队了解更多"
+        }
+    }
+}

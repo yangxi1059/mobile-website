@@ -1,0 +1,87 @@
+/*
+ * @Author: 杨曦
+ * @Date: 2019-09-27 08:21:50
+ * @LastEditors  : 杨曦
+ * @LastEditTime : 2020-01-13 20:23:10
+ * @Version: 
+ * @Description: 公共样式  包括 header footer contactUs 以及 字体
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td ,textarea,input { margin:0; padding:0;-moz-user-select:none;}
+
+html{
+    touch-action:none;
+}
+address,cite,dfn,em,var, i {font-style:normal;}
+body {font-size: 16px; line-height: 1.5; color: #222; background: #eee;cursor: auto !important; }
+table { border-collapse:collapse; border-spacing:0; }
+h1, h2, h3, h4, h5, h6, th { font-size: 100%; font-weight: normal; }
+button,input,select,textarea{font-size:100%;}
+fieldset,img{border:0;}
+a { text-decoration: none !important; color: #666; background: none }
+a:hover { text-decoration: none !important}
+ul, ol { list-style: none; }
+ul,li{ padding:0;margin:0;list-style:none}
+:focus{ outline:none;}
+.clearfix{ clear: both; content: ""; display: block;}
+.clear{clear: both;}
+.fl{ float: left; }
+.fr{float: right;}
+
+a:active{
+    text-decoration: none !important;
+}
+
+@font-face{
+     font-family: 'Ubuntu-R'; 
+     src: url('../fonts/Ubuntu-Regular.ttf');
+     src:url('../fonts/Ubuntu-Regular.ttf') format('truetype'),
+}
+@font-face{
+    font-family: 'Ubuntu-B'; 
+    src: url('../fonts/Ubuntu-Bold.ttf');
+    src:url('../fonts/Ubuntu-Bold.ttf') format('truetype'),
+}
+@font-face{
+    font-family: 'Ubuntu-L'; 
+    src: url('../fonts/Ubuntu-Light.ttf');
+    src:url('../fonts/Ubuntu-Light.ttf') format('truetype'),
+}
+@font-face{
+    font-family: 'Ubuntu-BI'; 
+    src: url('../fonts/Ubuntu-BoldItalic.ttf');
+    src:url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype'),
+}
+@font-face{
+    font-family: 'Ubuntu-M'; 
+    src: url('../fonts/Ubuntu-Medium.ttf');
+    src:url('../fonts/Ubuntu-Medium.ttf') format('truetype'),
+}
+.content h2{
+    font-family: Ubuntu-R ;
+    font-style:italic ;
+    font-size: 0.2rem !important;
+}
+.shouzimu{
+    font-family: Ubuntu-M;
+    font-style:italic;
+    font-size: 0.3rem !important;
+}
+.erweima1{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    background-image: url('../images/img/wechat.png');
+    background-size: cover;
+    margin: 0 auto;
+}
+.erweima2{
+    margin: 0 auto;
+    width: 0.5rem;
+    height: 0.5rem;
+    display: block;
+    background-size: cover;
+}
+.banner-area .content h2{
+}

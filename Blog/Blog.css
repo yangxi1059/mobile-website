@@ -1,0 +1,28 @@
+.default-padding{
+    padding-top: 0.225rem !important;
+}
+.About-h3{
+    text-align: left;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.24rem;
+}
+.list-name{
+    font-size:0.14rem;
+    text-align: left;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.2rem; 
+}
+
+
+
+
+
+
+
+
+

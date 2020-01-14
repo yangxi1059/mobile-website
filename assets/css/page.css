@@ -1,0 +1,280 @@
+#page{
+    text-align: center;
+}
+#page ul{
+    display: flex;
+    display: inline-block;
+}
+#page ul li{
+    border:1px solid rgba(228,228,228,1);
+    width: 32px;
+    border-radius:2px;
+    height: 32px;
+    background:#fff;
+    font-size: 14px;
+    line-height: 32px;
+    color:rgba(59,59,59,0.96);
+    font-family:Ubuntu-R;
+    margin: 0 5px;
+}
+.xl-disabled{
+    background: #fff !important;
+    color:rgba(54,59,62,1) !important;
+    border: none !important;
+}
+.xl-jumpText{
+    width: 200px !important;
+}
+.xl-active{
+    background:rgba(59,59,59,.3) !important;
+    color: #363B3E !important;
+    border: none !important;
+}
+.xl-prevPage .iconshangyiye{
+    font-size: 12px;
+}
+.xl-nextPage .iconxiayiye{
+    font-size: 12px;
+}
+/* 分页插件 */
+#page {
+    margin-top: 110px;
+    color: #666;
+    display: block;
+    text-align: center;
+}
+
+#page li {
+    display: inline-block;
+    min-width: 30px;
+    height: 28px;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+    line-height: 28px;
+    background-color: #f9f9f9;
+    border: 1px solid #dce0e0;
+    text-align: center;
+    margin: 0 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#page li:hover{
+    background: rgba(195,46,71,1) ;
+    color: #fff ;
+    border-color: #fff;
+}
+.xl-nextPage,
+.xl-prevPage {
+    
+}
+
+#page li.xl-disabled {
+    opacity: .5;
+    cursor: no-drop;
+}
+
+#page li.xl-disabled:hover{
+    background-color: #f9f9f9 !important;
+    color: #666 !important;
+}
+
+#page li.xl-active {
+    background:rgba(195,46,71,1) !important;
+    color:rgba(255,255,255,1) !important;
+}
+
+#page li:hover{
+}
+
+ #page li.xl-jumpText {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    opacity: 1;
+}
+
+#page li.xl-jumpText:hover{
+    background-color: rgba(0,0,0,0) !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+#page li.xl-jumpButton{
+    padding: 0 5px;
+}
+
+#xlJumpNum {
+    width: 35px;
+    margin: 0 3px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+input[type="number"]{
+    -moz-appearance:textfield;
+}
+.labels-list{
+    width: 100%;
+}
+.block-overflow{
+    position: relative;
+    cursor: pointer;
+    width: 360px;
+    height: 230px;
+    overflow: hidden;
+}
+.block-videoImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background:rgba(72,89,102,0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+#pageLives{
+    text-align: center;
+}
+#pageLives ul{
+    display: flex;
+    display: inline-block;
+}
+#pageLives ul li{
+    border:1px solid rgba(228,228,228,1);
+    width: 32px;
+    border-radius:2px;
+    height: 32px;
+    background:#fff;
+    font-size: 14px;
+    line-height: 32px;
+    color:rgba(59,59,59,0.96);
+    font-family:Ubuntu-R;
+    margin: 0 5px;
+}
+.xl-disabled{
+    background: #fff !important;
+    color:rgba(54,59,62,1) !important;
+    border: none !important;
+}
+.xl-jumpText{
+    width: 200px !important;
+}
+.xl-active{
+    background:rgba(59,59,59,.3) !important;
+    color: #363B3E !important;
+    border: none !important;
+}
+.xl-prevPage .iconshangyiye{
+    font-size: 12px;
+}
+.xl-nextPage .iconxiayiye{
+    font-size: 12px;
+}
+/* 分页插件 */
+#pageLives {
+    margin: 20px auto;
+    color: #666;
+    display: block;
+    text-align: center;
+}
+
+#pageLives li {
+    display: inline-block;
+    min-width: 30px;
+    height: 28px;
+    cursor: pointer;
+    color: #666;
+    font-size: 13px;
+    line-height: 28px;
+    background-color: #f9f9f9;
+    border: 1px solid #dce0e0;
+    text-align: center;
+    margin: 0 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#pageLives li:hover{
+    background: rgba(195,46,71,1) ;
+    color: #fff ;
+    border-color: #fff;
+}
+.xl-nextPage,
+.xl-prevPage {
+    
+}
+
+#pageLives li.xl-disabled {
+    opacity: .5;
+    cursor: no-drop;
+}
+
+#pageLives li.xl-disabled:hover{
+    background-color: #f9f9f9 !important;
+    color: #666 !important;
+}
+
+#pageLives li.xl-active {
+    background:rgba(195,46,71,1) !important;
+    color:rgba(255,255,255,1) !important;
+}
+
+#pageLives li:hover{
+}
+
+ #pageLives li.xl-jumpText {
+    background-color: rgba(0,0,0,0);
+    border-color: rgba(0,0,0,0);
+    opacity: 1;
+}
+
+#pageLives li.xl-jumpText:hover{
+    background-color: rgba(0,0,0,0) !important;
+    border-color: rgba(0,0,0,0) !important;
+}
+
+#pageLives li.xl-jumpButton{
+    padding: 0 5px;
+}
+
+#xlJumpNum {
+    width: 35px;
+    margin: 0 3px;
+}
+input::-webkit-outer-spin-button,input::-webkit-inner-spin-button{
+    -webkit-appearance: none !important;
+}
+input[type="number"]{
+    -moz-appearance:textfield;
+}
+.labels-list{
+    width: 100%;
+}
+.block-overflow{
+    position: relative;
+    cursor: pointer;
+    width: 360px;
+    height: 230px;
+    overflow: hidden;
+}
+.block-videoImg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background:rgba(72,89,102,0.2);
+}
+

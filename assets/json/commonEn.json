@@ -1,0 +1,81 @@
+{
+    "code":200,
+    "msg":"",
+    "data":{
+            "header":{
+                "headerListMsg":
+                    [
+                        {
+                            "id": 1,
+                            "name": "Home",
+                            "detail": [],
+                            "url":"../../../"
+                        },
+                        {
+                            "id": 10,
+                            "name": "Video Lessons",
+                            "detail": [],
+                            "url":"../../../static/VideoLessons/VideoLessons.html"
+                        },
+                        {
+                            "id": 2,
+                            "name": "Video Stories",
+                            "detail": [],
+                            "url":"../../../static/VideoStories/VideoStories.html"
+                        },
+                        {
+                            "id": 3,
+                            "name": "Offers",
+                            "detail": [],
+                            "url":"../../../static/Offers/Offers.html"
+                        },
+                        {
+                            "id": 4,
+                            "name": "Success Stories",
+                            "detail": [
+                           
+                            ],
+                            "url":"../../../static/SuccessStories/SuccessStories.html"
+                        },
+                        {
+                            "id": 5,
+                            "name": "Services",
+                            "detail": [
+                            ],
+                            "url":"../../../static/Services/Services.html"
+                        },
+                        {
+                            "id": 6,
+                            "name": "About",
+                            "detail": [
+                            ],
+                            "url":"../../../static/About/About.html"
+                        },
+                        {
+                            "id": 7,
+                            "name": "Blog",
+                            "detail": [
+                        
+                            ],
+                            "url":"../../../static/Blog/Blog.html"
+                        }
+                    ],
+                "headerLoginmsg":{
+                    "other":"Log in",
+                    "myselfList":[
+                        {"my":"Message"},
+                        {"my":"Data"},
+                        {"my":"Order"},
+                        {"my":"Other"},
+                        {"my":"SignOut"}
+                    ]
+                }
+            },
+            "footer":{
+                "footermsg1":"Shanghai: Tianshan Road, Changning District",
+                "footermsg2":"Beijing: Dawang Road, Chaoyang District",
+                "erweima1":"Follow Our Platform on Wechat",
+                "erweima2":"Contact Our Team to Learn More"
+            }
+    }
+}

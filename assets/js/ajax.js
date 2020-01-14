@@ -1,0 +1,74 @@
+/*
+ * @Author: 杨曦
+ * @Date: 2019-11-18 08:55:34
+ * @LastEditors  : 杨曦
+ * @LastEditTime : 2020-01-13 16:10:11
+ * @Version: 
+ * @Description: 
+ */
+
+window.jQuery.Myajax = (arg) => {
+	// let baseUrl = 'http://192.168.1.199:1114/api-test/';
+	// let baseUrl = 'http://192.168.1.199:2001/';
+	// let baseUrl = 'http://192.168.1.105:2011/';
+	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
+	let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
+	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
+	// let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
+	if(!getCookie('userInfo')){
+		sessionStorage.clear('userDetail')
+	}
+	if(!sessionStorage.getItem('userDetail')){
+		clearCookie('userInfo')
+	}
+	let time;
+	clearTimeout(time);
+	time = setTimeout(() => {
+		clearCookie('userInfo');
+		sessionStorage.removeItem('userDetail');
+		if(getCookie('userInfo')){
+			sessionStorage.clear();
+			alert('长时间未操作已自动登出');
+		}
+	}, 1800000);
+	arg.data = arg.data || '';
+	if(arg.type == 'post'){
+		aes_rsa.encrypt(arg.data)
+	}
+	arg.type = arg.type || 'get';
+	arg.url = baseUrl + arg.url || '';
+	arg.headers = {
+		Accept: "application/json;charset=utf-8",
+		'Content-Type' : 'application/json;charset=utf-8',
+		Authorization:getCookie('userInfo')||'',
+	}
+	return new Promise((resolve,reject)=>{
+		$.ajax(arg).then(
+			(res,statusText,req)=>{
+				if(req.status === 200){
+					if(res.code === 200){
+					res.data = aes_rsa.decrypt(res.data,res.key)
+					resolve(res);
+					$('#loading').delay(1500).hide(0)
+				}else if(res.code === 401) {
+					clearCookie('token');
+					sessionStorage.clear();
+					reject(res.message || '请重新登录');
+				}else if( res.code === 30001 ){
+					clearCookie('token');
+					sessionStorage.clear();
+					reject(res.message || '');
+				}else{
+					reject(res || '错误了');
+				}
+			}else if(req.status === 401){
+				sessionStorage.clear();
+				clearCookie('token');
+				reject(res.message || '请重新登录');
+			}else{
+				clearCookie('token');
+				reject(res.message);
+			}
+		})
+	})
+};

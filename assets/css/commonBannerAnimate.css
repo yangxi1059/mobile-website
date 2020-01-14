@@ -1,0 +1,103 @@
+/* @keyframes bounceOutUp{
+    0% {
+        opacity: 1;
+        transform: translate(-50%,20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%,-50%);
+    }
+} */
+/* @keyframes bounceOutRight{
+    0% {
+        min-height: 100vh;
+        max-height: 100vh;
+    }
+    100% {
+        min-height: 60vh;
+        max-height:60vh;
+    }
+} */
+/* @keyframes fadeInUp{
+    0% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.backImg-main{
+    animation-fill-mode: forwards;
+    opacity: 1;
+    animation-duration: 500ms;
+}
+.animated{
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform:translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0); 
+}*/
+.backImg{
+    transition: all 0.6s linear 0.25s;
+    background-size: cover;
+    min-height: 52vh;
+    max-height: 52vh;
+    animation-delay: 250ms;
+}
+.VideoLessonsDetail-header{
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-delay: 1000ms;
+    opacity: 1;
+}
+.Video-list{
+    opacity: 1;
+    transition: all 1.2s cubic-bezier(.19,1,.22,1) 1200ms;
+    /* transform: translateY(4rem); */
+}
+.vidbg-container video{
+    width: auto !important;
+    height: 100%;
+}
+.video-list_ul{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+}
+.offersList{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+}
+.successCardList{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+}
+.Services-main-text{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+}
+.About-main_text{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+}
+.blog-main{
+    opacity: 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1200ms;
+} 
+
+

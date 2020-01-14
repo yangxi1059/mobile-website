@@ -1,0 +1,72 @@
+@charset "utf-8";
+ .socialShare {
+    display: block;
+    width: 54px;
+    height: 54px;
+    position: relative;
+    z-index: 1;
+}
+.socialShare .msb_main {
+    display: block;
+    width: 54px;
+    height: 23px;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    
+}
+.socialShare .msb_main img {
+    width: 46px;
+    height: 46px;
+    cursor: pointer;
+    border-radius: 23px;
+    border: none;
+    float: left
+}
+.socialShare .msb_network_button {
+    width: 31px;
+    height: 31px;
+    position: absolute;
+    left: 92px;
+    z-index: 1;
+    cursor: pointer;
+    text-indent: -9999px;
+    display: block;
+    background: no-repeat;
+	border-radius: 50%;
+}
+.social_group{
+    display: none;
+}
+.socialShare .msb_network_button:nth-child(1) {
+    top: 0px !important;
+ }
+.socialShare .msb_network_button:nth-child(2) {
+   top: 40px !important;
+}
+.socialShare .msb_network_button:nth-child(3) {
+    top: 80px !important;
+ }
+ .socialShare .msb_network_button:nth-child(4) {
+    top: 120px !important;
+ }
+ .socialShare .msb_network_button:nth-child(5) {
+     top: 160px !important;
+  }
+.socialShare .msb_network_button.sina {
+    background: url(../images/icons/social.png) no-repeat -130px -87px;
+}
+.socialShare .msb_network_button.tQQ {
+    background: url(../images/icons/social.png) no-repeat -185px -20px;
+}
+.socialShare .msb_network_button.qZone {
+    background: url(../images/icons/social.png) no-repeat -73px -20px;
+}
+.socialShare .msb_network_button.douban {
+    background: url(../images/icons/social.png) no-repeat -130px -151px;
+}
+.socialShare .msb_network_button.weixin {
+    background: url(../images/icons/social.png) no-repeat -73px -87px;
+}

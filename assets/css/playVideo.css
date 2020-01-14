@@ -1,0 +1,75 @@
+.progress-marker-container
+    {
+      position: absolute;
+      width: 210px;
+      height: 80px;
+      display: none;
+      justify-content: flex-start;
+      align-items: center;
+      color: #ffffff;
+      bottom: 55px;
+      background: rgba(0, 0, 0, 0.8);
+    }
+ 
+    .progress-marker-container .marker-img
+    {
+      width: 80px;
+      height: 80px;
+    }
+ 
+    .progress-marker-container .marker-text
+    {
+      text-align: center;
+      word-break: break-all
+    }
+    .prism-player .prism-liveshift-progress .prism-progress-loaded, .prism-player .prism-progress .prism-progress-loaded{
+      width:520px !important;
+      height:4px !important;
+      background:rgba(255,255,255,1) !important;
+      opacity:0.2 !important;
+      border-radius:100px !important;
+      left: 50%;
+      transform: translate(-50%,0);
+    }
+    .prism-player .prism-liveshift-progress, .prism-player .prism-progress{
+    }
+    .prism-player .prism-liveshift-progress .prism-progress-marker, .prism-player .prism-progress .prism-progress-marker{
+      width: 520px !important;
+      left: 50% !important;
+      transform: translate(-50%,0);
+    }
+    .prism-player .prism-liveshift-progress, .prism-player .prism-progress{
+      width: 520px;
+      left: 50% !important;
+      transform: translate(-50%,0);
+    }
+    .prism-player .prism-liveshift-progress .prism-progress-played, .prism-player .prism-progress .prism-progress-played{
+      background-color: #C32E47;
+    }
+    .prism-player .prism-volume .volume-icon{
+      background:url('../images/icons/yinliang-di@2x.png') no-repeat center;
+      background-size: 50%,50%;
+    }
+    .prism-player .prism-volume .volume-icon .long-horizontal{
+      display: none !important;
+    }
+    .prism-player .prism-setting-btn{
+      background: url('../images/icons/shezhi-2@2x.png') no-repeat center;
+      background-size: 50%,50%;
+    }
+    .prism-player .prism-controlbar .prism-controlbar-bg{
+      height: 66px;
+    }
+    .prism-player .prism-big-play-btn{
+      opacity: 0;
+    }
+    .prism-player .prism-play-btn{
+      background: url('../images/icons/路径\ 230.png') no-repeat center;
+      background-size: 50%,50%;
+    }
+    @keyframes hoverVolumeAnimation{
+      0%{
+
+      }
+    }
+   

@@ -1,0 +1,39 @@
+.prism-player .prism-controlbar .prism-controlbar-bg{
+  height: 60px;
+  background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%);
+}
+.prism-player .prism-liveshift-progress .prism-progress-played, .prism-player .prism-progress .prism-progress-played{
+  background-color: #C32E47;
+
+}
+.prism-player .prism-volume-control .volume-cursor{
+  background: #fff;
+}
+.prism-player .prism-volume-control .volume-value{
+  background:#C32E47
+}
+.prism-player .prism-volume-control .volume-cursor:hover{
+  background: #C32E47;
+}
+ .prism-setting-list div:nth-child(2){
+  display: none;
+}
+.prism-setting-list div:nth-child(3){
+  display: none;
+}
+.prism-player .prism-volume .volume-icon{
+  width: 26px;
+  height: 26px;
+}
+.prism-player .prism-setting-btn{
+  width: 22px;
+  height: 22px;
+}
+.prism-player .prism-liveshift-progress .prism-progress-loaded, .prism-player .prism-progress .prism-progress-loaded{
+    background: #fff;
+    opacity: 0.44;
+}
+.prism-player .prism-liveshift-progress .prism-progress-marker, .prism-player .prism-progress .prism-progress-marker{
+    background: #fff;
+    opacity: 0.2;
+}
