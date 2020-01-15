@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:45:54
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-13 20:54:23
+ * @LastEditTime : 2020-01-15 17:56:16
  * @Version:
  * @Description: 设置中文播放器 以及Share模块
  */
@@ -26,10 +26,8 @@ function displayVideos() {
       html += `<li class="video-list_ul--li" data-class="${i}">
       <div class="list_ul--li-img" id="player-con${i}" style="background-image:url('${data[i].storyCover || '../assets/images/img/about2@2x.png'}')">
         <div class="maskvideo">
-          <div class="play-btn_block">
-            <svg class="bigbtn alSvgIcon" data-class="${data[i].storyId}" data-type="${data[i].storyCover}" aria-hidden="true">
-              <use xlink:href="#iconbofanganniu"></use>
-            </svg>
+          <div class=" video-play-button btn-play">
+              <i class="ti-control-play"></i>
           </div>
         </use>
       </div>
@@ -83,7 +81,7 @@ function videoDetail (storyId) {
   })
 }
 function videoList () {
-  $('.bigbtn').click(function(){
+  $('.btn-play').click(function(){
     let storyId = $(this).attr('data-class');
     let storyCover = $(this).attr('data-type');
     let id = $(this).parents('.list_ul--li-img').attr('id');

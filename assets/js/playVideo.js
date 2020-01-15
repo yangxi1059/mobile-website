@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-21 14:02:00
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-10 13:58:00
+ * @LastEditTime : 2020-01-15 18:18:04
  * @Version: 
  * @Description: 阿里云播放器录播方法
  */
@@ -22,6 +22,8 @@ function playVideo(data) {
   $(`#${data.id}`).mouseleave(function(){
     $(this).find('.prism-big-play-btn').animate({'opacity':0},200);
   });
+  console.log(data)
+  alert(data.id)
   var player = new Aliplayer({
     "id": data.id,
     "vid": data.videoId,
@@ -232,6 +234,6 @@ function playVideo(data) {
       }
     }
   });
-  }
+}
 function endedhandle (data){
 }

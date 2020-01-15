@@ -1,0 +1,152 @@
+.header-top_icon .icontop_logo{
+    color: #C32E47;
+}
+.header-top_nav__ul > .header-top_nav__ul--li a {
+    height:22px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:22px;
+    color:#898989;
+}
+.header-top_nav__ul > .header-top_nav__ul--li a:hover {
+    color: #C32E47 !important;
+}
+.translateEn{
+    color: #C32E47;
+}
+.translateSpan{
+    color: #C32E47;
+}
+.translateCn{
+    color: #C32E47;
+}
+.banner-area{
+    height: auto !important;
+}
+.header-login{
+    color: #C32E47;
+}
+.navbar-toggle .fa{
+    color: #C32E47;
+}
+nav.navbar.bootsnav{
+    background: #fff;
+}
+.header-Login{
+}
+.header-top_nav__ul--login{
+}
+.footer-other{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.login{
+    width: 100%;
+    margin:  0 auto;
+    margin-top: 150px;
+}
+.login-title{
+    font-size:32px;
+    font-family:Ubuntu-B;
+    text-align: center;
+    ;
+    line-height:36px;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+.login-password{
+    position: relative;
+    width:100%;
+    height:60px;
+    border:1px solid rgba(137,137,137,0.2);
+    opacity:1;
+    border-radius:3px;
+    margin-top: 24px;
+}
+.login-username{
+    width:100%;
+    height:60px;
+    border:1px solid rgba(137,137,137,0.2);
+    opacity:1;
+    border-radius:3px;
+    margin-top: 33px;
+}
+.userName{
+    width: 80%;
+    display: block;
+    height: 32px;
+    border: none;
+    margin-left: 24px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    margin-top: 5px;
+    float: left;
+}
+.passWord{
+    width: 80%;
+    float: left;
+    display: block;
+    height: 32px;
+    border: none;
+    margin-left: 24px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    margin-top: 5px;
+}
+.LoginForm-main_checkbox{
+    margin-top: 20px;
+    text-align: center;
+}
+.Login-Tips{
+    width:123px;
+    height:20px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:20px;
+    color:rgba(74,79,82,1);
+    opacity:0.7;
+}
+.iconpassword{
+}
+.login .iconlogin{
+    line-height: 62px;
+    cursor: pointer;
+    font-size: 28px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    float: right;
+    margin-right: 20px;
+}
+.btn-Login{
+    text-align: center;
+}
+.Login-checkbox{
+    width:14px;
+    height:14px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(54,60,62,0.5019607843137255);
+    opacity:1;
+    border-radius:2px; 
+}
+.LoginForm-main_checkbox .iconusername{
+   
+}
+.loader-icon{
+    display: none;
+    top: 9px;
+    position: absolute;
+    right: 13px;
+}
+
+
+
+
+
+
+
+

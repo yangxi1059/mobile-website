@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-11-18 08:55:34
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 15:16:26
+ * @LastEditTime : 2020-01-15 18:53:00
  * @Version: 
  * @Description: 
  */
@@ -13,8 +13,8 @@ window.jQuery.Myajax = (arg) => {
 	// let baseUrl = 'http://192.168.1.105:2011/';
 	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
 	// let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
-	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
-	let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
+	let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
+	// let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
 	if(!getCookie('userInfo')){
 		sessionStorage.clear('userDetail')
 	}
