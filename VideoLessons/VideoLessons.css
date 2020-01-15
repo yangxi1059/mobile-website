@@ -1,0 +1,235 @@
+.VideoLessonsDetail-header{
+    margin-bottom: 0.25rem;
+    display: flex;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    overflow: hidden;
+    height: 0.4rem;
+    border-bottom: 1px #c32e47 solid;
+}
+.VideoLessonsDetail-header-Lives{
+    margin-left: 0.5rem;
+}
+.default-padding{
+    padding-top: 0.225rem !important;
+}
+.VideoLessonsDetail-li_top{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.block-overflow{
+    width: 100%;
+    height: 2rem;
+}
+ul .VideoLessonsDetail-li:nth-child(1){
+    margin-top: 0rem !important;
+}
+.VideoLessonsDetail-li{
+    text-align: left;
+    margin-top: 0.4rem !important;
+}
+.VideoLessonsDetail-p{
+    margin-top: 0.1rem;
+    width:100%;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLessonsDetail-title{
+    width:100%;
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:#363B3E;
+    line-height:0.2rem;
+    margin-top: 0.15rem !important;
+}
+.about-area .info h2{
+    margin-top: 0px;
+}
+.labels-list{
+    display: flex;
+}
+.VideoInformation{
+    margin-top: 0.15rem;
+    height:0.2rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLivesDetail-list{
+    display: none;
+}
+.VideoLessonsDetail-li_More{
+    display: flex;
+    position: absolute;
+    font-size:0.14rem;
+    font-family:Ubuntu-Me;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.16rem;
+    right: 0.15rem;
+    bottom: 0.19rem;
+}
+.MoreDeatil-icon{
+    font-size: 0.12rem !important;
+    line-height:0.16rem;
+    margin-left: 0.07rem;
+}
+#page{
+    margin-top: 0.4rem;
+}
+.about-area ul{
+    margin-top: 0;
+}
+.Video_Dividing-lines{
+    overflow: hidden;
+    position: relative;
+    height: 2px;
+    margin-top: 19px;
+}
+.Video-thinlong1{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:1px;
+    border-bottom:1px solid #C32E47;
+}
+.Video-shortstrong1{
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    display: block;
+    width:1px;
+    height:0.15rem;
+    opacity:1;
+    z-index: 2;
+    background: #C32E47;
+}
+.Video-shortstrong2{
+    background: #C32E47;
+    margin:0 auto;
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width:1px;
+    height:0;
+    opacity:1;
+    z-index: 2;
+}
+.VideoLessonsDetail-header-left{
+    position: relative;
+    font-family:Ubuntu-M;
+    cursor: pointer;
+    color:rgba(195,46,71,1);
+    opacity:1;
+    display: inline-block;
+}
+.VideoLessonsDetail-header-Lives{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family:Ubuntu-M;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+
+
+
+.playstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    background:rgba(195,46,71,1);
+    top: 0px;
+    right: 0px;
+}
+.playstatus .icondingyuerenshu{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.Waitstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background:rgba(137,137,137,0.7);
+}
+.playedstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background:rgba(0,0,0,0.7);
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.icon-status{
+    margin-top: 11px;
+    margin-right: 6px;
+    display:block;
+    width:4px;
+    height:4px;
+    background:rgba(255,255,255,1);
+    border-radius:50%;
+    opacity:1;
+}
+.livelines{
+    margin: 0 5px;
+}
+.playstatus .iconren{
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+    margin-right: 4px;
+}
+.playstatus .iconlive{
+    margin-right: 4px;
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+}
+.line-scale-pulse-out-rapid {
+    margin-right: 5px;
+}
+.line-scale-pulse-out-rapid > div{
+    height: 12px;
+    width: 2px;
+    margin: 0px;
+    margin-top: 7px;
+}

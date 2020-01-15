@@ -9,7 +9,7 @@
     <meta name="description" content="Bunas - Multipurpose Business and Corporate Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Video Stories</title>
+    <title>Offers - WallStreetTequila-Top Career Consulting</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
@@ -26,9 +26,10 @@
     <link href="../assets/css/animate.css" rel="stylesheet" />
     <link href="../assets/css/bootsnav.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/loading.css">
-    <link href="../style.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/page.css">
     <link href="../assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/common.css">
     <link rel="stylesheet" href="./Offers.css">
 	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1544952_2j65waqg3wf.css">
     <!-- ========== End Stylesheet ========== -->
@@ -121,9 +122,17 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
+                    <div class="header-login">
+                        <div class="login-flex">
+                            <div class="header-Login">
+                                <i class="iconfont icontop_login"></i>
+                                <span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">Login</span>
+                            </div>
+                        </div>
+                    </div>
                     <a class="navbar-brand" href="../">
-                        <img src="../assets/img/logo-light.png" class="logo logo-display" alt="Logo">      <!-- 大屏幕时 -->
-                        <img src="../assets/img/logo.png" class="logo logo-scrolled" alt="Logo">
+                        <img src="../assets/images/icons/mobile-logo_big.png" class="logo logo-display" alt="Logo">      <!-- 大屏幕时 -->
+                        <img src="../assets/images/icons/mobile-logo.png" class="logo logo-scrolled" alt="Logo">
                     </a>
                 </div>
                 <!-- End Header Navigation -->
@@ -134,7 +143,7 @@
                             <a href="../index.html" class="" data-toggle="" >Home</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="" data-toggle="" >Video Lessons</a>
+                            <a href="../VideoLessons/VideoLessons.html" class="" data-toggle="" >Video Lessons</a>
                         </li>
                         <li class="dropdown">
                             <a href="../VideoStories/VideoStories.html" class="" data-toggle="" >Video stories</a>
@@ -143,13 +152,13 @@
                             <a href="#" class="" data-toggle="" >Offers</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="" data-toggle="" >Success Stories</a>
+                            <a href="../SuccessStories/SuccessStories.html" class="" data-toggle="" >Success Stories</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#">Services</a>
+                            <a href="../Services/Services.html">Services</a>
                         </li>
                         <li class="dropdown">
-                            <a href="#">About</a>
+                            <a href="../About/About.html">About</a>
                         </li>
                         <li class="dropdown">
                            <a href="../Blog/Blog.html">Blog</a>
@@ -221,13 +230,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 info">
-                    <h3 class="About-h3">Video Stories</h3>
-                    <div class="offersList-title"></div>
-                    <div class="years-selectipon">
-
+                    <div class="offersList">
+                        <div class="offersList-header">
+                            <h3 class="offersList-title"></h3>
+                            <div class="offerList-year">
+                                <div class="selectDate">Selection date：</div>
+                                <div class="data-years">
+                                    <span class="years-span" data-class="2020" data-type="2019 Recruiting Season">2020 Recruiting Season </span>
+                                    <i class="yearsicon"></i>
+                                    <ul class="years-lists">
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offersList-main">
+                            <div class="offersList-main_main">
+                                <div class="main-headerul_li">
+                                    <ul class="headerul-ul_li">
+                                      <li class="main-headerul-mentee">Mentee</li>
+                                      <li class="main-headerul-edu">Education background</li>
+                                      
+                                      <li class="main-headerul-offer main-headerul-offer1">
+                                          <span class="offer-span" data-class="">
+                                              Offer received
+                                            </span>
+                                            <i class=" offerchoose"></i>
+                                            
+                                        </li>
+                                        <li class="main-headerul-job">
+                                            <span class="division-span" data-class="">
+                                                Division
+                                            </span>
+                                            <i class="jobchoose "></i>
+                                        </li>
+                                        <li class="main-headerul-review">Review</li>
+                                    </ul>
+                                  </div>
+                                <ul class="main-headerul">
+                                    
+                                </ul>
+                                <ul class="offerul">
+                                    
+                                  </ul>
+                                  <ul class="divisionul">
+                                  
+                                  </ul>
+                            </div>
+                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -270,7 +320,13 @@
         </div>
     </footer>
     <!-- End Footer-->
-
+    <div class="mask"></div>
+    <div class="white-review">
+        <img src="" class="review reviewImg${i}"/>
+    </div>
+    <div class="white-block">
+        <img src="" class="OfferImg Img${i}">
+    </div>
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="../assets/js/jquery.min.js"></script>

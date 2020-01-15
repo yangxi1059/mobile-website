@@ -2,13 +2,14 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:48:12
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-13 09:06:04
+ * @LastEditTime : 2020-01-15 17:11:17
  * @Version: 
  * @Description: 
  */
 //ajax请求渲染主体
 window.num = 1
 function displayOffers(newdata) {
+  $('#loading').show()
   // console.log(newdata)
   // listDetail数据兼容ie
   $.Myajax({
@@ -21,7 +22,6 @@ function displayOffers(newdata) {
       pageSize:1000
     }
   }).then(res => {
-    // console.log(res);
     let str = '';
         arr1 = res.data.rows;
        for (let i = 0; i < arr1.length; i++) {
@@ -35,13 +35,13 @@ function displayOffers(newdata) {
                      </li>
                      
                      <li class="main-headerul-offer">
-                       <p class="main-headerul--p main-headerul--p_OfferImg" data-class="${arr1[i].praiseVoucherMosaic}">${arr1[i].companyName}</p>
+                       <p class="main-headerul--p main-headerul--p_OfferImg" data-class="${arr1[i].resultVoucherMosaic}">${arr1[i].companyName}</p>
                      </li>
                      <li class="main-headerul-job">
                        <p class="main-headerul--p">${arr1[i].devistion}</p>
                      </li>
                      <li class="main-headerul-review">
-                        <p class="main-headerul--p main-headerul--p_ReviewImg" data-class="${arr1[i].resultVoucherMosaic}">Review</p>
+                        <p class="main-headerul--p main-headerul--p_ReviewImg" data-class="${arr1[i].praiseVoucherMosaic}">Review</p>
                      </li>
                    </ul>
                    
@@ -50,6 +50,7 @@ function displayOffers(newdata) {
        $('.offerList-year-span').html(newdata.applySeason);
        $('.offersList-title').html(newdata.title);
        $(".main-headerul").html(str);
+       $('#loading').delay(100).hide(0)
        offerClickImg();
       })
     }
@@ -123,29 +124,30 @@ function offerClickImg() {
     // console.log(url);
     $('.mask').show();
     $('.white-block').show();
-    $('.white-block').children('img').attr("src",url).show();
     $('body').css({
-      "overflow-y":"hidden"
-      });
+      "overflow-y": "hidden"
+    })
+    $('.white-block').find('.OfferImg').attr("src",url).show();
     event.stopPropagation();
   })
   $('.main-headerul--p_ReviewImg').click(function (event) {
     let url = $(this).attr('data-class');
     // console.log( $(this).parents('.headerul-ul_li'));
     $('.mask').show();
-    $('.review').attr("src",url).show();
+    $('.white-review').show();
     $('body').css({
-      "overflow-y":"hidden"
-      });
+      "overflow-y": "hidden"
+    })
+    $('.white-review').find('.review').attr("src",url)
     event.stopPropagation();
   })
-  $('.mask').click(function () {
+  $(document).click(function () {
     $('body').css({
-      "overflow-y":"scroll"
-      });
+      "overflow-y": "auto"
+    })
     $('.mask').hide();
     $('.white-block').hide();
-    $('.review').hide()
+    $('.white-review').hide()
   })
 }
 //  点击改变年份重新请求数据渲染页面
@@ -198,14 +200,14 @@ function Initfirst (data) {
   }).then(res => {
     window.offers = res.data
     listDown = res.data;
-    // console.log(res.data);
+    console.log(res.data);
     let html = '';
     let html1 = '';
     let html2 = '';
     let arr1 = res.data[0].locationDic;
     let arr2 = res.data[0].divisionDic;
-    arr1.unshift({itemName: "All", itemValue: ""});
-    arr2.unshift({itemName: "All", itemValue: ""});
+    // arr1.unshift({itemName: "All", itemValue: ""});
+    // arr2.unshift({itemName: "All", itemValue: ""});
     for(let i = 0;i < arr1.length;i++){
       html += `
       <li class="offerli" data-class="${arr1[i].itemValue}">${arr1[i].itemName}</li>

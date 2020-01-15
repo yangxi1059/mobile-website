@@ -63,3 +63,72 @@ text-align: left;
     fill: currentColor;
     overflow: hidden;
 }
+.successCardli{
+    text-align: left !important;
+    width: 100%;
+    height: 1.9rem;
+    border:1px solid rgba(0,0,0,0.25);
+}
+.successCardli{
+    margin-bottom: 0.15rem !important;
+    box-sizing: border-box;
+    padding: 0.225rem;
+}
+.successCardDown-time{
+    font-size:0.12rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(137,137,137,1);
+    line-height:0.16rem;
+}
+.successCardTop{
+    margin-top: 0.2rem;
+}
+.successCardTop-title{
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.24rem;
+}                                    
+.successCardDown-text{
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+    margin-top: 0.18rem;
+}
+.successCardDown-knowMore{
+    display: flex;
+}
+.successCardDown-knowMore{
+    font-size:0.12rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.14rem;
+    margin-top: 0.15rem;
+}
+.successCardDown-knowMore .successCardDown-knowMore_icon{
+    line-height:0.14rem;
+    font-size:0.12rem;
+    margin-left: 0.1rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

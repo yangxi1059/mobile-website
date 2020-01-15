@@ -2,18 +2,15 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-13 19:14:45
+ * @LastEditTime : 2020-01-15 13:41:51
  * @Version: 
  * @Description: 官网首页动画ie10
  */
 // 首页视屏渲染
 function InitHome(){
-    console.log(999999)
-
     $.Myajax({
 		url:'system/setting?itemIds=videoHome',
 	}).then(res => {
-        console.log(res)
         let HomeVideoDetail = ` 
         <h3 class="About-h3">ABOUT WST Career</h3>
         <div class="about-main">${res.data.videoHome.itemValue.videoTitle}</div>

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-13 20:08:01
+ * @LastEditTime : 2020-01-15 17:38:05
  * @Version:
  * @Description: 公共头部js
  */
@@ -167,11 +167,12 @@ function LoginBtn() {
 }
 // 头部下拉框选中字体变色
 function downMenu() {
-	$('.footer-icon_wechat').mouseenter(function(event){
-		$('.wechat-connect').show().stop().animate({opacity:1,top:'-370px'},500);
+	$('.footer-icon_wechat').click(function(event){
+		$('.wechat-connect').show().stop().animate({opacity:1,top:'-2.2rem'},500);
+		event.stopPropagation();
 	});
-	$('.footer-icon_wechat').mouseleave(function(event){
-		$('.wechat-connect').stop().animate({opacity:0,top:'-480px'},500).hide();
+	$(document).click(function(event){
+		$('.wechat-connect').stop().animate({opacity:0,top:'-2.4rem'},500).hide();
 	});
 	// $('.footer-icon_wechat').click(function(event){
 	// 	if( WechatStatus == 0){
@@ -246,4 +247,22 @@ function cancelSpace(e){
 $(document).keydown(function(e){
 	cancelSpace(e)
 })
+function touchmove(){
+	$(document).on('scroll',function(){//将文档绑定手机滑屏事件
+		var TopVaule = $(document).scrollTop();
+		if(TopVaule >= 10){
+			$('.logo-scrolled').attr('src','../assets/images/icons/mobile-logo_big.png')
+			$(".navbar").css({'background':'#fff'});
+			$('.header-login').css({'color':'#222'});
+			$('.navbar-toggle .fa').css({'color':'#222'})
+		}else{
+			$('.logo-scrolled').attr('src','../assets/images/icons/mobile-logo.png')
+			$(".navbar").css({'background':'none'}); 
+			$('.header-login').css({'color':'#fff'})
+			$('.navbar-toggle .fa').css({'color':'#fff'})
+		}
+	})
+}
+touchmove()
+
  

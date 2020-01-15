@@ -1,0 +1,426 @@
+/*
+ * @Author: 杨曦
+ * @Date: 2019-10-18 08:43:58
+ * @LastEditors  : 杨曦
+ * @LastEditTime : 2020-01-15 17:03:42
+ * @Version: 
+ * @Description: Offers页面样式
+ */
+
+.backImg{
+   background-size: cover;
+  
+}
+.offersList{
+   position: relative;
+   margin: 0 auto;
+   width: 100%;
+}
+.offersList-title{
+    text-align: left;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.24rem;
+}
+.Triangle-all{
+   width: 25px;
+   margin-left: 52px;
+}
+.offersList-header{
+    width: 100%;
+    margin: 0 auto;
+   position: relative;
+}
+.about-area ul li:nth-child(2){
+    margin-top: 0;
+}
+.offerList-year{
+   position: relative;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   margin-top: 0.14rem;
+}
+.offerList-year .offerList-year-span{
+   float: left;
+   width:41px;
+   font-size:20px;
+   font-family:Ubuntu-R;
+   ;
+   line-height:27px;
+   color:rgba(255,255,255,1);
+   opacity:1;
+   margin-top: 10px;
+   margin-left: 21px;
+}
+/* 三角形 */
+.year-icon{
+   display: block;
+   margin-left: 19px;
+}
+.Triangle-up{
+   border-color: #fff;
+   width: 0px;
+   height:0px;
+   border-left: 6px solid transparent;  
+   border-right: 6px solid transparent;
+   border-bottom: 9px solid white; 
+   cursor: pointer;
+   margin-top: 13px;
+}
+.Triangle-down{
+   margin-top: 3px;
+   border-color: #fff;
+   width: 0px;
+   height:0px;
+   border-left: 6px solid transparent;  
+   border-right: 6px solid transparent;
+   border-top: 9px solid white; 
+   cursor: pointer;
+}
+.offersList{
+}
+.offersList-main{
+   margin: 0 auto;
+   margin-top: 0.15rem;
+   width: 100%;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   position: relative;
+}
+.offersList-main_main{
+}
+.main-headerul .main-headerul_block{
+   width: 20px;
+   display: block;
+}
+.main-headerul > li {
+   font-family: Ubuntu-R;
+}
+.main-headerul > li::after{
+   overflow: hidden;
+}
+.main-headerul > div:nth-child(1){
+   font-size:18px;
+   font-family:Ubuntu-R;
+   line-height:24px;
+   color:rgba(255,255,255,1);
+   opacity:1;
+}
+.main-headerul_li--main > .headerul-ul_li > li{
+    overflow: hidden;
+    width: 20%;
+    float: left;
+    white-space: normal;
+    word-wrap:break-word;
+   text-align: center;
+   font-size:18px;
+   font-family:Ubuntu-R;
+   line-height:0.12rem;
+   color:rgba(72,89,102,1);
+   opacity:1;
+}
+.main-headerul-mentee ,.main-headerul-edu ,.main-headerul-review ,.main-headerul-offer ,.main-headerul-job{
+    font-size:0.09rem !important;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.125rem;
+}
+.main-headerul-edu{
+   text-align: center;
+}
+.main-headerul-review{
+   text-align: center;
+}
+.main-headerul-offer{
+   position: relative;
+   text-align: center;
+}
+.main-headerul-job{
+   text-align: center;
+}
+.main-mainul{
+}
+.main-headerul_li{
+}
+
+/* 列表内容区弹性盒 */
+.main-headerul_li--main .headerul-ul_li{
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   overflow: hidden;
+   min-height: 0.6rem;
+}
+.main-headerul_li > .headerul-ul_li > li{
+    
+    text-align: center;
+   float: left;
+   font-family:Ubuntu-R;
+   color:rgba(255,255,255,.96);
+   width: 20%;
+}
+.main-headerul_li--main > .headerul-ul_li > .main-headerul-offer{
+   color: #83001D;
+}
+.main-headerul .main-headerul_li--main:nth-child(even){
+   background:rgba(72,89,102,0.1);
+   opacity:1;
+}
+.main-headerul .main-headerul_li--main:nth-child(odd){
+   background:rgba(72,89,102,0.05);
+   opacity:1;
+}
+/* 列表头部弹性盒 */
+.main-headerul_li > .headerul-ul_li{
+    padding-top: 0.08rem;
+    vertical-align: middle;
+    height: 0.45rem;
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+   width:100%; 
+   overflow:hidden;
+   width:100%;
+   background:#3B3B3B;
+   opacity:1;
+   border-bottom: 6px rgba(195,46,71,1) solid ;
+}
+.main-headerul--p{
+    font-size:0.09rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height: 0.125rem;
+    padding-top: 0.1rem;
+}
+.main-headerul--p_OfferImg{
+   font-family: Ubuntu-R;
+   cursor: pointer;
+   color:rgba(195,46,71,1);
+   text-decoration:underline;
+}
+.main-headerul--p_ReviewImg {
+   font-family: Ubuntu-R;
+   cursor: pointer;
+   color: rgba(195,46,71,1);
+   text-decoration: underline;
+}
+.mainul_li-id{
+   width: 20px;
+}
+
+.mask{
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: black;
+   z-index: 1001;
+   opacity: 0.8;
+}
+.iconoffer{
+   font-size: 15px;
+   line-height:48px;
+   color: #fff;
+}
+.offerchoose{
+   width: 12px;
+   background: url('../assets/images/icons/xialawhite.png') no-repeat;
+   background-size: 100%,100%;
+   cursor: pointer;
+   display: inline-block;
+   margin-bottom: 2px;
+   margin-left: 10px;
+}
+.jobchoose{
+   width: 12px;
+   background: url('../assets/images/icons/xialawhite.png') no-repeat;
+   background-size: 100%,100%;
+   cursor: pointer;
+   display: inline-block;
+   margin-bottom: 2px;
+   margin-left: 10px;
+}
+.offerul{
+   z-index: 100;
+   display: none;
+   position: absolute;
+   top: 55px;
+   right: 40%;
+   background: #fff;
+   -webkit-box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+           box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+   padding-top: 0.09rem;
+}
+.offerul .offerli{
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   opacity:1;
+   font-size:0.07rem;
+   font-family:Ubuntu-R;
+   line-height:0.19rem;
+   color:#3B3B3B;
+   opacity:1;
+   padding-left: 0.12rem;
+   padding-right: 0.12rem;
+   cursor: pointer;
+}
+.offerul li:last-child {
+   margin-bottom: 17px;
+}
+.divisionul{
+   z-index: 100;
+   display: none;
+   position: absolute;
+   top: 55px;
+   right: 5%;
+   background: #fff;
+   -webkit-box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+           box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+   padding: 0.1rem 0.1rem 0px;
+}
+.divisionul li{
+   opacity:1;
+   font-size:0.07rem;
+   font-family:Ubuntu-R;
+   line-height:0.19rem;
+   color:#3B3B3B;
+   opacity:1;
+   cursor: pointer;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+.divisionul li:last-child {
+   margin-bottom: 17px;
+}
+.header-top_nav__ul li:nth-child(4) a{
+   opacity: 1;
+   color:rgba(255,255,255,1)
+}
+.offer-span{
+   cursor: pointer;
+}
+.offer-span:hover{
+   text-decoration: underline;
+}
+.division-span{
+   cursor: pointer;
+}
+.division-span:hover{
+   text-decoration: underline;
+}
+.years-lists{
+    width: 100%;
+   position: absolute;
+   z-index: 10;
+   display: none;
+   background:rgba(255,255,255);
+   -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+           box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+   opacity:1;
+   padding: .1rem .1rem 0px .1rem;
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+}
+.selectDate{
+   font-size: 0.14rem;
+   font-family: Ubuntu-M;
+   color: #363B3E;
+   line-height: 0.2rem;
+}
+.years-span{
+   font-size: 0.14rem;
+   font-family: Ubuntu-M;
+   color: #C32E47;
+   line-height: 0.2rem;
+}
+.years-lists{
+    
+}
+.years-span:hover{
+   text-decoration: underline;
+}
+.yearsicon{
+   width: 0.08rem;
+   background: url('../assets/images/icons/xiala@2x.png') no-repeat;
+   background-size: 100%,100%;
+   cursor: pointer;
+   height: 0.05rem;
+   display: block;
+   margin-top: 13px;
+   margin-left: 13px;
+   float: right;
+}
+.years-detail{
+   margin-bottom: 0.1rem;
+   font-size:0.07rem !important;
+   font-family:Ubuntu-R;
+   line-height:0.1rem;
+   color:#383838;
+   opacity:1;
+}
+.data-years{
+   cursor: pointer;
+   position: relative;
+}
+.white-block{
+   display: none;
+   position: fixed;
+   top: 120px;
+   left: 50%;
+   transform: translate(-50%,0);
+   padding: 0px;
+   z-index: 1002;
+   overflow: auto;
+   border-radius: 6px;
+   height: 80vh;
+
+}
+.white-review{
+   left: 50%;
+   transform: translate(-50%,0);
+   display: none;
+   position: fixed;
+   overflow-y: auto;
+   top: 120px;
+   padding: 0px;
+   height: 80vh;
+   z-index: 1002;
+   overflow: auto;
+   border-radius: 6px;
+}
+.review{
+   vertical-align: middle;
+   border: 0;
+   max-width: 100%;
+   z-index: 1002;
+   height: auto;
+}
+.about-area ul{
+    margin-top: 0;
+}
+.offersList-main_main{
+    width: 100%;
+    overflow: hidden;
+}
+.OfferImg{
+   height: auto;
+   vertical-align: middle;
+   border: 0;
+   max-width: 100%;
+   z-index: 1002;
+}
+
+
+
+
+
+
