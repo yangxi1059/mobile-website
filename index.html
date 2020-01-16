@@ -92,7 +92,7 @@
     </script>
 </head>
 
-<body>
+<body class="position-fixed">
     <!-- Preloader Start -->
     <!-- Preloader Ends -->
     <div id="loading">
@@ -106,7 +106,13 @@
 	</div>
     <!-- Header 
     ============================================= -->
-    <header id="home">
+    
+    <!-- End Header -->
+
+    <!-- Start Banner 
+    ============================================= -->
+    <div class="banner-area top-transparent">
+        <header id="home">
 
         <!-- Start Navigation -->
         <nav class="navbar navbar-fixed navbar-transparent white bootsnav">
@@ -167,19 +173,17 @@
         </nav>
         <!-- End Navigation -->
 
-    </header>
-    <!-- End Header -->
-
-    <!-- Start Banner 
-    ============================================= -->
-    <div class="banner-area top-transparent">
+        </header>
         <!-- <div id="bootcarousel " class="carousel  inc-top-heading slide carousel-fade animate_text" data-ride="carousel"> -->
             <!-- Wrapper for slides -->
             <div class=" text-light text-center carousel-zoom ">
                 <div class="video-back">
-                    <video  autoplay muted loop class="vidbacking" id="videobg">
+                    <!-- <video controls="controls" autoplay="autoplay">
+                        <source src="assets/img/videoBanner.m4v" type="video/mp4" />
+                    </video> -->
+                    <!-- <video  autoplay muted loop class="vidbacking" id="videobg">
                         <source src="assets/img/videoBanner.m4v" type="video/mp4">
-                    </video>
+                    </video> -->
                     <div class="box-table shadow dark">
                         <div class="box-cell">
                             <div class="container">
@@ -356,21 +360,12 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
     <script>
-        $(function(){
-            $('.video-back').vidbacking();
-        });
-        // 手机端不支持
-        // (function($){
-        //     $('#videobg').vidbg({
-        //         'mp4': 'assets/img/videoBanner.m4v',
-        //     }, {
-        //     // Options
-        //     muted: true,
-        //     loop: true,
-        //     overlay: false,
-        //     resizing: true,
-        //     });
-        // })(jQuery)
+        // $(document).ready = function(){
+        //     $('video').play()
+        // }
+        // $(function(){
+        //     $('.video-back').vidbacking();
+        // });
     </script>
 </body>
 </html>

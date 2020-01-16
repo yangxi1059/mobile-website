@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-21 14:02:00
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 18:18:04
+ * @LastEditTime : 2020-01-16 11:14:18
  * @Version: 
  * @Description: 阿里云播放器录播方法
  */
@@ -23,7 +23,6 @@ function playVideo(data) {
     $(this).find('.prism-big-play-btn').animate({'opacity':0},200);
   });
   console.log(data)
-  alert(data.id)
   var player = new Aliplayer({
     "id": data.id,
     "vid": data.videoId,
@@ -33,7 +32,7 @@ function playVideo(data) {
     "mediaType": "video",
     "width": data.width ||"100%",
     "height": data.height + 'px',
-    "autoplay": data.autoplay || true,
+    "autoplay": false,
     "isLive": data.isLive || false,
     "rePlay": data.rePlay || false,
     "playsinline": data.playsinline || true,
@@ -42,82 +41,9 @@ function playVideo(data) {
     "useH5Prism": true,
     "enableSystemMenu":true,
     "useFlashPrism":data.useFlashPrism || false, // 播放器类型
-    "skinLayout": data.skinLayout || [
-      // {
-      //   "name": "bigPlayButton",
-      //   "align": "blabs",
-      //   "x": 30,
-      //   "y": 80
-      // },
-      {
-        "name": "H5Loading",
-        "align": "cc"
-      },
-      {
-        "name": "errorDisplay",
-        "align": "tlabs",
-        "x": 0,
-        "y": 0
-      },
-      {
-        "name": "infoDisplay"
-      },
-      {
-        "name": "tooltip",
-        "align": "blabs",
-        "x": 0,
-        "y": 56
-      },
-      {
-        "name": "thumbnail"
-      },
-      {
-        "name": "controlBar",
-        "align": "blabs",
-        "x": 0,
-        "y": 0,
-        "children": [
-          {
-            "name": "progress",
-            "align": "blabs",
-            "x": 0,
-            "y": 44
-          },
-          {
-            "name": "playButton",
-            "align": "tl",
-            "x": 15,
-            "y": 12
-          },
-          {
-            "name": "timeDisplay",
-            "align": "tl",
-            "x": 10,
-            "y": 7
-          },
-          {
-            "name": "fullScreenButton",
-            "align": "tr",
-            "x": 15,
-            "y": 11
-          },
-          {
-            "name": "setting",
-            "align": "tr",
-            "x": 15,
-            "y": 12
-          },
-          {
-            "name": "volume",
-            "align": "tr",
-            "x": 15,
-            "y": 10
-          }
-        ]
-      }
-    ],
   }, 
   function (player) {
+    document.addEventListener("touchstart",playBgVideo(player),false)
     if(data.times){
       player.dispose()
       var player = new Aliplayer({
@@ -129,7 +55,7 @@ function playVideo(data) {
         "mediaType": "video",
         "width": data.width ||"100%",
         "height": data.height + 'px',
-        "autoplay": data.autoplay || false,
+        "autoplay": true,
         "isLive": data.isLive || false,
         "rePlay": data.rePlay || false,
         "playsinline": data.playsinline || true,
@@ -137,80 +63,6 @@ function playVideo(data) {
         "controlBarVisibility": "hover",
         "useH5Prism": true,
         "enableSystemMenu":true,
-        "skinLayout": data.skinLayout || [
-          // {
-          //   "name": "bigPlayButton",
-          //   "align": "blabs",
-          //   "x": 30,
-          //   "y": 80
-          // },
-          {
-            "name": "H5Loading",
-            "align": "cc"
-          },
-          {
-            "name": "errorDisplay",
-            "align": "tlabs",
-            "x": 0,
-            "y": 0
-          },
-          {
-            "name": "infoDisplay"
-          },
-          {
-            "name": "tooltip",
-            "align": "blabs",
-            "x": 0,
-            "y": 56
-          },
-          {
-            "name": "thumbnail"
-          },
-          {
-            "name": "controlBar",
-            "align": "blabs",
-            "x": 0,
-            "y": 0,
-            "children": [
-              {
-                "name": "progress",
-                "align": "blabs",
-                "x": 0,
-                "y": 44
-              },
-              {
-                "name": "playButton",
-                "align": "tl",
-                "x": 15,
-                "y": 12
-              },
-              {
-                "name": "timeDisplay",
-                "align": "tl",
-                "x": 10,
-                "y": 7
-              },
-              {
-                "name": "fullScreenButton",
-                "align": "tr",
-                "x": 10,
-                "y": 12
-              },
-              {
-                "name": "setting",
-                "align": "tr",
-                "x": 15,
-                "y": 12
-              },
-              {
-                "name": "volume",
-                "align": "tr",
-                "x": 5,
-                "y": 10
-              }
-            ]
-          }
-        ],
       });
       // console.log(player)
       player.on('ended',endedhandle);
@@ -235,5 +87,11 @@ function playVideo(data) {
     }
   });
 }
-function endedhandle (data){
+function ready() {
+}
+function endedhandle (data) {
+}
+function playBgVideo (player) {
+  player.play()
+  document.removeEventListener("touchstart",playBgVideo,false)
 }

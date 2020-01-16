@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:45:54
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 17:56:16
+ * @LastEditTime : 2020-01-16 10:37:06
  * @Version:
  * @Description: 设置中文播放器 以及Share模块
  */
@@ -26,7 +26,7 @@ function displayVideos() {
       html += `<li class="video-list_ul--li" data-class="${i}">
       <div class="list_ul--li-img" id="player-con${i}" style="background-image:url('${data[i].storyCover || '../assets/images/img/about2@2x.png'}')">
         <div class="maskvideo">
-          <div class=" video-play-button btn-play">
+          <div class=" video-play-button btn-play" data-class="${data[i].storyId}">
               <i class="ti-control-play"></i>
           </div>
         </use>
@@ -61,22 +61,23 @@ function ToShare(){
   });
 }
 function videoDetail (storyId) {
-  // console.log(storyId,99999999)
+  console.log(storyId,99999999)
   $.Myajax({
     url:`story/video/playAuth`,
     data:{
       storyId: storyId.storyId
     }
   }).then( res => {
-    // console.log(res)
+    console.log(res)
     playVideo({
       videoId:res.data.videoId,
       playAuth:res.data.playAuth,
       id:storyId.id,
-      autoplay:true,
       useFlashPrism:false,
       times:false
-    });
+    }).then( err => {
+      console.log(err)
+    })
    
   })
 }

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-11-18 08:55:34
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 18:53:00
+ * @LastEditTime : 2020-01-16 11:27:29
  * @Version: 
  * @Description: 
  */
@@ -11,9 +11,10 @@ window.jQuery.Myajax = (arg) => {
 	// let baseUrl = 'http://192.168.1.199:1114/api-test/';
 	// let baseUrl = 'http://192.168.1.199:2001/';
 	// let baseUrl = 'http://192.168.1.105:2011/';
-	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
+	let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
 	// let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
-	let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
+	// let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
+	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
 	// let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
 	if(!getCookie('userInfo')){
 		sessionStorage.clear('userDetail')
@@ -32,10 +33,10 @@ window.jQuery.Myajax = (arg) => {
 		}
 	}, 1800000);
 	arg.data = arg.data || '';
+	arg.type = arg.type || 'get';
 	if(arg.type == 'post'){
 		aes_rsa.encrypt(arg.data)
 	}
-	arg.type = arg.type || 'get';
 	arg.url = baseUrl + arg.url || '';
 	arg.headers = {
 		Accept: "application/json;charset=utf-8",

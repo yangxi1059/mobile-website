@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 17:38:05
+ * @LastEditTime : 2020-01-16 10:28:32
  * @Version:
  * @Description: 公共头部js
  */
@@ -263,6 +263,6 @@ function touchmove(){
 		}
 	})
 }
-touchmove()
+// touchmove()
 
  
