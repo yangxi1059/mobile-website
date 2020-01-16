@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-11-18 08:55:34
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 11:27:29
+ * @LastEditTime : 2020-01-16 17:43:45
  * @Version: 
  * @Description: 
  */
@@ -11,10 +11,10 @@ window.jQuery.Myajax = (arg) => {
 	// let baseUrl = 'http://192.168.1.199:1114/api-test/';
 	// let baseUrl = 'http://192.168.1.199:2001/';
 	// let baseUrl = 'http://192.168.1.105:2011/';
-	let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
+	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
 	// let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
 	// let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
-	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
+	let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
 	// let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
 	if(!getCookie('userInfo')){
 		sessionStorage.clear('userDetail')
@@ -32,11 +32,12 @@ window.jQuery.Myajax = (arg) => {
 			alert('长时间未操作已自动登出');
 		}
 	}, 1800000);
-	arg.data = arg.data || '';
-	arg.type = arg.type || 'get';
+
 	if(arg.type == 'post'){
-		aes_rsa.encrypt(arg.data)
+		arg.data = aes_rsa.encrypt(arg.data)
+		arg.data = JSON.stringify(arg.data)
 	}
+	arg.type = arg.type || 'get';
 	arg.url = baseUrl + arg.url || '';
 	arg.headers = {
 		Accept: "application/json;charset=utf-8",
@@ -48,8 +49,10 @@ window.jQuery.Myajax = (arg) => {
 			(res,statusText,req)=>{
 				if(req.status === 200){
 					if(res.code === 200){
-					res.data = aes_rsa.decrypt(res.data,res.key)
-					resolve(res);
+						if(res.data && res.key){
+							res.data = aes_rsa.decrypt(res.data,res.key)
+						}
+						resolve(res);
 					$('#loading').delay(1500).hide(0)
 				}else if(res.code === 401) {
 					clearCookie('token');

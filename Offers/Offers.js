@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:48:12
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 17:11:17
+ * @LastEditTime : 2020-01-16 13:08:18
  * @Version: 
  * @Description: 
  */
@@ -170,6 +170,16 @@ function changeYear(){
     };
     arr1.unshift({itemName: "All", itemValue: ""});
     arr2.unshift({itemName: "All", itemValue: ""});
+    if( arr1.length >= 2){
+      if( arr1[0].itemName == arr1[1].itemName){
+        arr1.shift()
+      }
+    }
+    if( arr2.length >= 2){
+      if( arr2[0].itemName == arr2[1].itemName){
+        arr2.shift()
+      }
+    }
     let html = '';
     let html1 = '';
     for(let i = 0;i<arr1.length;i++){
@@ -206,8 +216,8 @@ function Initfirst (data) {
     let html2 = '';
     let arr1 = res.data[0].locationDic;
     let arr2 = res.data[0].divisionDic;
-    // arr1.unshift({itemName: "All", itemValue: ""});
-    // arr2.unshift({itemName: "All", itemValue: ""});
+    arr1.unshift({itemName: "All", itemValue: ""});
+    arr2.unshift({itemName: "All", itemValue: ""});
     for(let i = 0;i < arr1.length;i++){
       html += `
       <li class="offerli" data-class="${arr1[i].itemValue}">${arr1[i].itemName}</li>

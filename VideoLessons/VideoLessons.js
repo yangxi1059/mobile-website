@@ -34,9 +34,9 @@ function InitVideoLessonsList () {
                 <a href="../VideoLessonsDetail/VideoLessonsDetail.html?courseId=${res.data.rows[i].courseId}">
                 <div class="block-videoImg">
                     <div class="VideoLessonsDetail-li_More">
-                            <div class="MoreDeatil-text">MORE DETAILS</div>
-                            <i class="MoreDeatil-icon iconfont iconstories_more"></i>
-                        </div>
+                        <div class="MoreDeatil-text">MORE DETAILS</div>
+                        <i class="MoreDeatil-icon iconfont iconstories_more"></i>
+                    </div>
                     </div>
                 </a>
             </div>

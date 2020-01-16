@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-21 14:02:00
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 11:14:18
+ * @LastEditTime : 2020-01-16 14:41:00
  * @Version: 
  * @Description: 阿里云播放器录播方法
  */
@@ -39,11 +39,15 @@ function playVideo(data) {
     "controlBarVisibility": "hover",
     "cover": data.storyCover|| '',
     "useH5Prism": true,
+    "encryptType":1,
     "enableSystemMenu":true,
     "useFlashPrism":data.useFlashPrism || false, // 播放器类型
   }, 
   function (player) {
-    document.addEventListener("touchstart",playBgVideo(player),false)
+    // $(document).on("touchstart",function(){
+    //   alert('点击了**按钮,马上播放')
+    //   player.play()
+    // })
     if(data.times){
       player.dispose()
       var player = new Aliplayer({
@@ -62,6 +66,7 @@ function playVideo(data) {
         "preload": data.preload || true,
         "controlBarVisibility": "hover",
         "useH5Prism": true,
+        "encryptType":1,
         "enableSystemMenu":true,
       });
       // console.log(player)
@@ -69,20 +74,6 @@ function playVideo(data) {
       player.on('play',playhandle);
       function playhandle (){
         $('.playstatus').hide();
-        getkeyval();
-      }
-      function getkeyval(){ //绑定按钮事件
-        // console.log($('.prism-big-play-btn').hasClass("playing"))
-        $(document).keydown(function(event) {        
-          event.preventDefault();      
-          if (event.keyCode == 32) {
-            if($('.prism-big-play-btn').hasClass("playing")){
-              player.pause();
-            }else{
-              player.play();
-            }
-          };
-        })
       }
     }
   });
@@ -92,6 +83,7 @@ function ready() {
 function endedhandle (data) {
 }
 function playBgVideo (player) {
+  alert(898989898989)
   player.play()
   document.removeEventListener("touchstart",playBgVideo,false)
 }

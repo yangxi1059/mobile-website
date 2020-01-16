@@ -61,7 +61,7 @@
                         }
                     ],
                 "headerLoginmsg":{
-                    "other":"Log in",
+                    "other":"Login",
                     "myselfList":[
                         {"my":"Message"},
                         {"my":"Data"},

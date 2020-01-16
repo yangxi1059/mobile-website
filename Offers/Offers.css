@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-10-18 08:43:58
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 17:03:42
+ * @LastEditTime : 2020-01-16 13:13:00
  * @Version: 
  * @Description: Offers页面样式
  */
@@ -179,13 +179,12 @@
 .main-headerul_li > .headerul-ul_li{
     padding-top: 0.08rem;
     vertical-align: middle;
-    height: 0.45rem;
+   min-height: 0.45rem;
    display: -webkit-box;
    display: -ms-flexbox;
    display: flex;
    width:100%; 
    overflow:hidden;
-   width:100%;
    background:#3B3B3B;
    opacity:1;
    border-bottom: 6px rgba(195,46,71,1) solid ;
@@ -197,12 +196,14 @@
     color:rgba(54,59,62,1);
     line-height: 0.125rem;
     padding-top: 0.1rem;
+    text-align: center !important;
 }
 .main-headerul--p_OfferImg{
    font-family: Ubuntu-R;
    cursor: pointer;
    color:rgba(195,46,71,1);
    text-decoration:underline;
+   text-align: center !important;
 }
 .main-headerul--p_ReviewImg {
    font-family: Ubuntu-R;
@@ -236,17 +237,15 @@
    background-size: 100%,100%;
    cursor: pointer;
    display: inline-block;
-   margin-bottom: 2px;
-   margin-left: 10px;
+   height: 6px;
 }
 .jobchoose{
+   height: 6px;
    width: 12px;
    background: url('../assets/images/icons/xialawhite.png') no-repeat;
    background-size: 100%,100%;
    cursor: pointer;
    display: inline-block;
-   margin-bottom: 2px;
-   margin-left: 10px;
 }
 .offerul{
    z-index: 100;
@@ -307,21 +306,27 @@
 }
 .offer-span{
    cursor: pointer;
+   text-align: left;
 }
 .offer-span:hover{
-   text-decoration: underline;
 }
 .division-span{
+   text-align: left;
    cursor: pointer;
 }
-.division-span:hover{
-   text-decoration: underline;
+.main-headerul-offer{
+}
+.main-headerul-job{
+   position: relative;
+}
+.division-span{
 }
 .years-lists{
     width: 100%;
    position: absolute;
    z-index: 10;
    display: none;
+   top: 0.2rem;
    background:rgba(255,255,255);
    -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
            box-shadow:0px 10px 20px rgba(0,0,0,0.05);
@@ -337,10 +342,10 @@
    line-height: 0.2rem;
 }
 .years-span{
+   display: block;
    font-size: 0.14rem;
    font-family: Ubuntu-M;
    color: #C32E47;
-   line-height: 0.2rem;
 }
 .years-lists{
     
@@ -355,21 +360,22 @@
    cursor: pointer;
    height: 0.05rem;
    display: block;
-   margin-top: 13px;
-   margin-left: 13px;
+   margin-top: 0.1rem;
+   margin-left: 0.065rem;
    float: right;
 }
 .years-detail{
    margin-bottom: 0.1rem;
    font-size:0.07rem !important;
    font-family:Ubuntu-R;
-   line-height:0.1rem;
+   line-height:0.15rem;
    color:#383838;
    opacity:1;
 }
 .data-years{
    cursor: pointer;
    position: relative;
+   display: flex;
 }
 .white-block{
    display: none;

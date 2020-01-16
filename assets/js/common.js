@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 10:28:32
+ * @LastEditTime : 2020-01-16 18:13:58
  * @Version:
  * @Description: 公共头部js
  */
@@ -41,11 +41,15 @@ function initHeaderFooter(url) {
 				headerListHtml += "</ul></li>";
 			}
 			loginHtml+=`<div class="header-login">
-				<div class="login-flex">
-					<div class="header-Login">
-						<div class="bg-color"></div>
-						<span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">${arr1.other}</span>
-					</div></div></div>`;
+					<div class="login-flex">
+						<div class="header-Login">
+						<a href="../../Login/Login.html">
+							<i class="iconfont icontop_login"></i>
+							<span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">${arr1.other}</span>
+						</a>
+						</div>
+					</div>
+				</div>`;
 			window.loginHtml = loginHtml;
 			$(".header-top_nav__ul").html(headerListHtml);
 			if(getCookie('userInfo') && sessionStorage.getItem('userDetail')){
@@ -55,34 +59,10 @@ function initHeaderFooter(url) {
 					<div class="login-flex">
 					<div class="header-top_nav__ul--user">
 					<div class="person-img">
-						<div class="persondetail-img" style="background-image:url('${"../../images/icons/headerHome.png" || userdata.imgUrl}')"></div>
+						<a href="../../User/User.html">
+							<div class="persondetail-img" ></div>
+						</a>
 					</div>
-					<ul class="my-DropDown">
-						<li class="my-DropDown_li0 my-DropDown_li">
-							<div class="user-name">${userdata.nickName}</div>
-							<div class="user-id">ID：${userdata.menteeAcc}</div>
-						</li>
-						<li class="my-DropDown_li1 my-DropDown_li">
-							<a class="user-center" href="../PersonalCenter/PersonalCenter.html">
-									Personal Center
-							</a>
-							<span class="lines-span"></span>
-						</li>
-						<li class="my-DropDown_li2 my-DropDown_li">
-							<a class="user-myvideo" href="../PersonalCenter/PersonalCenter.html?lesson=L">
-								<i class="iconfont  iconshipinsHome-copy iconshipins"></i>
-								My Video Lessons
-							</a>
-						</li>
-						<li class="my-DropDown_li3 my-DropDown_li" >
-							<a class="user-mylive my-DropDown_li" href="../PersonalCenter/PersonalCenter.html?live=B">
-								<i class="iconfont mylive-icon iconzhibo"></i>
-								My Live Broadcast
-							</a>
-							<span class="lines-span lines-span1 "></span>
-						</li>
-						<li class="user-logout my-DropDown_li">Logout</li>
-					</ul>
 					</div>
 					</div>
 					</div>`;
@@ -97,7 +77,6 @@ function initHeaderFooter(url) {
 				getVCode();
 			});
 			downMenu();
-			LoginBtn();
 		}
 	})
 	$.Myajax({
@@ -159,12 +138,7 @@ function translateStatus (){
 }
 translateStatus()
 // 点击登录
-function LoginBtn() {
-	$('.header-Login').click(function(){
-		$('#loading').show();
-		window.location.href = '../Login/Login.html';
-	});
-}
+
 // 头部下拉框选中字体变色
 function downMenu() {
 	$('.footer-icon_wechat').click(function(event){
@@ -213,9 +187,8 @@ function downMenu() {
 }
 // 用户下拉框
 function userlist() {
-	$('.my-DropDown_li').mouseenter(function(){
-		$(this).find('a').addClass('active2');
-		$(this).siblings('li').find('a').removeClass('active2');
+	$('.persondetail-img').click(function(){
+		console.log('个人中心')
 	});
 }
 // 弹出框始终居中

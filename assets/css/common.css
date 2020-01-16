@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 11:01:38
+ * @LastEditTime : 2020-01-16 19:44:42
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -108,6 +108,7 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand{
     background-image: url('../images/img/videoBanner.gif');
     background-position: center;
     background-size: cover;
+    height: 100vh !important;
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-toggle{
     top: 0px !important;
@@ -138,4 +139,163 @@ nav.navbar.bootsnav{
 }
 nav.navbar.bootsnav.navbar-fixed{
     position: relative;
+}
+.persondetail-img{
+    background-image: url('../images/icons/headerHome.png');
+}
+.my-DropDown{
+    width:203px;
+    box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+    opacity:1;
+    z-index: 20;
+    display: none;
+    position: absolute;
+    top: 66px;
+    right: -19px;
+    font-size: 12px;
+    line-height: 24px;
+    background: #fff;
+}
+.my-DropDown_li{
+}
+.my-DropDown_li1{
+    cursor: pointer;
+}
+.my-DropDown_li2{
+    cursor: pointer;
+}
+.my-DropDown_li3{
+    cursor: pointer;
+}
+.user-logout{
+    cursor: pointer;
+}
+.user-name{
+    font-size:16px;
+    font-family:Ubuntu-B;
+    ;
+    line-height:22px;
+    color:rgba(59,59,59,.96);
+    opacity:1;
+    margin-top: 18px;
+    margin-left: 24px;
+}
+
+.my-DropDown_li a:hover{
+    color:#C32E47;
+    opacity:1;
+}
+.user-mylive .mylive-icon{
+    font-size: 0.2rem;
+    line-height: 0.7rem;
+    margin-right: 0.24rem;
+}
+.user-myvideo .iconshipinsHome-copy{
+    font-size: 0.2rem;
+    line-height: 0.7rem;
+    margin-right: 0.24rem;
+}
+.user-logout:hover{
+    color:#C32E47;
+    opacity:1;
+}
+.lines-span{
+    display: block;
+    width: 153px;
+    height: 1px;
+    background: rgba(72,89,102,0.10196078431372549);
+    margin: 0 auto;
+}
+.user-id{
+    width: 153px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:20px;
+    color:rgba(59,59,59,.96);
+    opacity:0.5;
+    margin: 4px 0px 0px 24px;
+    padding-bottom: 11px;
+    border-bottom:1px solid rgba(72,89,102,0.10196078431372549);
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.Login-header{
+    float: left;
+}
+.lines-span1{
+    margin-top: 10px;
+}
+.user-myvideo{
+    width: 100%;
+    text-indent: 24px;
+    display: block;
+    margin-top: 9px;
+    padding: 10px 0;
+    margin-top: 19px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:20px;
+    color:rgba(59,59,59,0.96);
+    opacity:1;
+}
+.user-mylive{
+    width: 100%;
+    text-indent: 24px;
+    display: block;
+    margin-top: 8px;
+    padding: 10px 0 10px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:20px;
+    color:rgba(59,59,59,0.96);
+    opacity:1;
+}
+.my-DropDown_li2{
+   
+}
+.user-logout{
+    margin-left: 25px;    
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:58px;
+    color:#3B3B3B;
+    opacity:1;
+}
+.header-top_nav__ul--login{
+    /* font-size: 12PX; */
+    font-family:Ubuntu-R;
+    /* line-height:30px; */
+    /* color:rgba(255,255,255,1); */
+}
+.header-top_nav__ul--user{
+    width: 80px;
+    float: left\9;
+    font-family: Ubuntu-R;
+    font-size: 21px;
+    color: #2B2B2B;
+    letter-spacing: -0.1px;
+    line-height: 70px;
+    position: relative;
+}
+.person-img{
+    height: 70px;
+}
+.header-top_nav__ul--lastli{
+    display: inline-block;
+    float: right;
+    /* margin-top: 30px; */
+}
+.persondetail-img{
+    margin-top: 30px;
+    width:30px;
+    height:30px !important;
+    background-size: 100%,100%;
+    border-radius:50%;
+    opacity:1;
+
 }

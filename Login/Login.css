@@ -34,6 +34,7 @@ nav.navbar.bootsnav{
     background: #fff;
 }
 .header-Login{
+    
 }
 .header-top_nav__ul--login{
 }
@@ -47,7 +48,7 @@ nav.navbar.bootsnav{
 .login{
     width: 100%;
     margin:  0 auto;
-    margin-top: 150px;
+    margin-top: 0.5rem;
 }
 .login-title{
     font-size:32px;
