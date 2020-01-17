@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 18:13:58
+ * @LastEditTime : 2020-01-17 16:51:27
  * @Version:
  * @Description: 公共头部js
  */
@@ -83,6 +83,7 @@ function initHeaderFooter(url) {
 		url:'system/setting?itemIds=qrCode',
 	}).then(res => {
 		$('.erweima2').html(`<img src="${res.data.qrCode.itemValue}" class="erweima2img"/>`);
+		$('.support-erweima').css({'background-image':`url('${res.data.qrCode.itemValue}')`})
 	});
 }
 function ShowMyself() {

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 09:52:35
+ * @LastEditTime : 2020-01-17 16:23:36
  * @Version: 
  * @Description: 官网首页动画ie10
  */
@@ -46,7 +46,7 @@ function InitHome(){
             htmlLessons += `
             <div class="videoLesson-main_text">
                 <div class="videoLesson-main_left${i} animated videoLesson-main_left">
-                    <a href="./static/VideoLessonsDetail/VideoLessonsDetail.html?courseId=${arr1[i].courseId}">
+                    <a href="./VideoLessonsDetail/VideoLessonsDetail.html?courseId=${arr1[i].courseId}">
                         <div class="img-bgc" style="background-image:url('${arr1[i].coverUrl}')"></div>
                     </a>
                 </div>
@@ -67,7 +67,7 @@ function InitHome(){
                     <span class="lessons-detail_time">总时长${s_to_hs(Math.ceil(arr1[i].videoDurationTotal))}</span>
                 </div>
                 <div class="Homebackimg-push1 HomebackimgIcon${i} animated">
-                <a href="./static/VideoLessonsDetail/VideoLessonsDetail.html?courseId=${arr1[i].courseId}">
+                <a href="./VideoLessonsDetail/VideoLessonsDetail.html?courseId=${arr1[i].courseId}">
                     <div class="Homebackimg-push_text1">
                         <span class="Homebackimg-push_span1">MORE DETAILS</span>
                         <i class="Homebackimg-push_i1 iconfont iconhome_knowmore"></i>

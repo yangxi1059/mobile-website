@@ -1,0 +1,100 @@
+
+
+
+.msg-login{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    color: #000;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    font-family: Ubuntu-R;
+}
+.login{
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width:300px;
+    height: 400px;
+    -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+            box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+    opacity:1;
+    border-radius:3px;
+    text-align: center;
+    margin-top: 0px;
+    display: none;
+    z-index: 11;
+    border-radius: 12px;
+}
+.support{
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width:300px;
+    height: 400px;
+    -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+            box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+    opacity:1;
+    border-radius:3px;
+    text-align: center;
+    margin-top: 0px;
+    display: none;
+    z-index: 11;
+    border-radius: 12px;
+}
+.login-title{
+    margin-top: 0.35rem;
+    font-size:0.25rem;
+    font-family:Ubuntu-B;
+    font-weight:600;
+    color:rgba(195,46,71,1);
+    line-height:0.35rem;
+}
+.login-username{
+    margin: 0 auto;
+    margin-top: 33px;
+}
+.login-password{
+    margin: 0 auto;
+    margin-top: 0.12rem;
+    position: relative;
+}
+.userName,.passWord{
+    border: none;
+    width: 80%;
+    border-bottom: 1px solid rgba(0,0,0,0.4);
+    height: 0.35rem;
+}
+.mask-Login{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    display: none;
+}
+.btn-login{
+    width: 80%;
+    border: none;
+    height: 0.5rem;
+    font-size:0.16rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.22rem;
+    background-color: #c32e47;
+    border-radius: 12px;
+    margin-top: 0.4rem;
+}

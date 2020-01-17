@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-13 10:16:49
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-15 14:55:31
+ * @LastEditTime : 2020-01-17 16:08:26
  * @Version: 
  * @Description: VideoLessons页面 初始化直播和录播列表
  */
@@ -41,9 +41,7 @@ function InitVideoLessonsList () {
                 </a>
             </div>
             <h2 class="VideoLessonsDetail-title">
-                <a href="../VideoLessonsDetail/VideoLessonsDetail.html?courseId=${res.data.rows[i].courseId}">
                     ${res.data.rows[i].courseTitle}
-                </a>
             </h2>
             <div class="VideoLessonsDetail-Label">
             <div class="labels-list">`
@@ -108,6 +106,7 @@ function InitVideoLivesList () {
         url:`live/list?pageNum=${data}&pageSize=9`
     }).then(res => {
         let Videototal = res.data.total;
+        console.log(res.data)
         let html = '';
         for(let i = 0; i < res.data.rows.length; i++){
             html += `<li class="VideoLessonsDetail-li">
@@ -154,10 +153,9 @@ function InitVideoLivesList () {
                 </a>
             </div>
             <h2 class="VideoLessonsDetail-title">
-                <a href="../VideoLivesDetail/VideoLivesDetail.html?liveId=${res.data.rows[i].liveId}">
                     ${res.data.rows[i].liveTitle}
-                </a>
-            </h2><p class="VideoLessonsDetail-p">${res.data.rows[i].liveIntro}</p>
+            </h2>
+            <p class="VideoLessonsDetail-p">${res.data.rows[i].liveIntro}</p>
             <div class="VideoInformation">
                 <span class="Mentor-Video">${res.data.rows[i].liveBy}</span>
                 <span>|</span>

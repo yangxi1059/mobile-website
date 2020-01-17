@@ -186,7 +186,7 @@ nav.navbar.bootsnav{
     line-height:0.16rem;
 }
 .personal-edit{
-    font-size:0.12rem;
+    font-size:0.15rem;
     font-family:Ubuntu-R;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
@@ -207,8 +207,7 @@ nav.navbar.bootsnav{
     width: 100%;
     text-align: left;
     font-size:0.16rem;
-    font-family:Ubuntu-B;
-    font-weight:600;
+    font-family:Ubuntu-M;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
 }
@@ -216,8 +215,7 @@ nav.navbar.bootsnav{
     width: 100%;
     text-align: left;
     font-size:0.16rem;
-    font-family:Ubuntu-B;
-    font-weight:600;
+    font-family:Ubuntu-M;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
     text-indent: 0 !important;
@@ -254,8 +252,7 @@ nav.navbar.bootsnav{
 }
 .personal-logout{
     font-size:0.16rem;
-    font-family:Ubuntu-B;
-    font-weight:600;
+    font-family:Ubuntu-M;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
 }

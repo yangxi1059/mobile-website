@@ -1,0 +1,148 @@
+.header-top_icon .icontop_logo{
+    color: #C32E47;
+}
+
+.navbar-toggle .fa{
+    color: #C32E47;
+}
+nav.navbar.bootsnav{
+    background: #fff;
+}
+#home{
+}
+
+.VideoLessonsDetail-header-left{
+    position: absolute;
+    left: 15%;
+    font-family:Ubuntu-M;
+    cursor: pointer;
+    color:rgba(195,46,71,1);
+    opacity:1;
+    display: inline-block;
+}
+.VideoLessonsDetail-header-Lives{
+    display: inline-block;
+    position: absolute;
+    right: 15%;
+    cursor: pointer;
+    font-family:Ubuntu-M;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+.Video-thinlong1{
+    display: block;
+    width:100%;
+    height:1px;
+    border-bottom:1px solid #C32E47;
+}
+
+.Video-shortstrong1{
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    display: block;
+    width:1px;
+    height:0.15rem;
+    opacity:1;
+    z-index: 2;
+    background: #C32E47;
+}
+.Video-shortstrong2{
+    background: #C32E47;
+    margin:0 auto;
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width:1px;
+    height:0;
+    opacity:1;
+    z-index: 2;
+}
+.VideoLessonsDetail-header{
+    margin-top: 0.15rem;
+    position: relative;
+    display: flex;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    overflow: hidden;
+    height: 0.4rem;
+    border-bottom: 1px #c32e47 solid;
+}
+.Video-list{
+    text-align: left;
+}
+.VideoLivesDetail-list{
+    overflow: hidden;
+    display: none;
+}
+#playVideo{
+    width: 100%;
+    height: 2.1rem;
+}
+.live-intro{
+    display: flex;
+    margin-top: 0.22rem;
+    justify-content: space-between;
+}
+.live-title{
+    width: 55%;
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.live-Sub{
+    padding: 0 0.08rem;
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.3rem;
+    text-align: center;
+    background: #c32e47;
+    border-radius: 6px;
+    height: 0.3rem;
+}
+.live-Subed{
+    padding: 0 0.08rem;
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.3rem;
+    text-align: center;
+    background: #666;
+    border-radius: 6px;
+    height: 0.3rem;
+}
+.live-text{
+    margin-top: 0.2rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.live-msg{
+    margin-top: 0.15rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.lines{
+    padding: 0 0.02rem;
+}
+.live-nums{
+    color: #c32e47;
+    margin-left: 0.02rem;
+}
+

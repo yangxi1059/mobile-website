@@ -9,7 +9,7 @@
     <meta name="description" content="Bunas - Multipurpose Business and Corporate Template">
 
     <!-- ========== Page Title ========== -->
-    <title>Login - WallStreetTequila-Top Career Consulting</title>
+    <title>Video Lessons Detail - WallStreetTequila-Top Career Consulting</title>
 
     <!-- ========== Favicon Icon ========== -->
     <link rel="shortcut icon" href="../assets/img/favicon.png" type="image/x-icon">
@@ -28,11 +28,12 @@
     <link rel="stylesheet" href="../assets/css/loading.css">
     <link href="../assets/css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/page.css">
-    <link rel="stylesheet" href="../assets/css/loaders.min.css">
     <link href="../assets/css/responsive.css" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/common.css">
-    <link rel="stylesheet" href="./Login.css">
-	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1544952_2j65waqg3wf.css">
+    <link rel="stylesheet" href="../assets/css/commonUser.css">
+    <link rel="stylesheet" href="../assets/css/logincommon.css">
+    <link rel="stylesheet" href="./VideoLessonsDetail.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_1544952_u6vlz5hwaej.css">
     <!-- ========== End Stylesheet ========== -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -123,11 +124,13 @@
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-bars"></i>
                     </button>
-                    <div class="header-login">
-                        <div class="login-flex">
-                            <div class="header-Login">
-                                <i class="iconfont icontop_login"></i>
-                                <span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">Login</span>
+                    <div class="header-top_nav__ul--lastli">
+                        <div class="header-login">
+                            <div class="login-flex">
+                                <div class="header-Login">
+                                    <i class="iconfont icontop_login"></i>
+                                    <span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">Login</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,10 +176,6 @@
     </header>
     <!-- End Header -->
 
-    <!-- Start Banner 
-    ============================================= -->
-   
-    <!-- End Banner -->
 
     <!-- Start About
     ============================================= -->
@@ -184,60 +183,110 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 info">
-                    <div class="login">
-                        <div class="login-title">LOGIN</div>
-                        <div class="login-username">
-                            <input class="userName" placeholder="username"/>
+                   <div class="videolessons-main">
+                       <div id="playVideo" class=""></div>
+                       <div class="VideoLessonsDetail-header">
+                            <div class="VideoLessonsDetail-header-left">
+                                Introduction
+                                <span class="Video-shortstrong1"></span>
+                            </div>
+                            <div class="VideoLessonsDetail-header-Lives">
+                                List
+                                <span class="Video-shortstrong2"></span>
+                            </div>
                         </div>
-                        <div class="login-password">
-                            <input class="passWord" placeholder="password"  type="password"/>
-                            <i class="iconfont iconlogin iconpassword"></i>
-                            <div data-loader="circle-side" class="loader-icon"></div>
+                        <div class="Video-list">
+                            <div class="VideoLessonsDetail-list animated" >
+                                <div class="lessons-main">
+                                    <div class="lessons-title">An Interview with WST Team – Annie and Bruce</div>
+                                    <div class="lessons-time">2019.12.11</div>
+                                    <div class="lessons-text">Check out this interview with Annie and Bruce on their career choices, life before and after joining WST…</div>
+                                    <div class="lessons-msg">
+                                        <span class="lessons-author">Jane</span>
+                                        <span class="span-lines">|</span>
+                                        <span class="lessons-Alltimes">总120课时</span>
+                                        <span class="span-lines">|</span>
+                                        <span class="lessons-Alltime">总时长1300分钟</span>
+                                    </div>
+                                </div>
+                                <div class="lessons-other">
+                                    <ul class="contain-ul">
+                                        <li class="contain-ul_li">
+                                            <i class="iconfont contain-icon iconplay"></i>
+                                            <span class="contain-li_text">Video on demand</span>
+                                            </li>
+                                        <li class="contain-ul_li">
+                                            <i class="iconfont contain-icon iconzhensghu"></i>
+                                            <span class="contain-li_text">Full lifetime use right</span>
+                                        </li>
+                                        <li class="contain-ul_li">
+                                            <i class="iconfont contain-icon iconshouji"></i>
+                                            <span class="contain-li_text">Watch on your mobile device</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="VideoLivesDetail-list animated" >
+                                <div class="video-plan">
+                                    <div class="Video-plan_title">Summary</div>
+                                    <div class="video-plan_times">120课时</div>
+                                    <div class="video-plan_timeList">03:23:20</div>
+                                    <i class="iconfont Video-plan_icon iconzhankai"></i>
+                                </div>
+                                    <ul class="video-plan_ul">
+                                        <li class="video-plan_li">
+                                            <div class="plan_li-title">
+                                                <span class="li-title_span1">An Interview with WST Team </span>
+                                                <span class="class-times" style="display: none;">1课时</span>
+                                                <span class="class-time">00:30</span>
+                                                <i class="li-title_icon iconfont iconzhankai"></i>
+                                            </div>
+                                            <ul class="plan_li-ul plan_li-ul0">
+                                                <li class="plan_secondUl-secondLi yesplay" data-class="29">
+                                                    <div class="secondUl-secondLi_main">2</div>
+                                                    <span class="freeplay iconbofang iconfont"></span>
+                                                    <span class="li-title_time">00:30</span>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <footer class="log-msg">VIP Mentees Please Log In First</footer>
     <!-- End About -->
-    <!-- Star Footer
-    ============================================= -->
-    <footer class="bg-dark default-padding text-light"  style="padding-top: 0.4rem !important;padding-bottom:0.4rem">
-        <div class="container">
-            <div class="row col-md-12">
-               <div class="title-footer">Contact Us</div>
-               <div class="footer-main">021-62081590 <br>application@wallstreettequila.org</div>
-               <div class="title-footer">Our Offices</div>
-               <div class="footer-main">Shanghai：Tianshan Road,Changning District<br>Beijing：Dawang Road,Chaoyang District</div>
-               <div class="footer-main">© 2020 Wall Street Tequila.io.Inc</div>
-               <div class="main_right-icons animated" >
-                    <a target="_blank" href="https://www.linkedin.com/company/wall-street-tequila" style="margin-right: 0.35rem;">
-                        <i class="footer-icon_in iconfont iconbotton_1"></i>
-                    </a>
-                    <i class="footer-icon_wechat iconfont iconbotton_2">
-                    </i>
-                    <div class="wechat-connect">
-                        <div class="erweimas">
-                            <div class="erweimawechat">
-                                <i class="erweima1">
-                                    
-                                </i>
-                                <p class="erweima1text">Follow Our Platform on WeChat</p>
-                            </div>
-                            <div class="erweimalearnMore">
-                                <i class="erweima2">
-                                        
-                                </i>
-                                <p class="erweima2text">Chat with Our Consultant</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Footer-->
+    <div class="help">
+        
+    </div>
 
+
+    <div class="mask"></div>
+    <div class="text-Popup">
+        <div class="Popup-img"></div>
+        <p class="Popup-text_p">很抱歉，您暂时无法查看此视频，请联系你的导师</p>
+        <button class="btn-cancel">OK</button>
+    </div>
+    <div class="login">
+        <div class="login-title">Login</div>
+        <div class="login-username">
+            <input class="userName" placeholder="username"/>
+        </div>
+        <div class="login-password">
+            <input class="passWord" placeholder="password"  type="password"/>
+        </div>
+        <button class="btn-login">Login</button>
+    </div>
+    <div class="support">
+        <div class="support-img"></div>
+        <div class="support-erweima"></div>
+        <p class="support-p">扫一扫小助手的微信二维码<br>
+            即可获取帮助</p>
+    </div>
+    <div class="mask-Login"></div>
     <!-- jQuery Frameworks
     ============================================= -->
     <script src="../assets/js/jquery.min.js"></script>
@@ -265,10 +314,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/aes.min.js"></script>
     <script src="../assets/js/utils.js"></script>
     <script src="../assets/js/ajax.js"></script>
-    <script src="../assets/js/common.js"></script>
     <script src="../assets/js/playVideo.js"></script>
-	<script src="../assets/js/aes_ecb.js"></script>
-    <script src="Login.js"></script>
+    <script src="../assets/js/aes_ecb.js"></script>
+    <script src="../assets/js/common.js"></script>
+    <script src="../assets/js/Login.js"></script>
+    <script src="VideoLessonsDetail.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script>

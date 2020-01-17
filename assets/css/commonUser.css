@@ -1,3 +1,6 @@
 .persondetail-img{
     background-image: url('../images/icons/header.png');
 }
+.header-Login a{
+    color: #C32E47;
+}

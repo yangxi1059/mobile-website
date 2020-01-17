@@ -1,0 +1,401 @@
+.header-top_icon .icontop_logo{
+    color: #C32E47;
+}
+
+.navbar-toggle .fa{
+    color: #C32E47;
+}
+nav.navbar.bootsnav{
+    background: #fff;
+}
+#home{
+}
+
+.VideoLessonsDetail-header-left{
+    position: absolute;
+    left: 20%;
+    font-family:Ubuntu-M;
+    cursor: pointer;
+    color:rgba(195,46,71,1);
+    opacity:1;
+    display: inline-block;
+}
+.VideoLessonsDetail-header-Lives{
+    display: inline-block;
+    position: absolute;
+    right: 20%;
+    cursor: pointer;
+    font-family:Ubuntu-M;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+.Video-thinlong1{
+    display: block;
+    width:100%;
+    height:1px;
+    border-bottom:1px solid #C32E47;
+}
+
+.Video-shortstrong1{
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    display: block;
+    width:1px;
+    height:0.15rem;
+    opacity:1;
+    z-index: 2;
+    background: #C32E47;
+}
+.Video-shortstrong2{
+    background: #C32E47;
+    margin:0 auto;
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width:1px;
+    height:0;
+    opacity:1;
+    z-index: 2;
+}
+.VideoLessonsDetail-header{
+    margin-top: 0.15rem;
+    position: relative;
+    display: flex;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    overflow: hidden;
+    height: 0.4rem;
+    border-bottom: 1px #c32e47 solid;
+}
+.VideoLivesDetail-list{
+    overflow: hidden;
+    display: none;
+}
+.lessons-main{
+    margin-top: 0.22rem;
+    text-align: left;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.Video-list{
+}
+.lessons-title{
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.lessons-time{
+    margin-top: 0.22rem;
+    font-size:0.11rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.15rem;
+}
+.lessons-text{
+    margin-top: 0.12rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.lessons-msg{
+    margin-top: 0.15rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.contain-li_text{
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(137,137,137,1);
+    line-height:0.2rem;
+    margin-left: 0.14rem;
+}
+
+.contain-ul{
+    margin-top: 0.1rem;
+    text-align: left !important;
+}
+.iconzhankai{
+    transform: rotate(45deg) ;
+}
+
+.contain-ul_li{
+    margin-top: 0.1rem !important;
+}
+.contain-ul_li i{
+    display: inline-block;
+    width: 0.3rem;
+    text-align: center;
+    font-size: 0.14rem;
+}
+.default-padding{
+    padding-top: 0.9rem !important;
+    padding-bottom: 0.5rem !important;
+
+}
+#playVideo{
+    height: 2rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+.video-plan{
+    display: flex;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.Video-plan_title{
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.65rem;
+}
+.Video-plan_icon{
+    font-size: 0.12rem !important;
+    line-height:0.65rem;
+    
+    color: #c32e47;
+    position: absolute;
+    right: 0;
+}
+.video-plan_timeList{
+    color: #c32e47;
+    position: absolute;
+    right: .36rem;
+    font-size:0.12rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    line-height:0.65rem;
+   
+}
+.video-plan_times{
+    color: #c32e47;
+    position: absolute;
+    right: 1rem;
+    font-size:0.12rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    line-height:0.65rem;
+   
+}
+.plan_li-title{
+    display: flex;
+    position: relative;
+}
+.li-title_span1{
+    width: 48%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-size:0.13rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.48rem;
+}
+.secondUl-secondLi_main{
+    font-size: 0.13rem;
+    width: 40%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    text-align: left !important;
+    text-indent: 0.1rem;
+}
+.class-times {
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(137,137,137,1);
+    line-height:0.48rem;
+    position: absolute;
+    right: 1rem;
+}
+.class-time{
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(195,46,71,1);
+    line-height:0.48rem;
+    position: absolute;
+    right: 0.36rem;
+}
+.li-title_icon{
+    position: absolute;
+    right: 0;
+    color: #c32447;
+    line-height: 0.48rem;
+    font-size: 0.12rem !important;
+}
+.plan_secondUl-secondLi{
+    margin-top: 0 !important;
+    display: flex;
+    position: relative;
+    color:#898989;
+}
+.li-title_time{
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    position: absolute;
+    right: 0.36rem;
+}
+.iconbofang{
+    position: absolute;
+    right: 1rem;
+    font-size: 0.14rem !important;
+}
+.iconquanxian{
+    position: absolute;
+    right: 1rem;
+    font-size: 0.14rem !important;
+}
+.plan_secondUl-secondLi {
+    line-height: 0.3rem;
+}
+.about-area ul{
+    margin-top: 0px;
+}
+.video-plan_ul{
+    padding-top: 0;
+}
+.about-area ul li:nth-child(2){
+}
+.video-plan_li{
+    margin-top: 0 !important;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    display: none;
+    z-index: 9;
+}
+.text-Popup{
+    z-index: 10;
+    display: none;
+    width:3rem;
+    height:2.5rem;
+    background:rgba(255,255,255,1);
+    -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+            box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+    opacity:1;
+    border-radius:3px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+.Popup-img{
+    width: 62px;
+    height: 80px;
+    background:url('../assets/images/img/Popup-img.png') no-repeat center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+}
+.Popup-text_p{
+    width:210px;
+    height:40px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    line-height:20px;
+    color:rgba(59,59,59,1);
+    text-align: center;
+    opacity:1;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+.btn-cancel{
+    display: block;
+    text-align: center;
+    width:82px;
+    height:30px;
+    background:#c32e47;
+    opacity:1;
+    border-radius:3px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border: 0;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    line-height:30px;
+    color:rgba(255,255,255,1);
+    cursor: pointer;
+}
+.log-msg{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size:0.15rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.5rem;
+    background-color: #c32e47;
+}
+.help{
+    width:0.46rem;
+    height:0.46rem;
+    background-image:url('../assets/images/img/help@2x.png');
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    bottom: 0.7rem;
+    right: 0.25rem;
+}
+.support-erweima{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+.support-p{
+    font-size:12px;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    margin-top: 10px;
+    color:rgba(137,137,137,1);
+    line-height:18px;
+}
+.support-img{
+
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 230px;
+    height: 145px;
+    background-size: cover;
+    background-image: url('../assets/images/img/support@2x.png');
+    margin-top: 40px;
+}
+
+
+
+
+

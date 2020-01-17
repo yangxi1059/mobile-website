@@ -2,13 +2,12 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 09:52:29
+ * @LastEditTime : 2020-01-17 15:23:57
  * @Version: 
  * @Description: 
  */
 //login或校验后
 function Login() {
-	$('#loading').hide()
 	$('.userName').val('');
     $('.passWord').val('');
 	$('.userName').focus(function(){
@@ -43,15 +42,7 @@ function Login() {
 			$('.iconpassword').css({"color":"rgb(54,59,62)",'opacity':'.5'});
 		};
 	});
-	$('.passWord').keydown(function(event) {              
-		if (event.keyCode == 13) {
-			if($(".userName").val() && $(".passWord").val()) {
-				$('.loader-icon').show().delay(2000).hide(0);
-				$('.iconpassword').hide().delay(2000).show(0);
-			};
-		};
-	});
-	$('.iconpassword').click(function(){
+	$('.btn-login').click(function(){
 		LoginCheck();
 	});
 	$(document).keydown(function(event) {              
@@ -61,6 +52,7 @@ function Login() {
 	});
 }
 function LoginCheck() {
+	console.log(999888)
 	var data = {};
 		if($(".userName").val() && $(".passWord").val()) {
 			$('.loader-icon').show().delay(2000).hide(0);
@@ -72,7 +64,7 @@ function LoginCheck() {
 			$.Myajax({
 				url:'login/mentee',
 				type: 'post',
-				data:data,
+				data: data,
 			}).then(res => {
 				if(res.code == 200){
 					// console.log(res);
@@ -85,13 +77,14 @@ function LoginCheck() {
 					};
 					setCookie('userInfo',res.data.token,6);
 					sessionStorage.setItem('userDetail',JSON.stringify(data),6);
-					window.location.replace('../../');
+					location.reload();
+					$('.msg-login').html('登录成功')
 				}
 			}).catch(err => {
-				console.log(err)
-				link({text:err,type:'warning'});
+				$('.msg-login').html(err)
 			});
 		} else {
+			$('.msg-login').html('请完整输入账号密码')
 		}
 }
 Login()
