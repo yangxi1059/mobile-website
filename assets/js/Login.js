@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 15:23:57
+ * @LastEditTime : 2020-01-18 11:56:19
  * @Version: 
  * @Description: 
  */
@@ -45,6 +45,7 @@ function Login() {
 	$('.btn-login').click(function(){
 		LoginCheck();
 	});
+	
 	$(document).keydown(function(event) {              
 		if (event.keyCode == 13) {
 			LoginCheck();
@@ -88,3 +89,4 @@ function LoginCheck() {
 		}
 }
 Login()
+

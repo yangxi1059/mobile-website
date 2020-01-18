@@ -1,0 +1,562 @@
+.header-top_icon .icontop_logo{
+    color: #C32E47;
+}
+body{
+    background-color: #f9f9f9;
+}
+.header-top_nav__ul > .header-top_nav__ul--li a {
+    height:22px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:22px;
+    color:#898989;
+}
+.header-top_nav__ul > .header-top_nav__ul--li a:hover {
+    color: #C32E47 !important;
+}
+.translateEn{
+    color: #C32E47;
+}
+.translateSpan{
+    color: #C32E47;
+}
+.translateCn{
+    color: #C32E47;
+}
+.banner-area{
+    height: auto !important;
+}
+.header-login a{
+    color: #C32E47;
+}
+.navbar-toggle .fa{
+    color: #C32E47;
+}
+nav.navbar.bootsnav{
+    background: #fff;
+}
+.header-Login{
+    
+
+}
+.person-info{
+    padding: 0 15px;
+    text-align: left;
+    width:100%;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.6rem;
+    background-color: #fff;
+}
+.personal-span{
+    border-bottom: #c32e47 solid 1px;
+
+}
+.header-top_nav__ul--login{
+}
+.footer-other{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.login{
+    width: 100%;
+    margin:  0 auto;
+    margin-top: 0.5rem;
+}
+.login-title{
+    font-size:32px;
+    font-family:Ubuntu-B;
+    text-align: center;
+    ;
+    line-height:36px;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+.login-password{
+    position: relative;
+    width:100%;
+    height:60px;
+    border:1px solid rgba(137,137,137,0.2);
+    opacity:1;
+    border-radius:3px;
+    margin-top: 24px;
+}
+.login-username{
+    width:100%;
+    height:60px;
+    border:1px solid rgba(137,137,137,0.2);
+    opacity:1;
+    border-radius:3px;
+    margin-top: 33px;
+}
+.userName{
+    width: 80%;
+    display: block;
+    height: 32px;
+    border: none;
+    margin-left: 24px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    margin-top: 5px;
+    float: left;
+}
+.passWord{
+    float: left;
+    display: block;
+    height: 32px;
+    border: none;
+    margin-left: 24px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    margin-top: 5px;
+}
+.LoginForm-main_checkbox{
+    margin-top: 20px;
+    text-align: center;
+}
+.Login-Tips{
+    width:123px;
+    height:20px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    ;
+    line-height:20px;
+    color:rgba(74,79,82,1);
+    opacity:0.7;
+}
+.iconpassword{
+}
+.login .iconlogin{
+    line-height: 62px;
+    cursor: pointer;
+    font-size: 28px;
+    color:rgb(54,59,62);
+    opacity: .5;
+    float: right;
+    margin-right: 20px;
+}
+.btn-Login{
+    text-align: center;
+}
+.Login-checkbox{
+    width:14px;
+    height:14px;
+    background:rgba(255,255,255,1);
+    border:1px solid rgba(54,60,62,0.5019607843137255);
+    opacity:1;
+    border-radius:2px; 
+}
+.LoginForm-main_checkbox .iconusername{
+   
+}
+.loader-icon{
+    display: none;
+    top: 9px;
+    position: absolute;
+    right: 13px;
+}
+.personal-detail{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 95%;
+
+}
+.personal-img{
+    width: 0.65rem;
+    height: 0.65rem;
+    background-image: url('../assets/images/icons/header.png');
+    background-size: cover;
+}
+#home{
+    position: relative;
+}
+.default-padding{
+    padding-top: 0 !important;
+}
+.personal-main{
+    margin-left: 0.18rem;
+    margin-top: 0.12rem;
+}
+.personal-name{
+    text-align: left;
+    font-size:0.16rem;
+    font-family:Ubuntu-B;
+    font-weight:600;
+    color:rgba(54,59,62,1);
+    line-height:0.22rem;
+}
+.personal-Id{
+    margin-top: 0.03rem;
+    text-align: left;
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    color:rgba(137,137,137,1);
+    line-height:0.16rem;
+}
+.personal-edit{
+    font-size:0.15rem;
+    font-family:Ubuntu-R;
+    color:rgba(54,59,62,1);
+    line-height:0.7rem;
+    position: absolute;
+    right: 0.15rem;
+}
+.detail-block{
+    padding: 0 15px;
+    background: #fff;
+    height: 1.2rem;
+    width: 100%;
+    position: relative;
+}
+.TopersonalCenter{
+    margin-top: 0.075rem;
+    padding: 0 15px;
+    background-color: #fff;
+    width: 100%;
+    text-align: left;
+    font-size:0.16rem;
+    font-family:Ubuntu-M;
+    color:rgba(54,59,62,1);
+    line-height:0.7rem;
+}
+.my-DropDown_li a{
+    width: 100%;
+    text-align: left;
+    font-size:0.16rem;
+    font-family:Ubuntu-M;
+    color:rgba(54,59,62,1);
+    line-height:0.7rem;
+    text-indent: 0 !important;
+}
+.user-myvideo{
+    text-indent: 0 !important;
+
+}
+.about-area .info a{
+    margin-top: 0 ;
+    padding: 0;
+}
+.about-area .info{
+    padding: 0 !important;
+}
+.personalLessons{
+    padding: 0 15px;
+
+    background-color: #fff;
+    margin-top: 0.075rem;
+}
+.personal-logout{
+    height: 0.7rem;
+    padding: 0 15px;
+    margin-top: 0.075rem;
+
+    background-color: #fff;
+    text-align: left;
+}
+.iconlogout{
+    font-size: 0.2rem !important;
+    line-height: 0.7rem;
+    margin-right: 0.24rem;
+}
+.personal-logout{
+    font-size:0.16rem;
+    font-family:Ubuntu-M;
+    color:rgba(54,59,62,1);
+    line-height:0.7rem;
+}
+.block-main{
+    padding: 0 15px;
+    background-color: #fff;
+}
+.VideoLessonsDetail-header{
+    display: flex;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    overflow: hidden;
+    height: 0.4rem;
+    border-bottom: 1px #c32e47 solid;
+}
+.VideoLessonsDetail-header-Lives{
+    margin-left: 0.5rem;
+}
+.default-padding{
+    padding-top: 0.075rem !important;
+}
+.VideoLessonsDetail-li_top{
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.block-overflow{
+    width: 100%;
+    height: 2rem;
+}
+ul .VideoLessonsDetail-li:nth-child(1){
+    margin-top: 0rem !important;
+}
+.VideoLessonsDetail-li{
+    text-align: left;
+    padding-bottom: 0.4rem;
+}
+.VideoLessonsDetail-p{
+    margin-top: 0.1rem;
+    width:100%;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLessonsDetail-title{
+    width:100%;
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:#363B3E;
+    line-height:0.2rem;
+    margin-top: 0.15rem !important;
+}
+.about-area .info h2{
+    margin-top: 0px;
+}
+.labels-list{
+    display: flex;
+}
+.VideoInformation{
+    margin-top: 0.15rem;
+    height:0.2rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLivesDetail-list{
+    display: none;
+}
+.VideoLessonsDetail-li_More{
+    display: flex;
+    position: absolute;
+    font-size:0.14rem;
+    font-family:Ubuntu-Me;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.16rem;
+    right: 0.15rem;
+    bottom: 0.19rem;
+}
+.MoreDeatil-icon{
+    font-size: 0.12rem !important;
+    line-height:0.16rem;
+    margin-left: 0.07rem;
+}
+#page{
+    margin-top: 0.4rem;
+}
+.about-area ul{
+    margin-top: 0;
+}
+.Video_Dividing-lines{
+    overflow: hidden;
+    position: relative;
+    height: 2px;
+    margin-top: 19px;
+}
+.Video-thinlong1{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:1px;
+    border-bottom:1px solid #C32E47;
+}
+.Video-shortstrong1{
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    display: block;
+    width:1px;
+    height:0.15rem;
+    opacity:1;
+    z-index: 2;
+    background: #C32E47;
+}
+.Video-shortstrong2{
+    background: #C32E47;
+    margin:0 auto;
+    display: none;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    width:1px;
+    height:0;
+    opacity:1;
+    z-index: 2;
+}
+.VideoLessonsDetail-header-left{
+    position: relative;
+    font-family:Ubuntu-M;
+    cursor: pointer;
+    color:rgba(195,46,71,1);
+    opacity:1;
+    display: inline-block;
+
+}
+.VideoLessonsDetail-header-Lives{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    font-family:Ubuntu-M;
+    color:rgba(195,46,71,1);
+    opacity:1;
+}
+
+
+
+.playstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    background:rgba(195,46,71,1);
+    top: 0px;
+    right: 0px;
+}
+.playstatus .icondingyuerenshu{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.Waitstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background:rgba(137,137,137,0.7);
+}
+.playedstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background:rgba(0,0,0,0.7);
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.icon-status{
+    margin-top: 11px;
+    margin-right: 6px;
+    display:block;
+    width:4px;
+    height:4px;
+    background:rgba(255,255,255,1);
+    border-radius:50%;
+    opacity:1;
+}
+.livelines{
+    margin: 0 5px;
+}
+.playstatus .iconren{
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+    margin-right: 4px;
+}
+.playstatus .iconlive{
+    margin-right: 4px;
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+}
+.line-scale-pulse-out-rapid {
+    margin-right: 5px;
+}
+.line-scale-pulse-out-rapid > div{
+    height: 12px;
+    width: 2px;
+    margin: 0px;
+    margin-top: 7px;
+}
+.Label{
+    margin-right: 0.1rem;
+    padding: 0 0.08rem;
+    border-radius:2px;
+    border:1px solid rgba(54,59,62,1);
+    font-size:0.11rem;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLessonsDetail-ul{
+    padding: 0 15px;
+    padding-top: 0.3rem;
+    background-color: #fff;
+}
+.Video-detail_h3{
+    text-align: left;
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+    margin-top: 0.15rem;
+}
+.Video-detail_main{
+    margin-top: 0.2rem;
+    text-align: left;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.VideoLivesDetail-ul{
+    padding: 0 15px;
+    padding-top: 0.3rem;
+}
+.Video-detail_li{
+    padding-bottom: 0.4rem;
+}
+
+
+
+
+
+
+
+
+
+

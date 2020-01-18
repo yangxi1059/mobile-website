@@ -80,6 +80,30 @@ nav.navbar.bootsnav{
 .VideoLivesDetail-list{
     overflow: hidden;
     display: none;
+    width: 100%;
+    height: 3rem;
+    position: relative;
+}
+.live-chat{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.chat-img{
+    width: 1.1rem;
+    height: 1.25rem;
+    background-image: url('../assets/images/img/1982.png');
+    background-size: cover;
+    background-position: center;
+}
+.chat-msg{
+    margin-top: 0.1rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(137,137,137,1);
+    line-height:0.2rem;
 }
 #playVideo{
     width: 100%;
@@ -145,4 +169,222 @@ nav.navbar.bootsnav{
     color: #c32e47;
     margin-left: 0.02rem;
 }
+.header-Login{
+    color: #c32e47;
 
+}
+
+/* 直播状态 */
+#playVideo{
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.default-padding{
+    padding-top: 110px !important;
+}
+.playstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    background:rgba(195,46,71,1);
+    top: 0px;
+    right: 0px;
+}
+.playstatus .icondingyuerenshu{
+    font-size: 12px;
+    margin-right: 4px;
+}
+.navbar-header{
+    position: relative;
+}
+.Waitstatus ,.noplay{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background:rgba(137,137,137,0.7);
+}
+.playedstatus{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background:rgba(0,0,0,0.7);
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.icon-status{
+    margin-top: 11px;
+    margin-right: 6px;
+    display:block;
+    width:4px;
+    height:4px;
+    background:rgba(255,255,255,1);
+    border-radius:50%;
+    opacity:1;
+}
+.livelines{
+    margin: 0 5px;
+}
+.playstatus .iconren{
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+    margin-right: 4px;
+}
+.playstatus .iconlive{
+    margin-right: 4px;
+    color: #fff;
+    font-size: 12px;
+    -webkit-transform: scale(0.8,0.8);
+            transform: scale(0.8,0.8);
+}
+.line-scale-pulse-out-rapid {
+    margin-right: 5px;
+}
+.line-scale-pulse-out-rapid > div{
+    height: 12px;
+    width: 2px;
+    margin: 0px;
+    margin-top: 7px;
+}
+.mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.Livemsg-ImgLogin{
+    width: 0.6rem;
+    height: 0.325rem;
+    background-image: url('../assets/images/img/1983.png');
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.Livemsg-title{
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.18rem;
+    margin-top: 0.15rem;
+}
+.Live-msg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.endplay{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background:rgba(0,0,0,0.7);
+    opacity:1;
+    padding: 0px 8px;
+    line-height: 26px;
+    font-size: 12px;
+    color: #fff;
+    font-family: Ubuntu-R;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.live-Subed{
+    background-color: rgba(137,137,137,0.7);
+}
+.mask-sub{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.sub{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 12px;
+    width: 300px;
+    height: 200px;
+    background-color: #fff;
+    display: none;
+    z-index: 10000;
+}
+.sub-title{
+    text-align: center;
+    font-size:14px;
+    font-family:Ubuntu-M;
+    color:rgba(54,59,62,1);
+    line-height:16px;
+    margin-top: 40px;
+}
+.number{
+    color: #c32e47;
+}
+.sub-times{
+    margin-top: 15px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    color:rgba(195,46,71,1);
+    line-height:16px;
+    text-align: center;
+}
+.sub-btns{
+    margin-top: 24px;
+    text-align: center;
+}
+.btn-cancel{
+    border: none;
+    margin-right: 10px;
+    width:105px;
+    height:40px;
+    background:rgba(137,137,137,1);
+    border-radius:6px;
+    font-size:16px;
+    font-family:Ubuntu-R;
+    color:rgba(255,255,255,1);
+    line-height:40px;
+}
+.btn-yes{
+    margin-left: 10px;
+    border: none;
+    width:105px;
+    height:40px;
+    background:#C32E47;
+    border-radius:6px;
+    font-size:16px;
+    font-family:Ubuntu-R;
+    color:rgba(255,255,255,1);
+    line-height:40px;
+}

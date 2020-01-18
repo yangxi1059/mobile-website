@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-21 14:02:00
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-10 14:21:46
+ * @LastEditTime : 2020-01-18 10:16:34
  * @Version: 
  * @Description: 阿里云播放器方法
  */

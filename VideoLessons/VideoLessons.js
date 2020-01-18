@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-13 10:16:49
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 16:08:26
+ * @LastEditTime : 2020-01-18 14:29:38
  * @Version: 
  * @Description: VideoLessons页面 初始化直播和录播列表
  */
@@ -22,7 +22,6 @@ function InitVideoLessonsList () {
         for(let i=0;i<res.data.rows.length;i++){
             if(res.data.rows[i].tags) {
                 res.data.rows[i].tags = res.data.rows[i].tags.split(";");
-                res.data.rows[i].tags = res.data.rows[i].tags.splice(0,2)
             };
         };
         // console.log(res.data);

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 18:57:23
+ * @LastEditTime : 2020-01-18 13:32:57
  * @Version: 
  * @Description: 
  */
@@ -33,78 +33,31 @@ function tabs() {
     })
 }
 function VideoLessonsAnimate(Id) {
-  $('.Tosubscribe-No').mouseenter(function(){
-    $(this).stop().animate({backgroundColor: 'rgba(137,137,137,1)'},200)
-  })
-  $('.Tosubscribe-No').mouseleave(function(){
-    $(this).stop().animate({backgroundColor: 'rgba(137,137,137,0.8)'},200)
-  })
-  $('.Tosubscribe-Yes').mouseenter(function(){
-    $(this).stop().animate({backgroundColor: '#b12a40'},200)
-  })
-  $('.Tosubscribe-Yes').mouseleave(function(){
-    $(this).stop().animate({backgroundColor: 'rgba(195,46,71,1)'},200)
-  })
-  $('.Live-Sub').mouseenter(function(){
-    $(this).stop().animate({backgroundColor: '#b12a40'},200)
-  })
-  $('.Live-Sub').mouseleave(function(){
-    $(this).stop().animate({backgroundColor: 'rgba(195,46,71,1)'},200)
-  })
-  $('.menteeDetailBtn').click(function () {
-    if (getCookie('userInfo')) {
-      window.location.href = '../PersonalCenter/PersonalCenter.html';
-    } else {
-      window.location.href = '../Login/Login.html';
-    }
-  })
-  $('.ipt-question').keyup(function(){
-    if($(this).val()){
-      $(this).css({'opacity':'1','color':'#3B3B3B'})
-      $('.btn-question').stop().animate({backgroundColor:'#C32E47'},100)
+  $('.live-Sub').click(function(){
+    if(getCookie('userInfo')){
+      $('.sub').show()
+      $('.mask-sub').show()
+      event.stopPropagation()
+      $("body").css("overflow-y","hidden");
     }else{
-      $(this).css({'opacity':'.5','color':'#898989'})
-      $('.btn-question').stop().animate({backgroundColor:'#9F9F9F'},100)
+      $('.login').show()
+      $('.mask-Login').show()
+      event.stopPropagation()
+      $("body").css("overflow-y","hidden");
     }
   })
-  $('.ipt-question').blur(function(){
-    if($(this).val()){
-      $(this).css({'opacity':'0.5','color':'#898989'})
-      $('.btn-question').stop().animate({backgroundColor:'#C32E47'},100)
-    }else{
-      $('.btn-question').stop().animate({backgroundColor:'#9F9F9F'},100)
-    }
+  let menteeId = JSON.parse(sessionStorage.getItem('userDetail')).menteeId
+  console.log(menteeId)
+  $('.btn-cancel').click(function(){
+    hideTosubscribe()
   })
-  $('.btn-question').mouseenter(function(){
-    if($('.ipt-question').val()){
-      $(this).css({backgroundColor: '#b12a40'},200)
-    }
-  })
-  $('.btn-question').mouseleave(function(){
-    if($('.ipt-question').val()){
-      $(this).css({backgroundColor: 'rgba(195,46,71,1)'},200)
-    }
-  })
-  $('.ipt-question').focus(function(){
-    if($(this).val()){
-      $(this).css({'opacity':'1','color':'#3B3B3B'})
-    }
-  })
-  $('.Live-Tosub').click(function(event){
-    let menteeId = JSON.parse(sessionStorage.getItem('userDetail')).menteeId
-    // console.log(menteeId)
-    $('.Tosubscribe').show()
-    event.stopPropagation()
-    $('.Tosubscribe-No').click(function(){
-      hideTosubscribe()
-    })
-    $('.Tosubscribe-Yes').click(function(){
-      SuccessTosubscribe(menteeId,Id)
-    })
+  $('.btn-yes').click(function(){
+    SuccessTosubscribe(menteeId,Id)
   })
 }
 function hideTosubscribe(){
-  $('.Tosubscribe').hide()
+  $('.sub').hide()
+  $('.mask-sub').hide()
 }
 // 订阅成功
 function SuccessTosubscribe(menteeId,Id){
@@ -119,7 +72,8 @@ function SuccessTosubscribe(menteeId,Id){
     console.log(res)
     if(res.code == 200){
       $('#loading').show()
-      $('.Tosubscribe').hide()
+      $('.sub').hide()
+      $('.mask-sub').hide()
       Init(Id)
     }else{
       alert('订阅失败，可能课时不够')
@@ -127,7 +81,6 @@ function SuccessTosubscribe(menteeId,Id){
   })
 }
 function Init(Id) {
-  
   var subStatus = 0
   if(sessionStorage.getItem('userDetail')){
     let MenteeId = JSON.parse(sessionStorage.getItem('userDetail')).menteeId;
@@ -157,19 +110,26 @@ function Init(Id) {
 }
 //  判断订阅状态后初始化
 function InitLiveDetail(subStatus,Id){
+  console.log(subStatus)
   $.Myajax({
     url: `live/${Id}/info`
   }).then(res => {
     let data = res.data;
     console.log(data)
     let detailRight = '';
-    let LoginHtml = ''
-    let times = 0;
-    let html = ''
+    let htmlDetail = '';
+    let html = '';
     window.nums = 0;
+    $('#playVideo').css({'background-image':`url('${data.liveCover}')`})
       if(getCookie('userInfo') && subStatus == 1){   // 登录且订阅
           if(data.liveStatus == 0){
-            html += `<div class="noplay playstatus"><i class="icon-noplay"></i>${data.planTime} <span class="livelines">|</span> 未直播</div>`
+            html += `
+              <div class="noplay playstatus">
+              <div class="icon-status lived ">
+              </div>
+              <i class="icon-noplay"></i>${data.planTime} 
+              <span class="livelines">|</span> 未直播
+              </div>`
           }else {
             $.Myajax({
               url:`live/${data.liveId}/playAuth`
@@ -178,7 +138,7 @@ function InitLiveDetail(subStatus,Id){
                 html += `<div class="startplay playstatus">正在直播</div>`
                 InitLive(res.data.playUrl,data.bindCount)
               }else if( res.data.playType == 'video'){
-                html += `<div class="endplay playstatus"><i class="icon-noplay"></i>${data.planTime} | 录播</div>`
+                html += ` <div class="endplay playstatus"> <div class="icon-status lived "></div> <i class="icon-noplay"></i>${data.planTime} | 录播</div>`
                 InitVideo({
                   playAuth: res.data.playAuth,
                   videoId: res.data.videoId,
@@ -188,221 +148,92 @@ function InitLiveDetail(subStatus,Id){
                 alert('视频错误')
               }
             }).catch( err =>{
-              // console.log(err)
+              console.log(err)
             })
           }
-          html += `</div><div class="Video-block" id="playVideo" style="background-image:url('${data.liveCover}')">
-          </div>
-            </div>
-            <div class="Video-introduction">
-              <h2 class="Video-introduction_title">
-                ${data.liveTitle}
-              <div class="Live-Nosub">Subscribed<i class="icon-subed"></i> </div>
-              </h2>
-              <div class="LiveAuthor">
-                <i class="author-icon iconfont"></i>
-                <span class="auth-Name">${data.liveBy}</span>
-                <i class="follow-icon iconfont"></i>
-                <span class="followNums">
-                  订阅人数
-                  <span class="followpeople">${data.bindCount}</span>
-                </span>
-              </div>
-              <p class="Video-introduction_p">${data.liveIntro}</p>
-            </div>
+      }else if(getCookie('userInfo') && subStatus == 0){    // 登录未订阅
+        html += `<div class="mask">
+          <div class="Live-msg">
+              <div class="Livemsg-ImgLogin"></div>
+            <div class="Livemsg-title"> 订阅后才可看直播哦～</div>
+        </div>`
+        if(data.liveStatus == 0){
+          html += `<div class="noplay playstatus">
+          <div class="icon-status"></div>
+          <i class="icon-noplay"></i> ${data.planTime} <span class="livelines">|</span>  未直播
           </div>`
-          // 登录状态下的聊天区域
-          if(res.data.liveStatus == 1){
-            if(res.data.liveSpan){
-              detailRight += `
-              <div class="LiveHeader">
-                <h2 class="Liveright-title">
-                  Questions
-                  <div class="Liveheader-lines"></div>
-                </h2>
-              </div>
-              <div class="Liveright-chat">
-                <div class="chatermsg-block">
-                    <div class="chatblock">
-                      <div class="chater-img"></div>
-                      <div class="chater-msg">
-                        <div class="chater-user">
-                          <div class="chater-user_top">
-                            <div class="chater-Name">Sally</div>
-                            <div class="chater-time">12-18</div>
-                          </div>
-                        <div class="chater-question">Why xxxtention why ?</div>
-                      </div>
-                    </div>
-                  </div>
-              </div>`
-              $('.ipt-block').html(`<div class="submitQuestion">
-              <div class="ipt-text">
-                  <span class="input-title">Q &nbsp:</span>
-                  <input type='text' style='display:none'> 
-                  <input type="text" placeholder="输入问题" class="ipt-question"  readonly onclick="this.removeAttribute('readonly')" autocomplete="off">
-                  <button class="btn-question">Send</button>
-              </div>
-              </div>`)
-            }else{
-              detailRight += `
-              <div class="LiveHeader">
-                <h2 class="Liveright-title">
-                Questions
-                <div class="Liveheader-lines"></div>
-                </h2>
-              </div>
-              <div class="Liveright-msg">
-                <div class="Liveright-img"></div>
-                <div class="Liveright-main">暂时还没有人提问哦~</div>
-              </div>`
-              $('.ipt-block').remove()
-            }
-          }else if(res.data.liveStatus == 2){
-            detailRight += `
-            <div class="LiveHeader">
-              <h2 class="Liveright-title">
-              Questions
-              <div class="Liveheader-lines"></div>
-              </h2>
-            </div>
-            <div class="Liveright-msg">
-              <div class="Liveright-img"></div>
-              <div class="Liveright-main">暂时还没有人提问哦~</div>
+        }else if(data.liveStatus == 1){
+          html += `<div class="startplay playstatus">
+            <div class="loader-inner line-scale-pulse-out-rapid">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <span class="liveStatus">Live</span>
+          <span class="livelines">|</span>
+          <i class="iconfont followIcon icondingyuerenshu"></i>
+        <span class="followNums">${data.bindCount}</span>
+          </div>`
+        }else if(data.liveStatus == 2){
+            html += `<div class="endplay playstatus">
+            <div class="icon-status"></div>
+            <i class="icon-noplay"></i>${data.planTime} | 录播
             </div>`
-            $('.ipt-block').remove()
-          }else if(res.data.liveStatus == 0){
-            detailRight += `
-          <div class="LiveHeader">
-            <h2 class="Liveright-title">
-            Questions
-            <div class="Liveheader-lines"></div>
-            </h2>
-          </div>
-          <div class="Liveright-msg">
-            <div class="Liveright-img"></div>
-            <div class="Liveright-main">暂时还没有人提问哦~</div>
-          </div>`
-           
-            $('.ipt-block').remove()
-          }
         }
-        
-        else if(getCookie('userInfo') && subStatus == 0){    // 登录未订阅
-          html += `<div class="mask">
-            <div class="Live-msg">
-                <div class="Livemsg-ImgLogin"></div>
-              <div class="Livemsg-title"> 订阅后才可看直播哦～</div>
-          </div>`
-          if(data.liveStatus == 0){
-            html += `<div class="noplay playstatus"><i class="icon-noplay"></i> ${data.planTime} <span class="livelines">|</span>  未直播</div>`
-          }else if(data.liveStatus == 1){
-            html += `<div class="startplay playstatus">
-              <div class="loader-inner line-scale-pulse-out-rapid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
-            <span class="liveStatus">Live</span>
-            <span class="livelines">|</span>
-            <i class="iconfont followIcon icondingyuerenshu"></i>
-          <span class="followNums">${data.bindCount}</span>
-            </div>`
-          }else if(data.liveStatus == 2){
-              html += `<div class="endplay playstatus"><i class="icon-noplay"></i>${data.planTime} | 录播</div>`
-          }
-          html += `</div><div class="Video-block" id="playVideo" style="background-image:url('${data.liveCover}')"></div>
-          </div>
-          <div class="Video-introduction">
-            <h2 class="Video-introduction_title">
-              ${data.liveTitle}
-            <div class="Live-Sub Live-Tosub">Subscribe</div></h2>
-            <div class="LiveAuthor">
-              <i class="author-icon iconfont"></i>
-              <span class="auth-Name">${data.liveBy}</span>
-              <i class="follow-icon iconfont"></i>
-              <span class="followNums">
-                订阅人数
-                <span class="followpeople">${data.bindCount}</span>
-              </span>
-            </div>
-            <p class="Video-introduction_p">${data.liveIntro}</p>
-          </div>
-        </div>`
-        // 登录且未订阅下的聊天区域
-        detailRight += `
-        <div class="LiveHeader">
-          <h2 class="Liveright-title">
-          Questions
-          <div class="Liveheader-lines"></div>
-          </h2>
-        </div>
-        <div class="Liveright-msg">
-          <div class="Liveright-img"></div>
-          <div class="Liveright-main">订阅后才可查看</div>
-        </div>`
-        }else if(!getCookie('userInfo')){       //未登录状态
+      }else if(!getCookie('userInfo')){       //未登录状态
           html += `<div class="mask">
           <div class="Live-msg">
               <div class="Livemsg-ImgLogin"></div>
             <div class="Livemsg-title"> 登录订阅后才可看直播哦～</div>
         </div>`
         if(data.liveStatus == 0){
-          html += `<div class="noplay playstatus"><i class="icon-noplay"></i>${data.planTime} <span class="livelines">|</span>  未直播</div>`
+          html += `<div class="noplay playstatus">
+          <div class="icon-status"></div>
+          <i class="icon-noplay"></i> ${data.planTime} <span class="livelines">|</span>  未直播
+          </div>`
         }else if(data.liveStatus == 1){
-          html += `<div class="playstatus">
+          html += `<div class="startplay playstatus">
           <div class="loader-inner line-scale-pulse-out-rapid">
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-              <div></div>
-          </div>
-          <span class="liveStatus">Live</span>
-          <span class="livelines">|</span>
-          <i class="iconfont followIcon icondingyuerenshu"></i>
-          <span class="followNums">${data.bindCount}</span>
-      </div>`
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <span class="liveStatus">Live</span>
+        <span class="livelines">|</span>
+        <i class="iconfont followIcon icondingyuerenshu"></i>
+      <span class="followNums">${data.bindCount}</span>
+        </div>`
         }else if(data.liveStatus == 2){
-            html += `<div class="endplay playstatus"><i class="icon-noplay"></i>${data.planTime} | 录播</div>`
+            html += `<div class="endplay playstatus">
+            <div class="icon-status"></div>
+            <i class="icon-noplay"></i>${data.planTime} | 录播
+            </div>`
         }
-        html += `</div><div class="Video-block" id="playVideo" style="background-image:url('${data.liveCover}')"></div>
-        </div>
-        <div class="Video-introduction">
-          <h2 class="Video-introduction_title">
-            ${data.liveTitle}
-          <div class="Live-Sub Live-tologin">Subscribe</div></h2>
-          <div class="LiveAuthor">
-            <i class="author-icon iconfont"></i>
-            <span class="auth-Name">${data.liveBy}</span>
-            <i class="follow-icon iconfont"></i>
-            <span class="followNums">
-              订阅人数
-              <span class="followpeople">${data.bindCount}</span>
-            </span>
-          </div>
-          <p class="Video-introduction_p">${data.liveIntro}</p>
-        </div>
-      </div>`
-      // 未登录状态下的聊天区域
-      detailRight += `
-      <div class="LiveHeader">
-        <h2 class="Liveright-title">
-        Questions
-        <div class="Liveheader-lines"></div>
-        </h2>
-      </div>
-      <div class="Liveright-msg">
-        <div class="Liveright-img"></div>
-        <div class="Liveright-main">登录订阅后才可查看哦～</div>
-      </div>`
+    
       }
-    $('.block').html(detailRight);
-    $('.VideoLessons-detail_left').html(html);
-    $('#loading').delay(1500).hide(0)
-
+      htmlDetail += `<div class="live-intro">
+            <div class="live-title">${data.liveTitle}</div>`
+      if(subStatus == 1){
+        htmlDetail += ` <div class="live-Subed">Subscribed</div>`
+      }else{
+        htmlDetail += ` <div class="live-Sub">Subscribe</div>`
+      }
+      htmlDetail +=`</div>
+      <div class="live-text">
+          ${data.liveIntro}
+      </div>
+      <div class="live-msg">
+            <span class="live-author">${data.liveBy}</span>
+            <span class="lines">|</span>
+            <span class="live-follow">订阅人数</span>
+            <span class="live-nums">${data.bindCount}</span>
+        </div>`
+      $('#playVideo').html(html)
+      $('.VideoLessonsDetail-list').html(htmlDetail)
     // showLogin()
     VideoLessonsAnimate(Id);
   })
@@ -449,7 +280,6 @@ if (GetQueryString('liveId')) {
 function showLogin () {
   if(getCookie('userInfo')){
   }else{
-    // console.log(9999999)
     $('.Live-tologin').click(function(event){
       $('.login').show()
       $('.mask-Login').show()

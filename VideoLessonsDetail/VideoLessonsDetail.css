@@ -125,7 +125,10 @@ nav.navbar.bootsnav{
     line-height:0.2rem;
     margin-left: 0.14rem;
 }
+.header-Login{
+    color: #c32e47;
 
+}
 .contain-ul{
     margin-top: 0.1rem;
     text-align: left !important;
@@ -145,7 +148,7 @@ nav.navbar.bootsnav{
 }
 .default-padding{
     padding-top: 0.9rem !important;
-    padding-bottom: 0.5rem !important;
+    padding-bottom: 0.8rem !important;
 
 }
 #playVideo{
@@ -394,7 +397,9 @@ nav.navbar.bootsnav{
     background-image: url('../assets/images/img/support@2x.png');
     margin-top: 40px;
 }
-
+.support{
+    z-index: 10000;
+}
 
 
 

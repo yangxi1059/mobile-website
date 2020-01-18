@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 16:51:27
+ * @LastEditTime : 2020-01-18 13:16:16
  * @Version:
  * @Description: 公共头部js
  */
@@ -43,10 +43,8 @@ function initHeaderFooter(url) {
 			loginHtml+=`<div class="header-login">
 					<div class="login-flex">
 						<div class="header-Login">
-						<a href="../../Login/Login.html">
 							<i class="iconfont icontop_login"></i>
 							<span class="header-top_nav__ul--login" data-toggle="modal" data-target="#myModal">${arr1.other}</span>
-						</a>
 						</div>
 					</div>
 				</div>`;
@@ -72,6 +70,18 @@ function initHeaderFooter(url) {
 				ShowMyself();
 			}else{
 				$('.header-top_nav__ul--lastli').html(loginHtml);
+				$('.header-login').click(function(){
+					$('.login').show()
+					$('.mask-Login').show()
+					event.stopPropagation()
+					$("body").css("overflow-y","hidden");
+				})
+				$('.mask-Login').click(function(){
+					$('.login').hide()
+					$('.mask-Login').hide()
+					event.stopPropagation()
+					$("body").css("overflow-y","auto");
+				})
 			};
 			$('.VerificationCode-title').click(function(){
 				getVCode();
