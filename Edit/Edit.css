@@ -291,23 +291,83 @@ nav.navbar.bootsnav{
 .about-area{
     background-color: #fff;
 }
+.VideoLessonsDetail-header{
+    text-align: left;
+    border-bottom: 1px #C32E47 solid;
+}
 .VideoLessonsDetail-header-left{
+    padding-bottom: 0.15rem !important;
     display: inline-block;
     position: relative;
     text-align: left;
-    font-size:0.17rem;
+    font-size:0.2rem;
     font-family:Ubuntu-M;
     font-weight:500;
     color:rgba(195,46,71,1);
     line-height: 0.5rem;
 }
-
-
-
-
-
-
-
+.edit-id{
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    margin-top: 0.2rem;
+    line-height:0.2rem;
+}
+.edit-title{
+    margin-top: 0.2rem;
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(137,137,137,1);
+    line-height:0.16rem;
+}
+.info{
+    text-align: left !important;
+}
+.info input{
+    width: 100%;
+    border: none;
+    line-height: 0.3rem;
+    min-height: 0.3rem !important;
+    text-indent: 0.15rem;
+    margin-top: 0.1rem;
+}
+.edit-againpass,.edit-firstpass,.edit-oldpass{
+    margin-top: 0.1rem;
+    height:0.5rem;
+    border-radius:0.06rem;
+    border:1px solid #898989;
+}
+.btns{
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.btn-cancel{
+    width:1.5rem;
+    height:0.5rem;
+    background:rgba(137,137,137,1);
+    border-radius:0.06rem;
+    font-size:0.16rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.5rem;
+    border: none;
+}
+.btn-ok{
+    width:1.5rem;
+    height:0.5rem;
+    background:#C32E47;
+    border-radius:0.06rem;
+    font-size:0.16rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    line-height:0.5rem;
+    border: none;
+}
 
 
 

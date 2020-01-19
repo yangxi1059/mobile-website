@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-18 11:51:47
+ * @LastEditTime : 2020-01-19 11:06:36
  * @Version: 
  * @Description: 
  */
@@ -106,6 +106,7 @@ if (GetQueryString('courseId')) {
   window.location.href="../VideoLessons/VideoLessons.html"
 }
 function Initplayer(lessonId) {
+  $('html,body').animate({scrollTop:'0px'},'slow');
   if (lessonId) {
     $.Myajax({
       url: `course/lesson/playAuth`,
@@ -120,7 +121,6 @@ function Initplayer(lessonId) {
         autoplay: true,
         times:true,
       });
-      $('html,body').animate({scrollTop:'200px'},'slow');
     }).catch(res => {
     })
   }

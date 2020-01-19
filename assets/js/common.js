@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-18 13:16:16
+ * @LastEditTime : 2020-01-19 10:50:27
  * @Version:
  * @Description: 公共头部js
  */
@@ -248,5 +248,17 @@ function touchmove(){
 	})
 }
 // touchmove()
-
+function link(data) {
+    swal({
+        text: data.text,
+        icon: data.type,
+        buttons: {
+            cancel: {text: '取消', value: false, visible: true},
+		}
+    }).then((res) => {
+		$('body').css({
+			"overflow-y": "auto"
+		})
+	});
+}
  
