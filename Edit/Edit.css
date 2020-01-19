@@ -235,7 +235,7 @@ nav.navbar.bootsnav{
     padding: 0;
 }
 .about-area .info{
-    padding: 0 !important;
+    padding: 0 15px!important;
 }
 .personalLessons{
     padding: 0 15px;
@@ -262,8 +262,45 @@ nav.navbar.bootsnav{
     color:rgba(54,59,62,1);
     line-height:0.7rem;
 }
-
-
+.Video_Dividing-lines{
+    overflow: hidden;
+    position: relative;
+    height: 2px;
+    margin-top: 19px;
+}
+.Video-thinlong1{
+    position: absolute;
+    display: block;
+    width:100%;
+    height:1px;
+    border-bottom:1px solid #C32E47;
+}
+.Video-shortstrong1{
+    margin:0 auto;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%,0);
+            transform: translate(-50%,0);
+    display: block;
+    width:1px;
+    height:0.15rem;
+    opacity:1;
+    z-index: 2;
+    background: #C32E47;
+}
+.about-area{
+    background-color: #fff;
+}
+.VideoLessonsDetail-header-left{
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height: 0.5rem;
+}
 
 
 

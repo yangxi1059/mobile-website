@@ -193,6 +193,14 @@ nav.navbar.bootsnav{
     position: absolute;
     right: 0.15rem;
 }
+.personal-edit a{
+    font-size:0.15rem;
+    font-family:Ubuntu-R;
+    color:rgba(54,59,62,1);
+    line-height:0.7rem;
+    position: absolute;
+    right: 0.15rem;
+}
 .detail-block{
     padding: 0 15px;
     background: #fff;
