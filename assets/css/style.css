@@ -455,7 +455,7 @@ input {
 
 .btn.btn-light.border {
   background: transparent;
-  border: 2px solid #ffffff;
+  border: none;
   color: #ffffff;
 }
 
@@ -516,7 +516,7 @@ input {
   color:rgba(54,59,62,1);
   line-height:0.2rem;
   margin-bottom: 0.3rem;
-  font-family: Ubuntu-R;
+  font-family: Ubuntu-L;
 }
 .btn-gray.border:hover {
   background-color: #f71735;
@@ -1289,10 +1289,20 @@ body,
 }
 
 .banner-area .text-center .content a {
+  font-size:0.12rem;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:0.14rem;
   margin: 0 5px;
   font-family: Ubuntu-M;
 }
-
+.banner-area .text-center .content a .Homebackimg-push_i1{
+  font-size: 0.12rem;
+  display: block;
+  transform: scale(0.8,0.8);
+  float: left;
+  margin-left: 0.07rem;
+}
 .banner-area .text-center .content p {
   padding: 0 8%;
 }
@@ -1303,7 +1313,7 @@ body,
   text-transform: capitalize;
   margin-top: -5px;
   line-height: 1;
-  margin-bottom: 30px;
+  margin-bottom: 0.1rem;
 }
 
 .banner-area .content h2 strong {
@@ -1542,7 +1552,7 @@ body,
   position: relative;
 }
 .erweimawechat{
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
 }
 .erweimalearnMore{
   margin-top: 0.1rem;
@@ -1560,7 +1570,7 @@ body,
 .erweimas p{
   text-align: center;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 14px;
   margin: 0px;
   font-family: Ubuntu-L;
   color: #222 !important;
@@ -1576,11 +1586,13 @@ body,
   line-height:0.19rem;
   margin-right: 0.1rem;
 }
+
 .videoLesson-detail_text{
   margin-bottom: 0.4rem;
 }
 .Homebackimg-push_text1{
-  font-size: 0.13rem;
+  display: flex;
+  font-size: 0.12rem;
   font-family: Ubuntu-M;
   color: #363B3E;
   margin-top: 0.1rem;

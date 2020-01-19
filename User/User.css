@@ -160,10 +160,8 @@ nav.navbar.bootsnav{
     background-size: cover;
 }
 #home{
-    position: relative;
 }
 .default-padding{
-    padding-top: 0 !important;
 }
 .personal-main{
     margin-left: 0.18rem;

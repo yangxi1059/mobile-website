@@ -29,7 +29,7 @@
     margin-top: 0px;
     display: none;
     z-index: 10000;
-    border-radius: 12px;
+    border-radius: 0.06rem;
 }
 .support{
     background: #fff;
@@ -71,6 +71,8 @@
     width: 80%;
     border-bottom: 1px solid rgba(0,0,0,0.4);
     height: 35px;
+    color: rgb(54, 59, 62);
+    opacity: 0.5;
 }
 .mask-Login{
     position: fixed;
@@ -94,6 +96,6 @@
     color:rgba(255,255,255,1);
     line-height:22px;
     background-color: #c32e47;
-    border-radius: 12px;
+    border-radius: 0.06rem;
     margin-top: 40px;
 }

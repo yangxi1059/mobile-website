@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-19 10:50:27
+ * @LastEditTime : 2020-01-19 17:29:54
  * @Version:
  * @Description: 公共头部js
  */
@@ -96,6 +96,12 @@ function initHeaderFooter(url) {
 		$('.support-erweima').css({'background-image':`url('${res.data.qrCode.itemValue}')`})
 	});
 }
+$('.navbar-toggle').click(function(){
+	console.log(111111)
+	if($('#navbar-menu').css("display") == 'none'){
+		$('.navbar-header').css({'background-color':'#fff'})
+	}
+})
 function ShowMyself() {
 	$(".header-top_nav__ul--user").mouseenter(function () {
 		$(".my-DropDown").show();
@@ -159,48 +165,17 @@ function downMenu() {
 	$(document).click(function(event){
 		$('.wechat-connect').stop().animate({opacity:0,top:'-2.4rem'},500).hide();
 	});
-	// $('.footer-icon_wechat').click(function(event){
-	// 	if( WechatStatus == 0){
-	// 		$('.wechat-connect').show().stop().animate({opacity:1,top:'-370px'},500);
-	// 		WechatStatus = 1;
-	// 	}else{
-	// 	}
-	// 	event.stopPropagation();
-	// })
-	// $(document).click(function(){
-	// 	$('.wechat-connect').hide().stop().animate({opacity:0,top:'-480px'},500);
-	// 	 WechatStatus = 0;
-	// });
-	$('.iconbotton_2,.iconbotton_1').mouseenter(function(){
-		$(this).stop().animate({opacity:.5},500);
-	});
-	$('.iconbotton_2,.iconbotton_1').mouseleave(function(){
-		$(this).stop().animate({opacity:.3},500);
-	});
-	$('.footer-main_left p').mouseenter(function(){
-		$(this).stop().animate({opacity:'1'},200);
-	});
-	$('.footer-main_left p').mouseleave(function(){
-		$('.footer-main_left p').stop().animate({opacity:'0.8'},200);
-	});
-	$('.footer-main_center p').mouseenter(function(){
-		$(this).css({'opacity':'1'});
-	});
-	$('.footer-main_center p').mouseleave(function(){
-		$('.footer-main_center p').css({opacity:'0.8'});
-	});
-	$('.header-Login').mouseenter(function(){
-		$('.bg-color').stop().animate({width:'100%'});
-	});
-	$('.header-Login').mouseleave(function(){
-		$('.bg-color').stop().animate({width:'0%'});
-	});
+	$('.btn-light').click(function(){
+		window.location.href = '../../About/About.html'
+	})
+	
 }
 // 用户下拉框
 function userlist() {
 	$('.persondetail-img').click(function(){
 		console.log('个人中心')
 	});
+
 }
 // 弹出框始终居中
 function leftTop(obj) {
@@ -261,4 +236,3 @@ function link(data) {
 		})
 	});
 }
- 

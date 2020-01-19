@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:48:12
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 13:08:18
+ * @LastEditTime : 2020-01-19 13:19:24
  * @Version: 
  * @Description: 
  */
@@ -34,15 +34,23 @@ function displayOffers(newdata) {
                        <p class="main-headerul--p">${arr1[i].schoolName}</p>
                      </li>
                      
-                     <li class="main-headerul-offer">
-                       <p class="main-headerul--p main-headerul--p_OfferImg" data-class="${arr1[i].resultVoucherMosaic}">${arr1[i].companyName}</p>
-                     </li>
+                     <li class="main-headerul-offer">`
+                      if(arr1[i].resultVoucherMosaic){
+                        str += `<p class="main-headerul--p main-headerul--p_OfferImg" data-class="${arr1[i].resultVoucherMosaic}">${arr1[i].companyName}</p>`
+                      }else{
+                        str += `<p class="main-headerul--p main-noImage">${arr1[i].companyName}</p>`
+                      }
+                    str += `</li>
                      <li class="main-headerul-job">
                        <p class="main-headerul--p">${arr1[i].devistion}</p>
                      </li>
-                     <li class="main-headerul-review">
-                        <p class="main-headerul--p main-headerul--p_ReviewImg" data-class="${arr1[i].praiseVoucherMosaic}">Review</p>
-                     </li>
+                     <li class="main-headerul-review">`
+                      if(arr1[i].praiseVoucherMosaic){
+                        str +=  `<p class="main-headerul--p main-headerul--p_ReviewImg" data-class="${arr1[i].praiseVoucherMosaic}">Review</p>`
+                      }else{
+                          str +=  `<p class="main-headerul--p main-noImage ">Review</p>`
+                      }
+                    str +=  `</li>
                    </ul>
                    
                  </li>`
@@ -56,6 +64,13 @@ function displayOffers(newdata) {
     }
    
 function reviewClickImg() {
+  $('.main-noImage').click(function(){
+    $('.mask').show()
+    $('.text-Popup').show()
+    $('body').css({
+      "overflow-y": "hidden"
+    })
+  })
   $(document).click(function () {
     $('.offerul').hide();
     $('.divisionul').hide();

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-17 16:27:08
+ * @LastEditTime : 2020-01-19 18:06:44
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -59,9 +59,10 @@ a:active{
     src:url('../fonts/Ubuntu-Medium.ttf') format('truetype'),
 }
 .content h2{
-    font-family: Ubuntu-R ;
+    font-family: Ubuntu-B ;
     font-style:italic ;
-    font-size: 0.2rem !important;
+    font-size: 0.25rem !important;
+    line-height: 0.31rem;
 }
 .shouzimu{
     font-family: Ubuntu-M;
@@ -83,16 +84,20 @@ a:active{
     display: block;
     background-size: cover;
 }
-.banner-area .content h2{
+.banner-area {
+    background-color: #fff;
 }
 .container{
 }
 .icontop_login{
-    font-size: 0.15rem !important;
+    /* font-size: 0.15rem !important; */
 }
 .navbar{
     margin-bottom: 0px ;
     min-height:0.45rem;
+}
+nav.navbar.bootsnav ul.nav > li > a{
+    text-transform:none;
 }
 .navbar-header{
     /* border-bottom: solid 1px #fff; */
@@ -101,6 +106,12 @@ a:active{
 }
 nav.navbar.bootsnav.navbar-fixed{
     z-index: 9999;
+}
+#banner-main p{
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    color:rgba(255,255,255,1);
+    line-height:0.15rem;
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-brand{
     top: 0px !important;
@@ -135,9 +146,9 @@ nav.navbar.bootsnav{
 .header-top_nav__ul--login{
     margin-left: 0.03rem;
     height:0.15rem;
-    font-size:0.14rem;
+    /* font-size:0.14rem; */
     font-family:Ubuntu-R;
-    line-height:0.16rem;
+    /* line-height:0.16rem; */
 }
 #home{
     width: 100%;
@@ -228,6 +239,15 @@ nav.navbar.bootsnav.navbar-fixed{
     text-overflow:ellipsis;
     white-space: nowrap;
 }
+nav.navbar.bootsnav .navbar-nav > li > a{
+}
+
+nav.navbar.bootsnav ul.nav > li > a{
+    font-size:14px;
+    font-family:Ubuntu-R;
+    color:rgba(54,59,62,1);
+    line-height:20px;
+}
 .Login-header{
     float: left;
 }
@@ -296,6 +316,9 @@ nav.navbar.bootsnav.navbar-fixed{
     float: right;
     /* margin-top: 30px; */
 }
+.main_right-icons{
+    padding-bottom: 40px;
+}
 .persondetail-img{
     margin-top: 30px;
     width:30px;
@@ -304,4 +327,27 @@ nav.navbar.bootsnav.navbar-fixed{
     border-radius:50%;
     opacity:1;
     margin-right: 0.2rem;
+}
+#banner-main .yearsNum{
+    font-size:0.2rem;
+    opacity: 0.7;
+    font-family:Ubuntu-R;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.42rem;
+}
+@media (min-width: 1024px){
+    .navbar-brand{
+        display: none !important; 
+    }
+}
+.navbar-brand > img{
+    height: 30px !important;
+}
+
+.navbar-brand{
+    padding:  30px 15px;
+}
+.erweima2text{
+    padding-bottom: 0.2rem;
 }
