@@ -32,7 +32,8 @@ html ,body{
 .main-return{
     margin-top: 0.25rem;
     display: inline-block;
-    /* display: flex; */
+    position: relative;
+    overflow: hidden;
 }
 .block-main{
     width: 100%;
@@ -42,8 +43,11 @@ html ,body{
     font-family:Ubuntu-M;
     color:rgba(195,46,71,1);
     line-height:0.2rem;
+    float: left;
 }
 .return-img{
+    float: left;
+
     display: inline-block;
     margin-left: 0.1rem;
     width: 0.2rem;
