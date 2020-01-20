@@ -10,7 +10,9 @@ nav.navbar.bootsnav{
 }
 #home{
 }
-
+.VideoLessonsDetail-header-left,.VideoLessonsDetail-header-Lives{
+    text-align: center;
+}
 .VideoLessonsDetail-header-left{
     position: relative;
     width: 50%;
@@ -79,16 +81,20 @@ nav.navbar.bootsnav{
     border-bottom: 1px rgba(0,0,0,0.15) solid;
 }
 .VideoLivesDetail-list{
+    padding: 0 15px;
     overflow: hidden;
     display: none;
 }
 .lessons-main{
-    margin-top: 0.22rem;
+    padding: 0 15px;
     text-align: left;
     padding-bottom: 0.2rem;
     border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .Video-list{
+    padding-top: 0.22REM;
+    padding-bottom: 0.8REM;
+    background-color: rgba(249,249,249,1);
 }
 .lessons-title{
     font-size:0.15rem;
@@ -153,7 +159,7 @@ nav.navbar.bootsnav{
     font-size: 0.14rem;
 }
 .default-padding{
-    padding-bottom: 0.8rem !important;
+    padding-bottom: 0rem !important;
 
 }
 #playVideo{
@@ -201,6 +207,9 @@ nav.navbar.bootsnav{
     font-weight:500;
     line-height:0.65rem;
    
+}
+.lessons-other{
+    padding: 0 15px;
 }
 .plan_li-title{
     display: flex;
