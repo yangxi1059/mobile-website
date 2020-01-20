@@ -50,6 +50,7 @@ ul .VideoLessonsDetail-li:nth-child(1){
     margin-top: 0.15rem !important;
 }
 .about-area .info h2{
+    margin-bottom: 0.2rem;
     margin-top: 0px;
     font-size:0.15rem;
     font-family:Ubuntu-M;

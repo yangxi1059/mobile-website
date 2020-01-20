@@ -40,6 +40,12 @@ nav.navbar.bootsnav{
     
 
 }
+.personal-maintext{
+    border-bottom: 2px #C32E47 solid;
+    line-height: 0.6rem;
+    display: inline-block;
+
+}
 .person-info{
     padding: 0 15px;
     text-align: left;
@@ -52,10 +58,18 @@ nav.navbar.bootsnav{
     background-color: #fff;
 }
 .personal-span{
-    border-bottom: #c32e47 solid 1px;
+    position: relative;
+    /* border-bottom:rgba(0,0,0,0.1) solid 1px; */
 
 }
 .header-top_nav__ul--login{
+}
+.underlines{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    bottom: 0px;
 }
 .footer-other{
     position: fixed;
@@ -179,7 +193,7 @@ nav.navbar.bootsnav{
     position: relative;
 }
 .default-padding{
-    padding-top: 0 !important;
+    padding-top: 0 ;
 }
 .personal-main{
     margin-left: 0.18rem;
@@ -275,6 +289,8 @@ nav.navbar.bootsnav{
 .block-main{
     padding: 0 15px;
     background-color: #fff;
+    padding-top: 0.225rem;
+    margin-top: 0.075rem;
 }
 .VideoLessonsDetail-header{
     display: flex;
@@ -290,7 +306,6 @@ nav.navbar.bootsnav{
     margin-left: 0.5rem;
 }
 .default-padding{
-    padding-top: 0.075rem !important;
 }
 .VideoLessonsDetail-li_top{
     background-position: center;

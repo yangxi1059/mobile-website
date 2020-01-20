@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 11:16:47
+ * @LastEditTime : 2020-01-20 15:32:59
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -87,8 +87,10 @@ a:active{
 .banner-area {
     background-color: #fff;
 }
-.container{
+.navbar .container{
+    width: 100%;
 }
+
 .icontop_login{
     /* font-size: 0.15rem !important; */
 }
@@ -99,14 +101,20 @@ a:active{
 nav.navbar.bootsnav ul.nav > li > a{
     text-transform:none;
 }
+nav.navbar.bootsnav{
+    box-shadow: none !important;
+}
 .navbar-header{
     position: relative;
-    /* border-bottom: solid 1px #fff; */
     min-height: 90px;
     box-sizing: border-box;
 }
 nav.navbar.bootsnav.navbar-fixed{
     z-index: 9999;
+}
+#banner-main{
+    padding: 0 !important;
+    margin: 0 !important;
 }
 #banner-main p{
     font-size:0.13rem;
@@ -143,7 +151,6 @@ nav.navbar.bootsnav{
     font-size: 14px;
     line-height: 90px;
     color: #fff;
-    margin-right: 30px;
     font-family: Ubuntu-M;
 }
 .header-top_nav__ul--login{
@@ -152,6 +159,9 @@ nav.navbar.bootsnav{
     /* font-size:0.14rem; */
     font-family:Ubuntu-R;
     /* line-height:0.16rem; */
+}
+.wrapper{
+    position: relative;
 }
 #home{
     width: 100%;
@@ -312,29 +322,24 @@ nav.navbar.bootsnav ul.nav > li > a{
     font-size: 21px;
     color: #2B2B2B;
     letter-spacing: -0.1px;
-    line-height: 70px;
     position: relative;
 }
 .person-img{
-    height: 70px;
 }
 .header-top_nav__ul--lastli{
-    float: right;
-    right: 60px;
-    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 46px;
     /* margin-top: 30px; */
 }
 .main_right-icons{
     padding-bottom: 40px;
 }
 .persondetail-img{
-    margin-top: 30px;
-    width:30px;
-    height:30px !important;
     background-size: 100%,100%;
     border-radius:50%;
     opacity:1;
-    margin-right: 0.2rem;
 }
 #banner-main .yearsNum{
     font-size:0.2rem;
@@ -371,4 +376,9 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 ul.nav{
     height: 75vh !important;
+}
+@media (max-width: 1023px){
+    #navbar-brand{
+        left: 30px;
+    }
 }
