@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-19 17:29:54
+ * @LastEditTime : 2020-01-20 11:09:08
  * @Version:
  * @Description: 公共头部js
  */
@@ -58,7 +58,7 @@ function initHeaderFooter(url) {
 					<div class="header-top_nav__ul--user">
 					<div class="person-img">
 						<a href="../../User/User.html">
-							<div class="persondetail-img" ></div>
+							<div class="persondetail-img iconfont icontouxiang" ></div>
 						</a>
 					</div>
 					</div>
@@ -158,6 +158,22 @@ translateStatus()
 
 // 头部下拉框选中字体变色
 function downMenu() {
+	$('.navbar-toggle').click(function(){
+		if($('#navbar-menu').css("display")=='none'){
+			$('.navbar-header').animate({'backgroundColor':'#fff'},300)
+			$('.logo-scrolled').hide()
+			$('.logo-display').css("cssText", "display:block !important;")
+			$('.header-login').css({'color':'#c32e47'})
+			$('.navbar-toggle .fa').css({'color':'#c32e47'})
+		}else{
+			$('.navbar-header').animate({'backgroundColor':'transparent'},300)
+			$('.logo-scrolled').show()
+			$('.logo-display').css("cssText", "display:none !important;")
+			$('.header-login').css({'color':'#fff'})
+			$('.navbar-toggle .fa').css({'color':'#fff'})
+		}
+	})
+
 	$('.footer-icon_wechat').click(function(event){
 		$('.wechat-connect').show().stop().animate({opacity:1,top:'-2.2rem'},500);
 		event.stopPropagation();

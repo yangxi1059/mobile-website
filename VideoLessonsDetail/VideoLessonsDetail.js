@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-19 11:06:36
+ * @LastEditTime : 2020-01-20 09:49:19
  * @Version: 
  * @Description: 
  */
@@ -10,14 +10,14 @@
 tabs()
 function tabs() {
     $('.VideoLessonsDetail-header-left').click(function(){
-        $('.Video-shortstrong1').stop().animate({height:'0.15rem'},200);
-        $('.Video-shortstrong2').stop().animate({height:'0px'},500);
+        $('.Video-shortstrong1').stop().animate({'width':'70px'},200);
+        $('.Video-shortstrong2').stop().animate({'width':'0px'},200);
         $('.VideoLivesDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLessonsDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
     })
     $('.VideoLessonsDetail-header-Lives').click(function(){
-        $('.Video-shortstrong1').stop().animate({height:'0px'},500);
-        $('.Video-shortstrong2').stop().animate({height:'0.15rem'},200);
+      $('.Video-shortstrong1').stop().animate({'width':'0px'},200);
+        $('.Video-shortstrong2').stop().animate({'width':'70px'},200);
         $('.VideoLessonsDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLivesDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
     })

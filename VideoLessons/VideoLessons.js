@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-13 10:16:49
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-18 14:29:38
+ * @LastEditTime : 2020-01-20 09:06:46
  * @Version: 
  * @Description: VideoLessons页面 初始化直播和录播列表
  */
@@ -14,7 +14,7 @@ function InitVideoLessonsList () {
     // 初始化默认第一页
     let data = arguments[0]?arguments[0]:1;
     $.Myajax({
-        url:`course/list?pageNum=${data}&&pageSize=9`
+        url:`course/list?pageNum=${data}&&pageSize=21`
     }).then(res => {
         console.log(res.data);
         let Videototal = res.data.total;
@@ -68,7 +68,7 @@ function InitVideoLessonsList () {
     });
 }
 function pageNum(data) {
-    data.pageNum = Math.ceil(data.pageNum/9);
+    data.pageNum = Math.ceil(data.pageNum/21);
     $("#page").paging({
         nowPage: data.num || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -102,7 +102,12 @@ function InitVideoLivesList () {
     // 初始化默认第一页
     let data = arguments[0]?arguments[0]:1;
     $.Myajax({
-        url:`live/list?pageNum=${data}&pageSize=9`
+        url:`live/online/list`,
+        type:'get',
+        data: {
+            pageNum:1,
+            pageSize:21
+        }
     }).then(res => {
         let Videototal = res.data.total;
         console.log(res.data)
@@ -166,13 +171,17 @@ function InitVideoLivesList () {
             </div>
         </li>`
         }
-        $('.VideoLivesDetail-ul').html(html);
-        VideoAnimation2();
+        if(html == ''){
+            $('.video-block').show()
+        }else{
+            $('.VideoLivesDetail-ul').html(html);
+            VideoAnimation2();
+        }
         pageNumLive({livenum:livenum,pageNum:res.data.total});
     });
 }
 function pageNumLive(data) {
-    data.pageNum = Math.ceil(data.pageNum/9);
+    data.pageNum = Math.ceil(data.pageNum/21);
     $("#pageLives").paging({
         nowPage: data.livenum || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -204,6 +213,7 @@ tabs()
 function tabs() {
     pageNum({num:1})
     $('.VideoLessonsDetail-header-left').click(function(){
+        $('.video-block').hide()
         $('.Video-shortstrong1').stop().animate({height:'0.15rem'},200);
         $('.Video-shortstrong2').stop().animate({height:'0px'},500);
         InitVideoLessonsList()
@@ -212,6 +222,7 @@ function tabs() {
         pageNum({num:1})
     })
     $('.VideoLessonsDetail-header-Lives').click(function(){
+        $('.video-block').hide()
         $('.Video-shortstrong1').stop().animate({height:'0px'},500);
         $('.Video-shortstrong2').stop().animate({height:'0.15rem'},200);
         InitVideoLivesList()

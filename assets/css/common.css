@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-19 18:06:44
+ * @LastEditTime : 2020-01-20 11:16:47
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -100,6 +100,7 @@ nav.navbar.bootsnav ul.nav > li > a{
     text-transform:none;
 }
 .navbar-header{
+    position: relative;
     /* border-bottom: solid 1px #fff; */
     min-height: 90px;
     box-sizing: border-box;
@@ -115,7 +116,7 @@ nav.navbar.bootsnav.navbar-fixed{
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-brand{
     top: 0px !important;
-    left: 0.075rem;
+    left: 15px;
     position: absolute;
 }
 .video-back{
@@ -125,6 +126,8 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand{
     height: 100vh !important;
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-toggle{
+    width: 16px;
+    height: 27px;
     top: 0px !important;
     margin-top: 32px !important;
 }
@@ -158,8 +161,12 @@ nav.navbar.bootsnav{
 nav.navbar.bootsnav.navbar-fixed{
     position: relative;
 }
-.persondetail-img{
-    background-image: url('../images/icons/headerHome.png');
+.person-img .persondetail-img{
+    /* background-image: url('../images/icons/headerHome.png'); */
+    font-size: 25px;
+}
+.person-img a{
+    display: block;
 }
 .my-DropDown{
     width:203px;
@@ -312,8 +319,9 @@ nav.navbar.bootsnav ul.nav > li > a{
     height: 70px;
 }
 .header-top_nav__ul--lastli{
-    display: inline-block;
     float: right;
+    right: 60px;
+    display: inline-block;
     /* margin-top: 30px; */
 }
 .main_right-icons{
@@ -346,8 +354,21 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 
 .navbar-brand{
-    padding:  30px 15px;
+    padding:  30px 0px;
 }
 .erweima2text{
     padding-bottom: 0.2rem;
+}
+nav.navbar.bootsnav ul.nav > li > a{
+    border: none !important;
+    font-weight: 500;
+    letter-spacing:0;
+    padding: 15px 0 !important; 
+}
+#navbar-menu{
+    background: #fff !important;
+    max-height: 75vh !important;
+}
+ul.nav{
+    height: 75vh !important;
 }

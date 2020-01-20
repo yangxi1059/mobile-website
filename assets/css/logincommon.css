@@ -67,6 +67,7 @@
     position: relative;
 }
 .userName,.passWord{
+    font-family: Ubuntu-R;
     border: none;
     width: 80%;
     border-bottom: 1px solid rgba(0,0,0,0.4);
