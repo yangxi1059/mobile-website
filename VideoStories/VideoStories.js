@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:45:54
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-16 10:37:06
+ * @LastEditTime : 2020-01-20 16:32:56
  * @Version:
  * @Description: 设置中文播放器 以及Share模块
  */
@@ -22,6 +22,10 @@ function displayVideos() {
   }).then(res => {
     let data = res.data.rows
     console.log(data);
+    // <div class="iconfont iconbofanganniu ">
+                
+    //           </div>
+    //           <div class="play-text">PLAY VIDEO</div>
     for (let i = 0; i < data.length; i++) {
       html += `<li class="video-list_ul--li" data-class="${i}">
       <div class="list_ul--li-img" id="player-con${i}" style="background-image:url('${data[i].storyCover || '../assets/images/img/about2@2x.png'}')">

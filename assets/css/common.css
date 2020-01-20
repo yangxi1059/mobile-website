@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 15:32:59
+ * @LastEditTime : 2020-01-20 16:36:21
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -372,13 +372,21 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 #navbar-menu{
     background: #fff !important;
-    max-height: 75vh !important;
 }
 ul.nav{
-    height: 75vh !important;
 }
 @media (max-width: 1023px){
     #navbar-brand{
         left: 30px;
+    }
+}
+nav.navbar.bootsnav.no-full .navbar-collapse{
+    max-height: none !important;
+    overflow-y: hidden !important;
+}
+@media screen and (min-width:768px){
+    nav.navbar.bootsnav .navbar-header{
+        padding-left: 15px;
+        padding-right: 15px
     }
 }

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-13 10:16:49
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 14:54:05
+ * @LastEditTime : 2020-01-20 16:11:47
  * @Version: 
  * @Description: VideoLessons页面 初始化直播和录播列表
  */
@@ -124,7 +124,7 @@ function InitVideoLivesList () {
                         <span class="liveStatus">${res.data.rows[i].planTime}</span>
                         <span class="livelines">|</span>
                         <i class="iconfont followIcon"></i>
-                        <span class="followNums">未直播</span>
+                        <span class="followNums">开始直播</span>
                     </div>`
                 } else if(res.data.rows[i].liveStatus == 1){
                     html += `<div class="playstatus">

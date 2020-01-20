@@ -86,9 +86,14 @@ ul .VideoLessonsDetail-li:nth-child(1){
     bottom: 0.19rem;
 }
 .MoreDeatil-icon{
-    font-size: 0.12rem !important;
+    font-size: 0.09rem !important;
     line-height:0.16rem;
     margin-left: 0.07rem;
+    /* font-size: 0.12rem;
+    line-height: 0.14rem;
+    transform: scale(0.8,0.8);
+    margin-left: 0.07rem;
+    display: block; */
 }
 #page{
     margin-top: 0.4rem;

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2020-01-20 14:37:46
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 15:34:54
+ * @LastEditTime : 2020-01-20 15:55:26
  * @Version: 
  * @Description: 
  */
@@ -27,6 +27,9 @@ function down(){
 				$('.header-login').css({'color':'#fff'})
 				$('.navbar-toggle .fa').css({'color':'#fff'})
 			}, 400);
+			$('body').css({
+				'overflow-y':'auto'
+			})
 		}
 	})
 }

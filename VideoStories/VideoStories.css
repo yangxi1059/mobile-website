@@ -3,12 +3,17 @@
     padding-bottom: 0;
 }
 .About-h3{
-text-align: left;
+    text-align: left;
+    font-family: Ubuntu-M;
+    font-size:0.17rem;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.24rem;
 }
 .video-list_ul--li{
     text-decoration: none;
     text-align: left;
-    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
 }
 .list_ul--li-img{
     height: 2rem;
@@ -63,3 +68,33 @@ text-align: left;
     fill: currentColor;
     overflow: hidden;
 }
+.btn-pop{
+    display: flex;
+    position: absolute;
+    bottom: 0.15rem;
+    right: 0.15rem;
+}
+.btn-pop .iconbofanganniu{
+  font-size: 0.2rem;
+  color:rgba(255,255,255,1);
+  line-height: 0.2rem;
+}
+.play-text{
+    font-size:0.14rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.2rem;
+    margin-left: 0.08rem;
+}
+
+
+
+
+
+
+
+
+
+
+
