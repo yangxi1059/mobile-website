@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 14:38:33
+ * @LastEditTime : 2020-01-21 11:49:53
  * @Version:
  * @Description: 公共头部js
  */
@@ -76,7 +76,8 @@ function initHeaderFooter(url) {
 					event.stopPropagation()
 					$("body").css("overflow-y","hidden");
 				})
-				$('.mask-Login').click(function(){
+				$('.mask-Login').click(function(event){
+					$('.support').hide()
 					$('.login').hide()
 					$('.mask-Login').hide()
 					event.stopPropagation()
@@ -93,7 +94,7 @@ function initHeaderFooter(url) {
 		url:'system/setting?itemIds=qrCode',
 	}).then(res => {
 		$('.erweima2').html(`<img src="${res.data.qrCode.itemValue}" class="erweima2img"/>`);
-		$('.support-erweima').css({'background-image':`url('${res.data.qrCode.itemValue}')`})
+		$('.support-erweima').find('img').attr("src",`${res.data.qrCode.itemValue}`)
 	});
 }
 $('.navbar-toggle').click(function(){
@@ -102,23 +103,6 @@ $('.navbar-toggle').click(function(){
 		$('.navbar-header').css({'background-color':'#fff'})
 	}
 })
-function ShowMyself() {
-	$(".header-top_nav__ul--user").mouseenter(function () {
-		$(".my-DropDown").show();
-	});
-	$(".header-top_nav__ul--user").mouseleave(function () {
-		$(".my-DropDown").hide();
-	});
-	CancellationUser();
-}
-// 注销按钮
-function CancellationUser () {
-	$('.user-logout').click(function(){
-		clearCookie('userInfo');
-		sessionStorage.removeItem('userDetail');
-		location.reload();
-	});
-}
 // 中英文切换按钮
 function translate(){
 	$('.translate').click(function(){
@@ -154,12 +138,18 @@ function translateStatus (){
 	translate();
 }
 translateStatus()
-// 点击登录
-
 // 头部下拉框选中字体变色
 function downMenu() {
-
-
+	$('.support-login').click(function(){
+		$('.support').show()
+		$('.login').hide()
+		event.stopPropagation()
+		$("body").css("overflow-y","hidden");
+	})
+	$('.backToLogin').click(function(){
+		$('.support').hide()
+		$('.login').show()
+	})
 	$('.footer-icon_wechat').click(function(event){
 		$('.wechat-connect').show().stop().animate({opacity:1,top:'-2.2rem'},500);
 		event.stopPropagation();

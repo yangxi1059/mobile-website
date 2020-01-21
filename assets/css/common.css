@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-21 09:39:59
+ * @LastEditTime : 2020-01-21 11:49:03
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -390,6 +390,15 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 ul.nav{
 }
+.support-login{
+    margin-top: 40px;
+    height:20px;
+    font-size:18px;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:#363B3E;
+    line-height:20px;
+}
 @media (max-width: 1023px){
     #navbar-brand{
         left: 30px;
@@ -406,4 +415,54 @@ nav.navbar.bootsnav.no-full .navbar-collapse{
     .header-top_nav__ul--lastli{
         right: 61px;
     }
+}
+.support-erweima{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;
+}
+.support-p{
+    font-size:12px;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    margin-top: 10px;
+    color:rgba(137,137,137,1);
+    line-height:18px;
+}
+.support-img{
+
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 230px;
+    height: 145px;
+    background-size: cover;
+    background-image: url('../images/img/support@2x.png');
+    margin-top: 30px;
+}
+.support{
+    z-index: 10000;
+}
+.backToLogin{
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 125px;
+}
+.back-login{
+    font-size:14px;
+    font-family:Ubuntu-R;
+    color:rgba(195,46,71,1);
+    line-height:15px;
+}
+.back-img{
+    margin-left: 7px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url('../images/icons/1571.png');
+    background-size: cover;
+    background-position: center;
 }

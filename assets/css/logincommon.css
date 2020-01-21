@@ -39,15 +39,33 @@
     -webkit-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
     width:300px;
-    height: 400px;
+    height: 422px;
     -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
             box-shadow:0px 10px 20px rgba(0,0,0,0.05);
     opacity:1;
     text-align: center;
     margin-top: 0px;
     display: none;
-    z-index: 11;
-    border-radius: 12px;
+    z-index: 10000;
+    border-radius: 0.06rem;
+}
+.support-lessons{
+    background: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+    width:300px;
+    height: 422px;
+    -webkit-box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+            box-shadow:0px 10px 20px rgba(0,0,0,0.05);
+    opacity:1;
+    text-align: center;
+    margin-top: 0px;
+    display: none;
+    z-index: 10000;
+    border-radius: 0.06rem;
 }
 .login-title{
     margin-top: 35px;

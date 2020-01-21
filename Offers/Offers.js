@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:48:12
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-19 13:19:24
+ * @LastEditTime : 2020-01-21 11:31:32
  * @Version: 
  * @Description: 
  */
@@ -38,7 +38,7 @@ function displayOffers(newdata) {
                       if(arr1[i].resultVoucherMosaic){
                         str += `<p class="main-headerul--p main-headerul--p_OfferImg" data-class="${arr1[i].resultVoucherMosaic}">${arr1[i].companyName}</p>`
                       }else{
-                        str += `<p class="main-headerul--p main-noImage">${arr1[i].companyName}</p>`
+                        str += `<p class="main-headerul--p main-headerul--p_OfferImg" style="pointer-events:none">${arr1[i].companyName}</p>`
                       }
                     str += `</li>
                      <li class="main-headerul-job">

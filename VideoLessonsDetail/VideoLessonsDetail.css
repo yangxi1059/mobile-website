@@ -386,14 +386,14 @@ nav.navbar.bootsnav{
     bottom: 0.7rem;
     right: 0.25rem;
 }
-.support-erweima{
+.support-lessons-erweima{
     width: 120px;
     height: 120px;
     margin: 0 auto;
     background-size: cover;
     background-position: center;
 }
-.support-p{
+.support-lessons-p{
     font-size:12px;
     font-family:Ubuntu-R;
     font-weight:400;
@@ -401,7 +401,7 @@ nav.navbar.bootsnav{
     color:rgba(137,137,137,1);
     line-height:18px;
 }
-.support-img{
+.support-lessons-img{
 
     margin: 0 auto;
     margin-bottom: 30px;
@@ -411,7 +411,7 @@ nav.navbar.bootsnav{
     background-image: url('../assets/images/img/support@2x.png');
     margin-top: 40px;
 }
-.support{
+.support-lessons{
     z-index: 10000;
 }
 

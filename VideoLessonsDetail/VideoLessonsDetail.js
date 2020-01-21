@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 09:49:19
+ * @LastEditTime : 2020-01-21 11:54:20
  * @Version: 
  * @Description: 
  */
@@ -127,7 +127,7 @@ function Initplayer(lessonId) {
 }
 function VideoLessonsAnimate(data) {
   $('.help').click(function(){
-    $('.support').show()
+    $('.support-lessons').show()
     $('.mask-Login').show()
     event.stopPropagation()
     $("body").css("overflow-y","hidden");
@@ -152,7 +152,7 @@ function VideoLessonsAnimate(data) {
     }
   })
   $('.mask-Login').click(function(){
-    $('.support').hide()
+    $('.support-lessons').hide()
     $('.login').hide()
     $('.mask-Login').hide()
     $("body").css("overflow-y","auto");
