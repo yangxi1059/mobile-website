@@ -1,0 +1,42 @@
+.detail-Img{
+    width: 100%;
+    /* height: 3.7rem; */
+    background-size: cover;
+    background-position: center;
+}
+.detail-name{
+    text-align: left;
+    font-size:0.17rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.24rem;
+    margin-top: 0.2rem;
+}
+.detail-maintext{
+    text-align: left;
+    font-size:0.13rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    margin-top: 0.15rem;
+    color:rgba(54,59,62,1);
+    line-height:0.15rem;
+}
+.more-detail{
+    text-align: left;
+    font-size:0.13rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.18rem;
+    margin-top: 0.15rem;
+}
+
+
+
+
+
+
+
+
+

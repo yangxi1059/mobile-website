@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 17:57:11
+ * @LastEditTime : 2020-01-21 09:39:59
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -145,10 +145,13 @@ nav.navbar.bootsnav{
 .navbar-toggle .fa{
     color: #fff;
 }
+.login-flex{
+    width: 90px;
+    height: 90px;
+}
 .header-login{
     display: inline-block;
     float: right;
-    font-size: 14px;
     line-height: 90px;
     color: #fff;
     font-family: Ubuntu-M;
@@ -171,11 +174,20 @@ nav.navbar.bootsnav{
 nav.navbar.bootsnav.navbar-fixed{
     position: relative;
 }
+.header-user{
+    width:90px;
+    height: 90px;
+    
+}
 .person-img .persondetail-img{
     /* background-image: url('../images/icons/headerHome.png'); */
     font-size: 25px;
 }
 .person-img a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%) ;
     display: block;
 }
 .my-DropDown{
@@ -325,6 +337,9 @@ nav.navbar.bootsnav ul.nav > li > a{
     position: relative;
 }
 .person-img{
+    width: 90px;
+    height: 90px;
+    position: relative;
 }
 .header-top_nav__ul--lastli{
     position: absolute;

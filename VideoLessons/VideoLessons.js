@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-13 10:16:49
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 16:11:47
+ * @LastEditTime : 2020-01-21 09:13:01
  * @Version: 
  * @Description: VideoLessons页面 初始化直播和录播列表
  */
@@ -14,7 +14,7 @@ function InitVideoLessonsList () {
     // 初始化默认第一页
     let data = arguments[0]?arguments[0]:1;
     $.Myajax({
-        url:`course/list?pageNum=${data}&&pageSize=21`
+        url:`course/list?pageNum=${data}&&pageSize=9`
     }).then(res => {
         console.log(res.data);
         let Videototal = res.data.total;
@@ -68,7 +68,7 @@ function InitVideoLessonsList () {
     });
 }
 function pageNum(data) {
-    data.pageNum = Math.ceil(data.pageNum/21);
+    data.pageNum = Math.ceil(data.pageNum/9);
     $("#page").paging({
         nowPage: data.num || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -105,8 +105,8 @@ function InitVideoLivesList () {
         url:`live/online/list`,
         type:'get',
         data: {
-            pageNum:1,
-            pageSize:21
+            pageNum:data,
+            pageSize:9
         }
     }).then(res => {
         let Videototal = res.data.total;
@@ -181,7 +181,8 @@ function InitVideoLivesList () {
     });
 }
 function pageNumLive(data) {
-    data.pageNum = Math.ceil(data.pageNum/21);
+    console.log(data)
+    data.pageNum = Math.ceil(data.pageNum/9);
     $("#pageLives").paging({
         nowPage: data.livenum || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -190,6 +191,7 @@ function pageNumLive(data) {
         showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
         callback: function (num) { //回调函数
             window.livenum = num ;
+            console.log(livenum)
             InitVideoLivesList(livenum);
         }
     })
