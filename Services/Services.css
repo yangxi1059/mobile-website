@@ -2,6 +2,7 @@
     border-bottom: 1px solid #979797;
     margin-bottom: 0px ;
     position: relative;
+    line-height: 0.24rem;
 }
 .about-span{
     border-bottom: 1px solid #c32e47;
@@ -21,133 +22,60 @@
     line-height:0.2rem;
     margin-top: 0.1rem;
 }
-.Services-main-text{
-    font-size: 0.09rem;
-}
 
-body{
-    letter-spacing:0px;
-}
-.backImg{
-    background-size: cover;
-  
-}
-
-
-.ServicesMain-span{
-    height: 0.34rem;
-    width:100%;
-    border-bottom:1px solid rgba(72,89,102,1);
-    opacity:1;
-}
-.ServicesMain-title{
-    display: inline-block;
-    font-family:Ubuntu-M,sourcehan;
-    line-height:0.35rem;
-    color:rgba(195,46,71,1);
-    border-bottom: 2px solid rgba(195,46,71,1);
-    opacity:1;
-}
-.ServicesMain-introduce{
-    font-size:0.1rem;
-    font-family:Ubuntu-R,sourcehan;
-    ;
-    line-height:0.14rem;
-    color:#575757;
-    margin-top: 0.11rem;
-}
-.table-show{
-    width: 100%;
-    background: lightslategray;
-    margin-top: 0.25rem;
-}
-.ServicesMain-explain{
-    margin-top: 0.15rem;
-    text-align: left;
-    font-size:0.07rem;
-    font-family:Ubuntu-R,sourcehan;
-    line-height:0.1rem;
-    color:rgba(59,59,59,0.96);
-    opacity:0.7;
-}
-.serviceform{
-    margin-top: 0.25rem;
-}
-.serviceform th{
+.th1{
+    background-color: #363B3E;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    padding: 0px;
+    position: relative;
+    color: #fff;
+    height:0.31rem;
+    width: 0.75rem;
     text-align: center;
-    width: 1.3rem;
-    height: 0.36rem;
+    padding: 0.1rem 0;
     font-size:0.08rem;
-    line-height:0.11rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
     color:rgba(255,255,255,1);
-    border-right:#fff solid 1px;
+    line-height:0.1rem;
+    border-radius: 0.06rem 0.06rem 0 0;
 }
-
-.first-tr{
-    height:0.57rem;
-    background:rgba(72,89,102,0.1);
-    opacity:1;
-    font-size:0.07rem;
-    font-family:Ubuntu-R,sourcehan;
-    line-height:0.09rem;
-    color:rgba(72,89,102,1);
-    opacity:1;
+.service-form{
+    margin-top: 0.25rem;
 }
-.second-tr{
-    height:0.39rem;
-    background:rgba(72,89,102,0.1);
-    opacity:1;
+td{
+    background-color: #f3f3f3;
+    box-sizing: border-box;
+    padding: 0.1rem 0 !important;
+    font-size:0.09rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.12rem;
+}
+.border-middle{
+    /* border-left:1px solid #fff; */
+    /* border-right:1px solid #fff */
 }
 tr{
-    height: 0.3rem;
+    border-bottom: 1px #fff solid;
 }
-tr td {
-    font-size:0.07rem;
-    font-family:Ubuntu-R,sourcehan;
-    line-height:0.09rem;
-    color:#3B3B3B;
+td .iconservice{
+    font-size: 0.085rem;
+    vertical-align: middle;
+    color: #c32e47;
 }
-.serviceform td{
-    font-size: 0.07rem;
+.service-text{
+    font-size:0.1rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(137,137,137,1);
+    line-height:0.13rem;
+    text-align: left;
+    margin-top: 0.15rem;
 }
-.serviceform td{
-}
-.serviceform .center{
-    text-align: center;
-    padding: 0.025rem;
-}
-.serviceform td i{
-    text-align: center;
-}
-.serviceform td .iconservice{
-    font-size: 0.06rem;
-    color: #C32E47;
-}
-.footer{
-}
-.footer-home_ul{
-    margin-bottom: 0px;
-    padding-left: 0px;
-}
-.header-top_nav__ul li:nth-child(6) a{
-    opacity: 1;
-    color:rgba(255,255,255,1)
-}
-body ul{
-    margin-bottom: 0;
-    padding-left: 0
-}
-a{
-    color: #222;
-}
-a:hover{
-}
-
-
-
-
-
-
 
 
 

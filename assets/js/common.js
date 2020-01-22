@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:57
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-21 11:49:53
+ * @LastEditTime : 2020-01-22 09:45:39
  * @Version:
  * @Description: 公共头部js
  */
@@ -67,7 +67,6 @@ function initHeaderFooter(url) {
 				window.userHtml = userHtml;
 				$('.header-top_nav__ul--lastli').html(userHtml);
 				userlist();
-				ShowMyself();
 			}else{
 				$('.header-top_nav__ul--lastli').html(loginHtml);
 				$('.header-login').click(function(){

@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-21 11:49:03
+ * @LastEditTime : 2020-01-22 11:26:13
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -123,7 +123,8 @@ nav.navbar.bootsnav.navbar-fixed{
     line-height:0.15rem;
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-brand{
-    top: 0px !important;
+    top: 50% !important;
+    transform: translate(0,-50%);
     left: 15px;
     position: absolute;
 }
@@ -147,22 +148,23 @@ nav.navbar.bootsnav{
 }
 .login-flex{
     width: 90px;
-    height: 90px;
+    height: 90px !important;
 }
 .header-login{
+    height: 90px;
     display: inline-block;
     float: right;
     line-height: 90px;
     color: #fff;
     font-family: Ubuntu-M;
 }
-.header-top_nav__ul--login{
+/* .header-top_nav__ul--login{
     margin-left: 0.03rem;
     height:0.15rem;
-    /* font-size:0.14rem; */
+     font-size:0.14rem; 
     font-family:Ubuntu-R;
-    /* line-height:0.16rem; */
-}
+     line-height:0.16rem; 
+} */
 .wrapper{
     position: relative;
 }
@@ -187,7 +189,8 @@ nav.navbar.bootsnav.navbar-fixed{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform:translate(-50%,-50%) ;
+    -webkit-transform:translate(-50%,-50%) ;
+            transform:translate(-50%,-50%) ;
     display: block;
 }
 .my-DropDown{
@@ -323,10 +326,11 @@ nav.navbar.bootsnav ul.nav > li > a{
     opacity:1;
 }
 .header-top_nav__ul--login{
-    /* font-size: 12PX; */
+    font-size: 12px;
+    margin-left: 7px;
     font-family:Ubuntu-R;
-    /* line-height:30px; */
-    /* color:rgba(255,255,255,1); */
+    line-height:90px;
+    color:rgba(255,255,255,1);
 }
 .header-top_nav__ul--user{
     float: left\9;
@@ -338,13 +342,14 @@ nav.navbar.bootsnav ul.nav > li > a{
 }
 .person-img{
     width: 90px;
-    height: 90px;
+    height: 90px !important;
     position: relative;
 }
 .header-top_nav__ul--lastli{
     position: absolute;
     top: 50%;
-    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+            transform: translate(0,-50%);
     right: 46px;
     /* margin-top: 30px; */
 }
@@ -352,6 +357,7 @@ nav.navbar.bootsnav ul.nav > li > a{
     padding-bottom: 40px;
 }
 .persondetail-img{
+    color: rgba(255,255,255,0.4);
     background-size: 100%,100%;
     border-radius:50%;
     opacity:1;
@@ -446,6 +452,7 @@ nav.navbar.bootsnav.no-full .navbar-collapse{
 }
 .backToLogin{
     text-align: center;
+    display: -webkit-box;
     display: flex;
     margin: 0 auto;
     margin-top: 15px;
