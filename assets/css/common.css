@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-22 13:55:14
+ * @LastEditTime : 2020-01-22 15:39:53
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -61,7 +61,7 @@ a:active{
 .content h2{
     font-family: Ubuntu-B ;
     font-style:italic ;
-    font-size: 0.25rem !important;
+    font-size: 0.2rem !important;
     line-height: 0.31rem;
 }
 .shouzimu{
@@ -76,6 +76,10 @@ a:active{
     background-image: url('../images/img/wechat.png');
     background-size: cover;
     margin: 0 auto;
+}
+.About-h3{
+    font-family: Ubuntu-M;
+    font-size: 0.17rem !important;
 }
 .erweima2{
     margin: 0 auto;
@@ -363,6 +367,10 @@ nav.navbar.bootsnav ul.nav > li > a{
     border-radius:50%;
     opacity:1;
 }
+.banner-area .content h2{
+    margin-bottom: 0 !important;
+    margin-top: 0.2rem;
+}
 #banner-main .yearsNum{
     font-size:0.2rem;
     opacity: 0.7;
@@ -473,4 +481,10 @@ nav.navbar.bootsnav.no-full .navbar-collapse{
     background-image: url('../images/icons/1571.png');
     background-size: cover;
     background-position: center;
+}
+.banner-area .box-cell, .banner-area .box-cell div{
+    height: 100% !important;
+}
+.banner-area .box-table{
+    height: 100%;
 }

@@ -1,8 +1,17 @@
 .About-h3{
-    border-bottom: 1px solid #979797;
     margin-bottom: 0px ;
     position: relative;
     line-height: 0.24rem;
+}
+.lines-title{
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #000;
+    opacity: 0.2;
+    position: absolute;
+    bottom: 0.25px;
+    z-index: -55;
 }
 .about-span{
     border-bottom: 1px solid #c32e47;

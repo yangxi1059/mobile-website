@@ -24,11 +24,11 @@
 .ul--li-main_h2{
     margin-top: 0.2rem !important;
     margin-bottom: 0 !important;
-    font-size:.15rem;
+    font-size:.15rem !important;
     font-family:Ubuntu-M;
-    font-weight:500;
+    font-weight:500 !important;
     color:rgba(54,59,62,1);
-    line-height:.2rem;
+    line-height:.2rem !important;
 }
 .ul--li-main_p{
     margin-top: 0.1rem !important;
@@ -87,8 +87,6 @@
     line-height:0.2rem;
     margin-left: 0.08rem;
 }
-
-
 
 
 
