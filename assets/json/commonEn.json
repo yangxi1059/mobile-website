@@ -19,7 +19,7 @@
                         },
                         {
                             "id": 2,
-                            "name": "Video Stories",
+                            "name": "Our Stories",
                             "detail": [],
                             "url":"../../../static/VideoStories/VideoStories.html"
                         },

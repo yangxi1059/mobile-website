@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-30 13:45:54
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-20 16:32:56
+ * @LastEditTime : 2020-01-22 13:36:33
  * @Version:
  * @Description: 设置中文播放器 以及Share模块
  */
@@ -17,7 +17,7 @@ function displayVideos() {
     url:'story/list',
     data: {
       pageNum: data.num || 1,
-      pageSize: 999,
+      pageSize: 9,
     }
   }).then(res => {
     let data = res.data.rows
@@ -97,7 +97,8 @@ function videoList () {
   })
 }
 function pageNum(data) {
-  data.pageNum = Math.ceil(data.pageNum/6);
+  data.pageNum = Math.ceil(data.pageNum/9);
+  console.log(data)
   $("#page").paging({
     nowPage: data.num || 1, // 当前页码
     pageNum: data.pageNum || 1, // 总页码

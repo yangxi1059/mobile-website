@@ -17,11 +17,70 @@
     color:rgba(195,46,71,1);
     line-height:0.2rem; 
 }
-
-
-
-
-
+.blog-top{
+    width: 100%;
+    height: 2rem;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.VideoLessonsDetail-li_More{
+    display: flex;
+    position: absolute;
+    font-size:0.14rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    line-height:0.16rem;
+    right: 0.15rem;
+    bottom: 0.19rem;
+}
+.MoreDeatil-icon{
+    font-size: 0.09rem !important;
+    line-height:0.16rem;
+    margin-left: 0.07rem;
+    /* font-size: 0.12rem;
+    line-height: 0.14rem;
+    transform: scale(0.8,0.8);
+    margin-left: 0.07rem;
+    display: block; */
+}
+.video-list_ul{
+    margin-top: 0.15rem;
+}
+.blog-text{
+    text-align: left;
+    margin-top: 0.15rem;
+}
+.blog-main{
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.blog-text1{
+    text-align: left;
+    margin-top: 0.15rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
+.blog-title{
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500 !important;
+    color:rgba(54,59,62,1);
+    text-align: left;
+    line-height:0.2rem;
+}
+.blog-time{
+    margin-top: 0.15rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.2rem;
+}
 
 
 

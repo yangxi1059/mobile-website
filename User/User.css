@@ -147,11 +147,8 @@ nav.navbar.bootsnav{
 }
 .personal-detail{
     display: flex;
-    position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    width: 95%;
-
+    position: relative;
+    padding: 40px 0;
 }
 .personal-img{
     width: 0.65rem;
@@ -188,16 +185,16 @@ nav.navbar.bootsnav{
     font-family:Ubuntu-R;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
-    position: absolute;
-    right: 0.15rem;
 }
-.personal-edit a{
+.edit {
+    display: flex;
     font-size:0.15rem;
     font-family:Ubuntu-R;
     color:rgba(54,59,62,1);
-    line-height:0.7rem;
-    position: absolute;
-    right: 0.15rem;
+    position: absolute !important;
+    right: 0.21rem;
+    top: 50%;
+    transform: translate(0,-50%);
 }
 .detail-block{
     padding: 0 15px;
@@ -233,10 +230,21 @@ nav.navbar.bootsnav{
     text-indent: 0 !important;
 }
 .user-myvideo{
+    height: 0.7rem;
+    display: block;
     text-indent: 0 !important;
 
 }
+.spanicon{
+    position: absolute;
+    top: 50%;
+    left: 0.5rem;
+
+    transform: translate(0,-50%);
+}
 .about-area .info a{
+    display: block;
+    position: relative;
     margin-top: 0 ;
     padding: 0;
 }
@@ -263,19 +271,49 @@ nav.navbar.bootsnav{
     margin-right: 0.24rem;
 }
 .personal-logout{
+    position: relative;
     font-size:0.16rem;
     font-family:Ubuntu-M;
     color:rgba(54,59,62,1);
     line-height:0.7rem;
 }
+.jiantouIcon{
+    display: block;
+    width: 0.06rem;
+    height: 0.09rem;
+    background-image: url('../assets/images/img/jiantou.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 50%;
+    right: 0.07rem;
+    transform: translate(0,-50%);
+}
 
-
-
-
-
-
-
-
+.jiantouedit{
+    right: 0.07rem;
+}
+.iconshipinsHome-copy{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.mylive-icon{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.iconlogout{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.my-DropDown_li{
+    height: 0.7rem;
+}
+.spantextlogout{
+    margin-left: 0.5rem;
+}
 
 
 

@@ -2,12 +2,13 @@
  * @Author: 杨曦
  * @Date: 2020-01-20 14:37:46
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-22 09:51:26
+ * @LastEditTime : 2020-01-22 14:08:41
  * @Version: 
  * @Description: 
  */
 function down(){
     $('.navbar-toggle').click(function(){
+		clearTimeout(a)
         console.log(9889898)
 		if($('#navbar-menu').css("display")=='none'){
 			$('.navbar-header').css({'backgroundColor':'#fff'})
@@ -21,7 +22,7 @@ function down(){
 				'overflow-y':'hidden'
 			})
 		}else{
-			setTimeout(() => {
+			var a = setTimeout(() => {
 				$('.navbar-header').stop().animate({'backgroundColor':'transparent'},300)
 				$('.logo-scrolled').css("cssText", "display:block !important;")
 				$('.logo-display').css("cssText", "display:none !important;")

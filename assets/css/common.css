@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-09-27 08:21:50
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-22 11:26:13
+ * @LastEditTime : 2020-01-22 13:55:14
  * @Version: 
  * @Description: 公共样式  包括 header footer contactUs 以及 字体
  */
@@ -106,7 +106,7 @@ nav.navbar.bootsnav{
 }
 .navbar-header{
     position: relative;
-    min-height: 90px;
+    min-height: 60px;
     box-sizing: border-box;
 }
 nav.navbar.bootsnav.navbar-fixed{
@@ -136,9 +136,9 @@ nav.navbar.bootsnav.navbar-fixed .navbar-brand{
 }
 nav.navbar.bootsnav.navbar-fixed .navbar-toggle{
     width: 16px;
-    height: 27px;
+    height: 28px;
     top: 0px !important;
-    margin-top: 32px !important;
+    margin-top: 16px !important;
 }
 nav.navbar.bootsnav{
     background: none;
@@ -147,14 +147,15 @@ nav.navbar.bootsnav{
     color: #fff;
 }
 .login-flex{
-    width: 90px;
-    height: 90px !important;
+    width: 60px;
+    height: 60px !important;
 }
+
 .header-login{
-    height: 90px;
+    height: 60px;
     display: inline-block;
     float: right;
-    line-height: 90px;
+    line-height: 60px;
     color: #fff;
     font-family: Ubuntu-M;
 }
@@ -177,8 +178,8 @@ nav.navbar.bootsnav.navbar-fixed{
     position: relative;
 }
 .header-user{
-    width:90px;
-    height: 90px;
+    width:60px;
+    height: 60px;
     
 }
 .person-img .persondetail-img{
@@ -329,7 +330,7 @@ nav.navbar.bootsnav ul.nav > li > a{
     font-size: 12px;
     margin-left: 7px;
     font-family:Ubuntu-R;
-    line-height:90px;
+    line-height:60px;
     color:rgba(255,255,255,1);
 }
 .header-top_nav__ul--user{
@@ -341,8 +342,8 @@ nav.navbar.bootsnav ul.nav > li > a{
     position: relative;
 }
 .person-img{
-    width: 90px;
-    height: 90px !important;
+    width: 60px;
+    height: 60px !important;
     position: relative;
 }
 .header-top_nav__ul--lastli{
@@ -399,7 +400,7 @@ ul.nav{
 .support-login{
     margin-top: 40px;
     height:20px;
-    font-size:18px;
+    font-size:14px;
     font-family:Ubuntu-R;
     font-weight:400;
     color:#363B3E;

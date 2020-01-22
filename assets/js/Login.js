@@ -2,7 +2,7 @@
  * @Author: 杨曦
  * @Date: 2019-12-06 14:11:16
  * @LastEditors  : 杨曦
- * @LastEditTime : 2020-01-18 11:56:19
+ * @LastEditTime : 2020-01-22 13:30:22
  * @Version: 
  * @Description: 
  */
@@ -11,15 +11,22 @@ function Login() {
 	$('.userName').val('');
     $('.passWord').val('');
 	$('.userName').focus(function(){
-		$(this).css({"color":"rgba(54, 59, 62, 1)","opacity":1});
-        $('.login-username').css({"borderColor":"rgba(195,46,71,1)"});
+		$(this).css({
+			"color":"rgba(54, 59, 62, 1)",
+			"opacity":1,
+			'border-color':'#c32e47'
+		}
+			);
+		$('.login-username').css({"borderColor":"rgba(195,46,71,1)"});
+		
 	});
 	$('.passWord').focus(function(){
-		$(this).css({"color":"rgba(54, 59, 62, 1)","opacity":1});
-        $('.login-password').css({"borderColor":"rgba(195,46,71,1)"});
+		$(this).css({"color":"rgba(54, 59, 62, 1)","opacity":1,'border-color':'#c32e47'});
+        // $('.login-password').css({"borderColor":"rgba(195,46,71,1)"});
 	});
 	$('.userName').blur(function(){
-		$('.login-username').css({"borderColor":"rgba(54,59,62,.2)"});
+		// $('.login-username').css({"borderColor":"rgba(54,59,62,.2)"});
+		$(this).css({'border-color':'rgba(0,0,0,0.4)'})
 		if($(this).val()){
 			$(this).css({"opacity":1});
 		}else{
@@ -27,8 +34,9 @@ function Login() {
 		};
 	});
 	$('.passWord').blur(function(){
+		$(this).css({'border-color':'rgba(0,0,0,0.4)'})
 		$('.login-password').css({"borderColor":"rgba(54,59,62,.2)"});
-        $('.iconpassword').css({"color":"rgba(89,89,89,1)"});
+        $('.iconpassword').css({"color":"rgba(0,0,0,0.4)"});
 		if($(this).val()){
 			$(this).css({"opacity":1});
 		}else{

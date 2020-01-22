@@ -29,7 +29,7 @@
     margin-top: 0px;
     display: none;
     z-index: 10000;
-    border-radius: 0.06rem;
+    border-radius: 6px;
 }
 .support{
     background: #fff;
@@ -67,11 +67,13 @@
     z-index: 10000;
     border-radius: 0.06rem;
 }
+.iconbangz{
+    line-height: 20px;
+}
 .login-title{
     margin-top: 35px;
     font-size:25px;
-    font-family:Ubuntu-B;
-    font-weight:600;
+    font-family:Ubuntu-M;
     color:rgba(195,46,71,1);
     line-height:35px;
 }
