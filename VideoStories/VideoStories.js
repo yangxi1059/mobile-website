@@ -78,11 +78,8 @@ function videoDetail (storyId) {
       playAuth:res.data.playAuth,
       id:storyId.id,
       useFlashPrism:false,
-      times:false
-    }).then( err => {
-      console.log(err)
+      times:true
     })
-   
   })
 }
 function videoList () {

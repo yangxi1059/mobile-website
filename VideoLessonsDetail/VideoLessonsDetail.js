@@ -75,6 +75,8 @@ function Init(Id) {
             <span class="span-lines">|</span>
             <span class="lessons-Alltime">总时长${s_to_hs(Math.ceil(data.courseDuration))}</span>
         </div>`
+    $('.video-plan_times').html(`${times}课时`)
+    $('.video-plan_timeList').html(s_to_hs(Math.ceil(data.courseDuration)))
     $('.lessons-main').html(html)
     $('.video-plan_ul').html(detailRight)
     VideoLessonsAnimate(arr)

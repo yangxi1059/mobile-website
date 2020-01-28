@@ -91,7 +91,7 @@ function InitHomeVideo(data){
             videoId:res.data.videoId,
             playAuth:res.data.playAuth,
             autoplay:true,
-            times:false,
+            times:true,
         })
     })
 }
