@@ -24,6 +24,7 @@ function displayOffers(newdata) {
   }).then(res => {
     let str = '';
         arr1 = res.data.rows;
+        console.log(arr1)
        for (let i = 0; i < arr1.length; i++) {
          str += `<li class="main-headerul_li--main">
                    <ul class="headerul-ul_li">
@@ -42,7 +43,7 @@ function displayOffers(newdata) {
                       }
                     str += `</li>
                      <li class="main-headerul-job">
-                       <p class="main-headerul--p">${arr1[i].devistion}</p>
+                       <p class="main-headerul--p">${arr1[i].division}</p>
                      </li>
                      <li class="main-headerul-review">`
                       if(arr1[i].praiseVoucherMosaic){

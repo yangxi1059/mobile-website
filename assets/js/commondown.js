@@ -8,9 +8,7 @@
  */
 function down(){
     $('.navbar-toggle').click(function(){
-		clearTimeout(a)
-        console.log(9889898)
-		if($('#navbar-menu').css("display")=='none'){
+ 		if($('#navbar-menu').css("display")=='none'){
 			$('.navbar-header').css({'backgroundColor':'#fff'})
 			$('.logo-scrolled').css("cssText", "display:none !important;")
 			$('.header-top_nav__ul--login').css({'color':"#c32e47"})
