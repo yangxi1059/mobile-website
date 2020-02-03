@@ -13,11 +13,13 @@ window.jQuery.Myajax = (arg) => {
 	// let baseUrl = 'http://192.168.1.105:2011/';
 	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
 	// let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
-	let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
+	// let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
+	let baseUrl = 'http://apple-free-day.51vip.biz/wb-api-dev/'
+
 	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';
 	// let baseUrl = 'http://192.168.1.199:1214/wb-api-test/';
 	if(!getCookie('userInfo')){
-		sessionStorage.clear('userDetail')
+		sessionStorage.removeItem('userDetail')
 	}
 	if(!sessionStorage.getItem('userDetail')){
 		clearCookie('userInfo')
@@ -28,7 +30,7 @@ window.jQuery.Myajax = (arg) => {
 		clearCookie('userInfo');
 		sessionStorage.removeItem('userDetail');
 		if(getCookie('userInfo')){
-			sessionStorage.clear();
+			sessionStorage.removeItem();
 			alert('长时间未操作已自动登出');
 		}
 	}, 1800000);
@@ -56,17 +58,17 @@ window.jQuery.Myajax = (arg) => {
 					$('#loading').delay(1500).hide(0)
 				}else if(res.code === 401) {
 					clearCookie('token');
-					sessionStorage.clear();
+					sessionStorage.removeItem();
 					reject(res.message || '请重新登录');
 				}else if( res.code === 30001 ){
 					clearCookie('token');
-					sessionStorage.clear();
+					sessionStorage.removeItem();
 					reject(res.message || '');
 				}else{
 					reject(res || '错误了');
 				}
 			}else if(req.status === 401){
-				sessionStorage.clear();
+				sessionStorage.removeItem();
 				clearCookie('token');
 				reject(res.message || '请重新登录');
 			}else{

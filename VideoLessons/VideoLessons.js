@@ -161,13 +161,8 @@ function InitVideoLivesList () {
             </h2>
             <p class="VideoLessonsDetail-p">${res.data.rows[i].liveIntro}</p>
             <div class="VideoInformation">
-                <span class="Mentor-Video">${res.data.rows[i].liveBy}</span>
-                <span>|</span>
-                <span class="Mentor-times">订阅人数&nbsp
-                    <span class="followNums">
-                        ${res.data.rows[i].bindCount}
-                    </span>
-                </span>
+                <span class="Mentor-Video">Mentor : ${res.data.rows[i].liveBy}</span>
+               
             </div>
         </li>`
         }
@@ -213,12 +208,17 @@ function VideoAnimation2() {
 }
 tabs()
 function tabs() {
+    if(getCookie('userInfo')){
+        $('.vip-login').hide()
+    }
+
     pageNum({num:1})
     $('.VideoLessonsDetail-header-left').click(function(){
         $('.video-block').hide()
         $('.Video-shortstrong1').stop().animate({height:'0.15rem'},200);
         $('.Video-shortstrong2').stop().animate({height:'0px'},500);
         InitVideoLessonsList()
+        $('.accessCode').show()
         $('.VideoLivesDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLessonsDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
         pageNum({num:1})
@@ -228,11 +228,57 @@ function tabs() {
         $('.Video-shortstrong1').stop().animate({height:'0px'},500);
         $('.Video-shortstrong2').stop().animate({height:'0.15rem'},200);
         InitVideoLivesList()
+        $('.accessCode').hide()
         $('.VideoLessonsDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLivesDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
         pageNumLive({livenum:1})
     })
+    $('.code-ipt').click(function(){
+        $('.codeToIpt').val('')
+        $('.code-dia').show()
+        $('.code-mask').show()
+        $('body').css({
+            'overflow-y':'hide'
+        })
+    })
+    $('.btn-Cancel').click(function(){
+        $('.code-dia').hide()
+        $('.code-mask').hide()
+        $('body').css({
+            'overflow-y':'auto'
+        })
+    })
+    $('.btn-Ok').click(function(){
+        if($('.codeToIpt').val()){
+            let code = $('.codeToIpt').val()
+            Code(code)
+        }else{
+            alert('code不能为空')
+        }
+    })
+    $('.vip-login').click(function(){
+        $('.login').show()
+        $('.mask-Login').show()
+        $('body').css({
+            'overflow-y':'hidden'
+        })
+    })
 }
-
+function Code(code){
+    $.Myajax({
+        url:'/access/code/verify',
+        type:'post',
+        data:{
+            accessCode:code
+        }
+    }).then( res => {
+        console.log(res)
+        sessionStorage.setItem('AccessCode',JSON.stringify(res.data))
+        window.location.href='../accessCode/accessCode.html';
+    }).catch(err => {
+        alert(err.message)
+        $('.codeToIpt').val('')
+    })
+}
 
 

@@ -250,10 +250,10 @@ ul .VideoLessonsDetail-li:nth-child(1){
     margin-bottom: 0.1rem;
     margin-right: 0.1rem;
     padding: 0 0.08rem;
+    background:rgba(245,246,247,1);
     border-radius:2px;
-    border:1px solid rgba(54,59,62,0.5);
     font-size:0.11rem;
-    color:rgba(54,59,62,1);
+    color:#A9ABAD;
     line-height:0.2rem;
     font-family: Ubuntu-R;
 }
@@ -279,15 +279,120 @@ ul .VideoLessonsDetail-li:nth-child(1){
     text-align: center;
     margin-top: 0.15rem;
 }
+.vip-login{
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    color:rgba(195,46,71,1);
+    line-height:0.35rem;
+    padding: 0 0.11rem;
+    border-radius:0.03rem;
+    border:1px solid rgba(195,46,71,1);
+    background: #fff;
+    float: left;
+    margin-right: 14px;
+}
+.code-ipt{
+    font-size:0.12rem;
+    font-family:Ubuntu-R;
+    color:rgba(195,46,71,1);
+    line-height:0.35rem;
+    padding: 0 0.11rem;
+    border-radius:0.03rem;
+    border:1px solid rgba(195,46,71,1);
+    background: #fff;
+    float: left;
+}
+.accessCode{
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+.code-mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 55;
+    background:rgba(0,0,0,0.6);
+}
+.code-dia{
+    display: none;
+    z-index: 56;
+    width:300px;
+    height:219px;
+    background:rgba(255,255,255,1);
+    border-radius:6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.code-blank{
+    width: 250px;
+    height: 159px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 
-
-
-
-
-
-
-
-
-
+}
+.code-title{
+    font-size:17px;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:19px;
+}
+.code-ipt1{
+    width: 100%;
+    height:50px;
+    background:rgba(195,46,71,0.1);
+    border-radius:6px;
+    border:1px solid rgba(195,46,71,0.5);
+    margin-top: 15px;
+}
+.codeToIpt{
+    width: 100%;
+    border: none;
+    font-size:16px;
+    font-family:Ubuntu-R;
+    color:rgba(137,137,137,1);
+    line-height:50px;
+    text-indent: 15px;
+    background: none;
+}
+.code-btns{
+    margin-top: 35px;
+    overflow: hidden;
+    width: 100%;
+    height: 40px;
+}
+.btn-Cancel{
+    width: 105px;
+    float: left;
+    border: none;
+    height:40px;
+    background:rgba(137,137,137,1);
+    border-radius:6px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    color:rgba(255,255,255,1);
+    line-height:40px;
+}
+.btn-Ok{
+    width: 105px;
+    float: right;
+    border: none;
+    height:40px;
+    background:#C32E47;
+    border-radius:6px;
+    font-size:14px;
+    font-family:Ubuntu-R;
+    color:rgba(255,255,255,1);
+    line-height:40px;
+}
 
 

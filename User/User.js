@@ -18,8 +18,8 @@ function Init(){
         window.location.href = '../../Login/Login.html'
     }
     $('.personal-logout').click(function(){
-        sessionStorage.clear('userDetail')
-        window.location.reload()
+        sessionStorage.removeItem('userDetail')
+        window.location.href = '../../'
     })
 }
 Init()
