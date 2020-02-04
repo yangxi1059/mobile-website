@@ -100,7 +100,7 @@ a:active{
 }
 .navbar{
     margin-bottom: 0px ;
-    min-height:0.45rem;
+    min-height:0.3rem;
 }
 nav.navbar.bootsnav ul.nav > li > a{
     text-transform:none;
@@ -151,7 +151,6 @@ nav.navbar.bootsnav{
     color: #fff;
 }
 .login-flex{
-    width: 60px;
     height: 60px !important;
 }
 
@@ -331,7 +330,7 @@ nav.navbar.bootsnav ul.nav > li > a{
     opacity:1;
 }
 .header-top_nav__ul--login{
-    font-size: 12px;
+    font-size: 14px;
     margin-left: 7px;
     font-family:Ubuntu-R;
     line-height:60px;
