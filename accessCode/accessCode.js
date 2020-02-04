@@ -40,7 +40,6 @@ function InitCodeList(data) {
 	// 	}
 	// }
     console.log(data)
-    data.courseList.push(data.courseList[0])
 	for(let i = 0; i < data.courseList.length; i++){
 		html += ` <li class="code-li">
 		<div class="codeSection-img" style="background-image:url('${data.courseList[i].coverUrl}')">
