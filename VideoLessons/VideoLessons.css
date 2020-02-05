@@ -97,7 +97,7 @@ ul .VideoLessonsDetail-li:nth-child(1){
     display: block; */
 }
 #page{
-    margin-top: 0.4rem;
+    margin-top: 0.4rem !important;
 }
 .about-area ul{
     margin-top: 0;
