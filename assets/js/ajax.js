@@ -12,8 +12,8 @@ window.jQuery.Myajax = (arg) => {
 	// let baseUrl = 'http://192.168.1.199:2001/';
 	// let baseUrl = 'http://192.168.1.105:2011/';
 	// let baseUrl = 'http://192.168.1.199:1213/wb-api-dev/';
-	let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
-	// let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
+	// let baseUrl = 'http://www.pageguo.com:1214/wb-api-test/';
+	let baseUrl = 'http://www.wallstreettequila.com:1215/wb-api-prod/'
 	// let baseUrl = 'http://apple-free-day.51vip.biz/wb-api-dev/'
 
 	// let baseUrl = 'http://192.168.1.105:1213/wb-api-dev/';

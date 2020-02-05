@@ -29,20 +29,15 @@ function displayVideos() {
     for (let i = 0; i < data.length; i++) {
       html += `<li class="video-list_ul--li" data-class="${i}">
       <div class="list_ul--li-img" id="player-con${i}" style="background-image:url('${data[i].storyCover || '../assets/images/img/about2@2x.png'}')">
+      <div class="btn-play" data-class="${data[i].storyId}"></div>
         <div class="maskvideo">
-          <div class=" video-play-button btn-play" data-class="${data[i].storyId}">
-              <i class="ti-control-play"></i>
-          </div>
-        </use>
-      </div>
+        </div>
       </div>
       <div class="list_ul--li-main">
-      <div class="Videomain-icon">
-      </div>
-      <div class="ul--li-main">
-        <h2 class="ul--li-main_h2">${data[i].storyTitle}</h2>
-      <p class="ul--li-main_p">${data[i].storyIntro}</p>
-      </div>
+        <div class="ul--li-main">
+          <h2 class="ul--li-main_h2">${data[i].storyTitle}</h2>
+          <p class="ul--li-main_p">${data[i].storyIntro}</p>
+        </div>
       </div>
       </li>`
     }

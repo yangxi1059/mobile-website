@@ -492,3 +492,6 @@ nav.navbar.bootsnav.no-full .navbar-collapse{
 .banner-area .box-table{
     height: 100%;
 }
+#page{
+    margin-top: 0px !important;
+}
