@@ -245,7 +245,11 @@ function Initfirst (data) {
       `;
     }
     for(let k = 0;k < res.data.length;k++){
-      html2 += `<li class="years-detail" data-class="${res.data[k].applySeason}" data-type="${res.data[k].applySeason} Recruiting Season">${res.data[k].title}</li>`;
+      if(res.data[k].applySeason == 2016){
+        html2 += `<li class="years-detail" data-class="${res.data[k].applySeason}" data-type="2015 - 2016 Recruiting Season">${res.data[k].title}</li>`;
+      }else{
+        html2 += `<li class="years-detail" data-class="${res.data[k].applySeason}" data-type="${res.data[k].applySeason} Recruiting Season">${res.data[k].title}</li>`;
+      }
     }
     $('.offerul').html(html);
     $('.divisionul').html(html1);

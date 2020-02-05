@@ -294,6 +294,7 @@ nav.navbar.bootsnav{
 .VideoLessonsDetail-header{
     text-align: left;
     border-bottom: 1px #C32E47 solid;
+    padding-top: 85px;
 }
 .VideoLessonsDetail-header-left{
     padding-bottom: 0.15rem !important;

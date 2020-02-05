@@ -347,6 +347,7 @@ ul .VideoLessonsDetail-li:nth-child(1){
 }
 .labels-list{
     display: flex;
+    flex-wrap: wrap;
 }
 .VideoInformation{
     margin-top: 0.15rem;
@@ -529,13 +530,15 @@ ul .VideoLessonsDetail-li:nth-child(1){
     margin-top: 7px;
 }
 .Label{
+    margin-bottom: 0.1rem;
     margin-right: 0.1rem;
     padding: 0 0.08rem;
-    border-radius:2px;
-    border:1px solid rgba(54,59,62,1);
-    font-size:0.11rem;
-    color:rgba(54,59,62,1);
-    line-height:0.2rem;
+    background: rgba(245,246,247,1);
+    border-radius: 2px;
+    font-size: 0.11rem;
+    color: #A9ABAD;
+    line-height: 0.2rem;
+    font-family: Ubuntu-R;
 }
 .VideoLessonsDetail-ul{
     padding: 0 15px;
@@ -568,6 +571,28 @@ ul .VideoLessonsDetail-li:nth-child(1){
     padding-bottom: 0.4rem;
 }
 
+.video-block{
+    display: none;
+    position: relative;
+    margin-top: 0.85rem;
+}
+.waiting{
+    background-image: url('../assets/images/img/neirong-block.png');
+    background-size: cover;
+    background-position: center;
+    width: 230px;
+    height: 125px;
+    margin: 0 auto;
+}
+.waitingMsg{
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(195,46,71,1);
+    line-height:0.2rem;
+    text-align: center;
+    margin-top: 0.15rem;
+}
 
 
 

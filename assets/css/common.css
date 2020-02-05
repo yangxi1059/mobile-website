@@ -49,6 +49,11 @@ a:active{
     src:url('../fonts/Ubuntu-Light.ttf') format('truetype'),
 }
 @font-face{
+    font-family: 'source'; 
+    src: url('../fonts/SourceHanSansCN-Normal.ttf');
+    src:url('../fonts/SourceHanSansCN-Normal.ttf') format('truetype'),
+}
+@font-face{
     font-family: 'Ubuntu-BI'; 
     src: url('../fonts/Ubuntu-BoldItalic.ttf');
     src:url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype'),

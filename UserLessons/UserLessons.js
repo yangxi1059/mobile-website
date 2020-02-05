@@ -73,7 +73,12 @@ function InitVideoList() {
             </div>
         </li>`
         }
-        $('.VideoLessonsDetail-ul').html(html);
+        if(html){
+            $('.VideoLessonsDetail-ul').html(html);
+            $('.video-block').hide()
+        }else{
+            $('.video-block').show()
+        }
         $('#loading').delay(1500).hide(0)
     })
 }
@@ -198,7 +203,12 @@ function InitVideoLivesList(num) {
                     </a>
                 </li>`
             }
-            $('.VideoLivesDetail-ul').html(aliveList);
+            if(aliveList){
+                $('.VideoLivesDetail-ul').html(aliveList);
+                $('.video-block').hide()
+            }else{
+                $('.video-block').show()
+            }
             // pageNumLives({
             //     pageNum:res.data.total,
             //     num:window.num1

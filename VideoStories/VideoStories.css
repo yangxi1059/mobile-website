@@ -1,6 +1,6 @@
 .default-padding{
-    padding-top: .225rem !important;
-    padding-bottom: 0;
+    padding-top: .25rem !important;
+    padding-bottom: 0 !important;
 }
 .About-h3{
     text-align: left;
