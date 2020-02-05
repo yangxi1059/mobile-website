@@ -8,13 +8,19 @@
  */
 
 //  分页
+window.listName = '';
 
 window.num = 1
-function InitVideoLessonsList () {
+function InitVideoLessonsList (pageNum,tags) {
+    console.log(pageNum,tags)
     // 初始化默认第一页
-    let data = arguments[0]?arguments[0]:1;
     $.Myajax({
-        url:`course/list?pageNum=${data}&&pageSize=9`
+        url:`course/list`,
+        data:{
+            tags:tags || '',
+            pageNum:pageNum || 1,
+            pageSize:21
+        }
     }).then(res => {
         console.log(res.data);
         let Videototal = res.data.total;
@@ -63,12 +69,13 @@ function InitVideoLessonsList () {
         }
         $('.VideoLessonsDetail-ul').html(html);
         VideoAnimation1();
-        pageNum({num:num,pageNum:res.data.total});
+        pageNumLesson({num:num,pageNum:res.data.total})
     }).catch(err =>{
     });
 }
-function pageNum(data) {
-    data.pageNum = Math.ceil(data.pageNum/9);
+function pageNumLesson(data) {
+    console.log(data.pageNum)
+    data.pageNum = Math.ceil(data.pageNum/21);
     $("#page").paging({
         nowPage: data.num || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -77,7 +84,7 @@ function pageNum(data) {
         showOne: 0,//只有一页时，是否显示。0=不显示,1=显示（默认）
         callback: function (num) { //回调函数
             window.num = num ;
-            InitVideoLessonsList(num);
+            InitVideoLessonsList(num,listName);
         }
     })
     if(data.pageNum === 0){
@@ -96,7 +103,7 @@ function VideoAnimation1() {
         $(this).find('i').stop().animate({opacity:'0'},500).siblings('.MoreDeatil-text').stop().animate({right:'0px'},500);
     });
 }
-InitVideoLessonsList()
+InitVideoLessonsList(num,listName)
 window.livenum = 1
 function InitVideoLivesList () {
     // 初始化默认第一页
@@ -106,7 +113,7 @@ function InitVideoLivesList () {
         type:'get',
         data: {
             pageNum:data,
-            pageSize:9
+            pageSize:21
         }
     }).then(res => {
         let Videototal = res.data.total;
@@ -177,7 +184,7 @@ function InitVideoLivesList () {
 }
 function pageNumLive(data) {
     console.log(data)
-    data.pageNum = Math.ceil(data.pageNum/9);
+    data.pageNum = Math.ceil(data.pageNum/21);
     $("#pageLives").paging({
         nowPage: data.livenum || 1, // 当前页码
         pageNum: data.pageNum, // 总页码
@@ -208,22 +215,23 @@ function VideoAnimation2() {
 }
 tabs()
 function tabs() {
+    InitTagsList()
     if(getCookie('userInfo')){
         $('.vip-login').hide()
     }
-
-    pageNum({num:1})
     $('.VideoLessonsDetail-header-left').click(function(){
+        $('.tag-list').show()
         $('.video-block').hide()
         $('.Video-shortstrong1').stop().animate({height:'0.15rem'},200);
         $('.Video-shortstrong2').stop().animate({height:'0px'},500);
-        InitVideoLessonsList()
+        InitVideoLessonsList(num,listName)
         $('.accessCode').show()
         $('.VideoLivesDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLessonsDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
-        pageNum({num:1})
+        // pageNumLesson({num:1})
     })
     $('.VideoLessonsDetail-header-Lives').click(function(){
+        $('.tag-list').hide()
         $('.video-block').hide()
         $('.Video-shortstrong1').stop().animate({height:'0px'},500);
         $('.Video-shortstrong2').stop().animate({height:'0.15rem'},200);
@@ -231,7 +239,7 @@ function tabs() {
         $('.accessCode').hide()
         $('.VideoLessonsDetail-list').hide().removeClass('fadeInUp').addClass('fadeOutDown')
         $('.VideoLivesDetail-list').show().removeClass('fadeOutDown').addClass('fadeInUp')
-        pageNumLive({livenum:1})
+        // pageNumLive({livenum:1})
     })
     $('.code-ipt').click(function(){
         $('.codeToIpt').val('')
@@ -280,5 +288,35 @@ function Code(code){
         $('.codeToIpt').val('')
     })
 }
-
+function InitTagsList (){
+    $.Myajax({
+        url:'/course/list/tags'
+    }).then( res => {
+        let html = ''
+        console.log(res.data)
+        res.data.unshift({itemName: "All", itemValue: ""})
+        for( let i = 0 ;i < res.data.length; i++){
+            html += `<li class="tags" data-class="${res.data[i].itemValue}">${res.data[i].itemName}</li>`
+        }
+        $('.tag-ul').html(html)
+        animationTag()
+    })
+}
+function animationTag(){
+    $('.tag-list').click(function(){
+        if($('.tag-ul').css("display")=='none' ){
+            $('.tag-ul').show()
+        }else{
+            $('.tag-ul').hide()
+        }
+    })
+    $('.tags').click(function(){
+        let tag = $(this).attr('data-class');
+        $(this).css({'color':'#c32e47'}).siblings().css({'color':'rgba(54,59,62,1)'})
+        let html = $(this).text()
+        $('.tag-span').html(html)
+        listName = tag;
+        InitVideoLessonsList(1,listName)
+    })
+}
 

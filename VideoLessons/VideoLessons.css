@@ -13,7 +13,8 @@
     margin-left: 0.5rem;
 }
 .default-padding{
-    padding-top: 0.225rem !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0 !important;
 }
 .VideoLessonsDetail-li_top{
     background-position: center;
@@ -288,8 +289,6 @@ ul .VideoLessonsDetail-li:nth-child(1){
     border-radius:0.03rem;
     border:1px solid rgba(195,46,71,1);
     background: #fff;
-    float: left;
-    margin-right: 14px;
 }
 .code-ipt{
     font-size:0.12rem;
@@ -300,11 +299,12 @@ ul .VideoLessonsDetail-li:nth-child(1){
     border-radius:0.03rem;
     border:1px solid rgba(195,46,71,1);
     background: #fff;
-    float: left;
 }
 .accessCode{
     overflow: hidden;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.15rem;
+    display: flex;
+    justify-content: space-between;
 }
 .code-mask{
     position: fixed;
@@ -393,6 +393,64 @@ ul .VideoLessonsDetail-li:nth-child(1){
     font-family:Ubuntu-R;
     color:rgba(255,255,255,1);
     line-height:40px;
+}
+.tag-list{
+    position: relative;
+}
+.tag-ul{
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+    background: #fff;
+    z-index: 11;
+    padding: 0.1rem 0;
+    width:1.73rem;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 10px 20px 0px rgba(0,0,0,0.2);
+}
+.tag-title{
+    display: flex;
+    line-height: 0.16rem;
+}
+.tag-name{
+    font-family: Ubuntu-M;
+    color: #363B3E;
+    font-size: 0.14rem;
+}
+.tag-span{
+    font-family: Ubuntu-M;
+    color: #C32E47;
+    font-size: 0.14rem;
+}
+.Video-list{
+    margin-top: 0.2rem;
+}
+.about-area .tag-ul li:nth-child(2){
+    margin-top: 0px !important;
+}
+.tag-icon{
+    background-size: cover;
+    background-position: center;
+    background-image: url('../assets/images/icons/xiala@2x.png');
+    width: 0.12rem;
+    height: 0.06rem;
+    margin-top: 0.05rem;
+    margin-left: 0.1rem;
+}
+.tags{
+    white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   opacity: 1;
+   font-family: Ubuntu-R;
+   opacity: 1;
+   padding-left: 0.12rem;
+   padding-right: 0.12rem;
+   cursor: pointer;
+    font-size:0.14rem !important;
+    color:rgba(54,59,62,1);
+    line-height:0.25rem;
 }
 
 
