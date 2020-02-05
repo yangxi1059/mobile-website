@@ -52,9 +52,14 @@
     text-align: left;
     margin-top: 0.15rem;
 }
+
 .blog-main{
     padding-bottom: 0.3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    margin-bottom: 0.3rem;
+}
+.video-list_ul div:last-child{
+    margin-bottom: 0rem;
 }
 .blog-text1{
     text-align: left;

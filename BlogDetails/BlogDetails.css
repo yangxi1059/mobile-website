@@ -1,0 +1,83 @@
+.header-Login{
+    color: #c32e47;
+}
+.header-Login span{
+    color: #c32e47;
+}
+.navbar-toggle .fa{
+    color: #C32E47;
+}
+#home{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+nav.navbar.bootsnav.navbar-fixed{
+    background-color: #fff;
+}
+.text-main{
+    text-align: left !important;
+}
+.blogDetail-title{
+    font-size:0.14rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.2rem;
+    margin-top: 0.25rem;
+}
+.blogDetail{
+    font-size:0.15rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+    margin-top: 0.4rem;
+}
+.labels{
+    margin-top: 0.25rem;
+}
+.label{
+    font-size:0.11rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height: 0.19rem;
+    border-radius:1px;
+    border:1px solid rgba(54,59,62,1);
+    padding: 0.02rem 0.08rem;
+
+}
+.blogDetail-img{
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.25rem;
+}
+.blogDetail-main{
+    margin-top: 0.25rem;
+
+}
+.blogDetail-num{
+    font-size:0.14rem;
+    font-family:Ubuntu-M;
+    font-weight:500;
+    color:rgba(195,46,71,1);
+    line-height:0.2rem;
+}
+.blogDetail-text{
+    font-size:0.14rem;
+    font-family:Ubuntu-R;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+    margin-top: 0.05rem;
+}
+.blogDetail-text_p{
+    margin-bottom: 0.3rem;
+    font-size:0.14rem;
+    font-family:Ubuntu-R,source;
+    font-weight:400;
+    color:rgba(54,59,62,1);
+    line-height:0.2rem;
+}
